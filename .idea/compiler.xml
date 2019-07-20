@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eat-order-api" />
+        <module name="eat-common-core" />
+        <module name="eat-user-service" />
+        <module name="eat-user-api" />
+        <module name="eat-gateway" />
+        <module name="eat-cache-api" />
+        <module name="eat-order-service" />
+        <module name="eat-common" />
+        <module name="eat-common-config" />
+        <module name="eat-cache-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eat-cache-api" target="1.8" />
+      <module name="eat-cache-service" target="1.8" />
+      <module name="eat-common" target="1.8" />
+      <module name="eat-common-config" target="1.8" />
+      <module name="eat-common-core" target="1.8" />
+      <module name="eat-common-dao" target="1.8" />
+      <module name="eat-gateway" target="1.8" />
+      <module name="eat-order-api" target="1.8" />
+      <module name="eat-order-service" target="1.8" />
+      <module name="eat-parent" target="1.8" />
+      <module name="eat-user-api" target="1.8" />
+      <module name="eat-user-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="eat-cache-api" options="-parameters" />
+      <module name="eat-cache-service" options="-parameters" />
+      <module name="eat-common" options="-parameters" />
+      <module name="eat-common-config" options="-parameters" />
+      <module name="eat-common-core" options="-parameters" />
+      <module name="eat-common-dao" options="-parameters" />
+      <module name="eat-gateway" options="-parameters" />
+      <module name="eat-order-api" options="-parameters" />
+      <module name="eat-order-service" options="-parameters" />
+      <module name="eat-user-api" options="-parameters" />
+      <module name="eat-user-service" options="-parameters" />
+    </option>
+  </component>
+</project>

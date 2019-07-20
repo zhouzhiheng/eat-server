@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="eat-gateway:war">
+    <output-path>$PROJECT_DIR$/eat-gateway/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>eat-gateway</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="eat-gateway-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="eat-gateway:war exploded" />
+    </root>
+  </artifact>
+</component>
