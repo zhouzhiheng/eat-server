@@ -15,4 +15,7 @@ public class UserEntity implements Serializable {
 
     private Integer age;
 
+    private Integer sort;
+
+
 }

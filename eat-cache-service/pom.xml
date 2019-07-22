@@ -6,11 +6,11 @@
         <groupId>com.opsigte</groupId>
         <artifactId>eat-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../eat-parent</relativePath>
+        <!--<relativePath>../eat-parent</relativePath>-->
     </parent>
 
     <artifactId>eat-cache-service</artifactId>
-    <version>${eat.cache.service.version}</version>
+    <version>${eat-cache-service.version}</version>
     <packaging>jar</packaging>
     <name>eat-cache-service</name>
 
@@ -39,18 +39,13 @@
         <!--项目jar依赖-->
         <dependency>
             <groupId>com.opsigte</groupId>
-            <artifactId>eat-common</artifactId>
-            <version>${eat.common.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.opsigte</groupId>
             <artifactId>eat-cache-api</artifactId>
-            <version>${eat.cache.api.version}</version>
+            <version>${eat-cache-api.version}</version>
         </dependency>
         <dependency>
             <groupId>com.opsigte</groupId>
             <artifactId>eat-common-config</artifactId>
-            <version>${eat.common.config.version}</version>
+            <version>${eat-common-config.version}</version>
         </dependency>
 
 

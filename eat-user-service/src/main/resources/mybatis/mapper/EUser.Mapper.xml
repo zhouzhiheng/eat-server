@@ -26,4 +26,8 @@
     <update id="update" parameterType="UserEntity">
         update e_user set name = #{name} where id = #{id}
     </update>
+
+    <insert id="insert" parameterType="UserEntity" useGeneratedKeys="true" keyColumn="id">
+         insert into e_user (name,age,sort) value (#{name},#{age},#{sort})
+    </insert>
 </mapper>

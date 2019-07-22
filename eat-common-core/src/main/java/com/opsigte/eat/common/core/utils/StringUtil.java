@@ -1,4 +1,4 @@
-package com.opsigte.eat.common.utils;
+package com.opsigte.eat.common.core.utils;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -9,15 +9,6 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-
-/**
- * @Project: com.opsigte.eat.common.utils
- * @Class: StringUtil
- * @Description: String字符串工具类.
- * @Author: opsigte
- * @Date: 2019/7/9 18:48
- * @version
- */
 public final class StringUtil {
 
     private static final Logger log = LoggerFactory.getLogger(StringUtil.class);
@@ -183,41 +174,40 @@ public final class StringUtil {
      * boolean
      */
     private static boolean isMatch(String regex, String orginal){
-	    if (orginal == null || orginal.trim().equals("")) {
-	      return false;
-	    }
-	    Pattern pattern = Pattern.compile(regex);
-	    Matcher isNum = pattern.matcher(orginal);
-	    return isNum.matches();
-	}
+        if (orginal == null || orginal.trim().equals("")) {
+            return false;
+        }
+        Pattern pattern = Pattern.compile(regex);
+        Matcher isNum = pattern.matcher(orginal);
+        return isNum.matches();
+    }
 
-	public static boolean isPositiveInteger(String orginal) {
-		return isMatch("^\\+{0,1}[1-9]\\d*", orginal);
-	}
+    public static boolean isPositiveInteger(String orginal) {
+        return isMatch("^\\+{0,1}[1-9]\\d*", orginal);
+    }
 
-	public static boolean isNegativeInteger(String orginal) {
-		return isMatch("^-[1-9]\\d*", orginal);
-	}
+    public static boolean isNegativeInteger(String orginal) {
+        return isMatch("^-[1-9]\\d*", orginal);
+    }
 
-	public static boolean isWholeNumber(String orginal) {
-		return isMatch("[+-]{0,1}0", orginal) || isPositiveInteger(orginal)
-				|| isNegativeInteger(orginal);
-	}
+    public static boolean isWholeNumber(String orginal) {
+        return isMatch("[+-]{0,1}0", orginal) || isPositiveInteger(orginal)
+                || isNegativeInteger(orginal);
+    }
 
-	public static boolean isPositiveDecimal(String orginal) {
-		return isMatch("\\+{0,1}[0]\\.[1-9]*|\\+{0,1}[1-9]\\d*\\.\\d*", orginal);
-	}
+    public static boolean isPositiveDecimal(String orginal) {
+        return isMatch("\\+{0,1}[0]\\.[1-9]*|\\+{0,1}[1-9]\\d*\\.\\d*", orginal);
+    }
 
-	public static boolean isNegativeDecimal(String orginal) {
-		return isMatch("^-[0]\\.[1-9]*|^-[1-9]\\d*\\.\\d*", orginal);
-	}
+    public static boolean isNegativeDecimal(String orginal) {
+        return isMatch("^-[0]\\.[1-9]*|^-[1-9]\\d*\\.\\d*", orginal);
+    }
 
-	public static boolean isDecimal(String orginal) {
-		return isMatch("[-+]{0,1}\\d+\\.\\d*|[-+]{0,1}\\d*\\.\\d+", orginal);
-	}
+    public static boolean isDecimal(String orginal) {
+        return isMatch("[-+]{0,1}\\d+\\.\\d*|[-+]{0,1}\\d*\\.\\d+", orginal);
+    }
 
-	public static boolean isRealNumber(String orginal) {
-		return isWholeNumber(orginal) || isDecimal(orginal);
-	}
-
+    public static boolean isRealNumber(String orginal) {
+        return isWholeNumber(orginal) || isDecimal(orginal);
+    }
 }

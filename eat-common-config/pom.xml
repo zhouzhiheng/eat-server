@@ -6,11 +6,11 @@
         <groupId>com.opsigte</groupId>
         <artifactId>eat-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../eat-parent</relativePath>
+        <!--<relativePath>../eat-parent</relativePath>-->
     </parent>
 
     <artifactId>eat-common-config</artifactId>
-    <version>${eat.common.config.version}</version>
+    <version>${eat-common-config.version}</version>
     <packaging>jar</packaging>
     <name>eat-common-config</name>
 

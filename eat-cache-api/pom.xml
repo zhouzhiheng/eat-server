@@ -6,11 +6,11 @@
         <groupId>com.opsigte</groupId>
         <artifactId>eat-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../eat-parent</relativePath>
+        <!--<relativePath>../eat-parent</relativePath>-->
     </parent>
 
     <artifactId>eat-cache-api</artifactId>
-    <version>${eat.cache.api.version}</version>
+    <version>${eat-cache-api.version}</version>
     <packaging>jar</packaging>
     <name>eat-cache-api</name>
 
@@ -28,14 +28,8 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.opsigte</groupId>
-            <artifactId>eat-common</artifactId>
-            <version>${eat.common.version}</version>
-        </dependency>
-        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>${lombok.version}</version>
         </dependency>
     </dependencies>
 

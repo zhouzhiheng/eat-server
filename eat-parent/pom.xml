@@ -7,7 +7,6 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.5.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
 
@@ -25,26 +24,25 @@
         <springboot.version>2.1.5.RELEASE</springboot.version>
 
         <!--子模块版本号管理-->
-        <eat.common.version>0.0.1-SNAPSHOT</eat.common.version>
-        <eat.common.config.version>0.0.1-SNAPSHOT</eat.common.config.version>
-        <eat.common.core.version>0.0.1-SNAPSHOT</eat.common.core.version>
-        <eat.user.api.version>0.0.1-SNAPSHOT</eat.user.api.version>
-        <eat.user.service.version>0.0.1-SNAPSHOT</eat.user.service.version>
-        <eat.order.api.version>0.0.1-SNAPSHOT</eat.order.api.version>
-        <eat.order.service.version>0.0.1-SNAPSHOT</eat.order.service.version>
-        <eat.cache.api.version>0.0.1-SNAPSHOT</eat.cache.api.version>
-        <eat.cache.service.version>0.0.1-SNAPSHOT</eat.cache.service.version>
+        <eat-common-config.version>0.0.1-SNAPSHOT</eat-common-config.version>
+        <eat-common-core.version>0.0.1-SNAPSHOT</eat-common-core.version>
+        <eat-user-api.version>0.0.1-SNAPSHOT</eat-user-api.version>
+        <eat-user-service.version>0.0.1-SNAPSHOT</eat-user-service.version>
+        <eat-order-api.version>0.0.1-SNAPSHOT</eat-order-api.version>
+        <eat-order-service.version>0.0.1-SNAPSHOT</eat-order-service.version>
+        <eat-cache-api.version>0.0.1-SNAPSHOT</eat-cache-api.version>
+        <eat-cache-service.version>0.0.1-SNAPSHOT</eat-cache-service.version>
         <eat-gateway.version>0.0.1-SNAPSHOT</eat-gateway.version>
 
         <!--第三方jar版本号管理-->
         <fastjson.version>1.2.47</fastjson.version>
-        <alibaba.spring.boot.dubbo.version>0.2.0</alibaba.spring.boot.dubbo.version>
+        <alibaba-spring-boot-dubbo.version>0.2.0</alibaba-spring-boot-dubbo.version>
         <!--<zookeeper.version>3.5.3-beta</zookeeper.version>-->
         <lombok.version>1.16.20</lombok.version>
         <common-lang3.version>3.8.1</common-lang3.version>
-        <mybatis.spring.boot.version>2.0.1</mybatis.spring.boot.version>
+        <mybatis-spring-boot.version>2.0.1</mybatis-spring-boot.version>
         <mysql.version>5.1.47</mysql.version>
-        <alibaba.druid.version>1.1.9</alibaba.druid.version>
+        <alibaba-druid.version>1.1.9</alibaba-druid.version>
         <pagehelper.version>5.1.10</pagehelper.version>
     </properties>
 
@@ -102,7 +100,7 @@
                         <artifactId>log4j</artifactId>
                     </exclusion>
                 </exclusions>
-                <version>${alibaba.spring.boot.dubbo.version}</version>
+                <version>${alibaba-spring-boot-dubbo.version}</version>
             </dependency>
 
 
@@ -146,7 +144,7 @@
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid-spring-boot-starter</artifactId>
-                <version>${alibaba.druid.version}</version>
+                <version>${alibaba-druid.version}</version>
             </dependency>
 
             <dependency>

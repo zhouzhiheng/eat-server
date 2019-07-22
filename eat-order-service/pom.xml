@@ -10,7 +10,7 @@
 
 
     <artifactId>eat-order-service</artifactId>
-    <version>${eat.order.service.version}</version>
+    <version>${eat-order-service.version}</version>
     <packaging>jar</packaging>
     <name>eat-order-service</name>
 
@@ -45,20 +45,14 @@
         <!--项目jar依赖-->
         <dependency>
             <groupId>com.opsigte</groupId>
-            <artifactId>eat-common</artifactId>
-            <version>${eat.common.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.opsigte</groupId>
             <artifactId>eat-order-api</artifactId>
-            <version>${eat.order.api.version}</version>
+            <version>${eat-order-api.version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.opsigte</groupId>
             <artifactId>eat-user-api</artifactId>
-            <version>${eat.user.api.version}</version>
+            <version>${eat-user-api.version}</version>
         </dependency>
 
         <!--第三方jar依赖-->
@@ -70,7 +64,7 @@
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>${mybatis.spring.boot.version}</version>
+            <version>${mybatis-spring-boot.version}</version>
         </dependency>
 
         <dependency>

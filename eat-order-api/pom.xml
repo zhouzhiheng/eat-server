@@ -10,7 +10,7 @@
 
 
     <artifactId>eat-order-api</artifactId>
-    <version>${eat.order.api.version}</version>
+    <version>${eat-order-api.version}</version>
     <packaging>jar</packaging>
     <name>eat-order-api</name>
 
@@ -33,9 +33,8 @@
         </dependency>
 
         <dependency>
-            <groupId>com.opsigte</groupId>
-            <artifactId>eat-common</artifactId>
-            <version>${eat.common.version}</version>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
 

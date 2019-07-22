@@ -15,6 +15,10 @@ public class EUserController {
     @Reference(version = "1.0.0", check = false)
     private UserService userService;
 
+    @RequestMapping(value = "todo")
+    public String todo (){
+        return "todo";
+    }
 
     @RequestMapping(value = "insertUser", method = RequestMethod.POST)
     public String insertUser(@RequestBody UserEntity userEntity) {
