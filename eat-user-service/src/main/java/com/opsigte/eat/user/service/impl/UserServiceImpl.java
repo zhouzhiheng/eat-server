@@ -95,6 +95,15 @@ public class UserServiceImpl implements UserService {
         return update;
     }
 
+    @Override
+    public Integer insert(UserEntity userEntity) {
+        int insert = userMapper.insert(userEntity);
+        if (insert == 1) {
+            return userEntity.getId();
+        }
+        return 0;
+    }
+
 
     private static void setPage(PageParam pageParam){
         try {

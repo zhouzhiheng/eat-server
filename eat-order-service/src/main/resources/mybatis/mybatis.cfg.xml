@@ -39,7 +39,7 @@
 
 	<!-- 类型别名是为 Java类型命名一个短的名字。 它只和 XML配置有关,只用来减少类完全 限定名的多余部分 -->
 	<typeAliases>
-        <typeAlias type="com.opsigte.eat.user.api.entity.UserEntity" alias="UserEntity"/>
+        <typeAlias type="com.opsigte.eat.order.api.entity.OrderEntity" alias="OrderEntity"/>
 	</typeAliases>
 
 
@@ -56,7 +56,6 @@
             <property name="reasonable" value="true"/>
             <!--当设置为true的时候，如果pagesize设置为0（或RowBounds的limit=0），就不执行分页，返回全部结果-->
             <property name="pageSizeZero" value="false"/>
-
         </plugin>
     </plugins>
 

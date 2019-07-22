@@ -4,7 +4,16 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3751a1e-f27a-4cb7-b7d1-61ed534930d3" name="Default Changelist" comment="" />
+    <list default="true" id="f3751a1e-f27a-4cb7-b7d1-61ed534930d3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/eat-gateway/src/main/java/com/opsigte/eatgateway/EatGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eat-gateway/src/main/java/com/opsigte/eatgateway/EatGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eat-gateway/src/main/java/com/opsigte/eatgateway/controller/EUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/eat-gateway/src/main/java/com/opsigte/eatgateway/controller/EUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eat-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eat-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eat-order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eat-order-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eat-user-api/src/main/java/com/opsigte/eat/user/api/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/eat-user-api/src/main/java/com/opsigte/eat/user/api/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/mapper/BaseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/mapper/BaseMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eat-user-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eat-user-service/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/eat-order-api/target/" />
     <ignored path="$PROJECT_DIR$/eat-parent/target/" />
     <ignored path="$PROJECT_DIR$/eat-common/target/" />
@@ -60,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eat-gateway/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="112">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
           <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
@@ -70,17 +79,74 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eat-gateway/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+            <state relative-caret-position="56">
+              <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eat-common-config/src/main/resources/application-port_config.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/eat-user-service/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eat-order-service/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/EatUserServiceApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eat-gateway/src/main/java/com/opsigte/eatgateway/EatGatewayApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="11" column="65" lean-forward="true" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eat-gateway/src/main/java/com/opsigte/eatgateway/controller/EUserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="476">
+              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/impl/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="99" column="44" selection-start-line="99" selection-start-column="44" selection-end-line="99" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,18 +157,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eat-user-service/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="81" column="40" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
-            </state>
-          </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eat-parent/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="36" column="65" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
+            <state relative-caret-position="224">
+              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
             </state>
           </provider>
           <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
@@ -156,12 +212,12 @@
       <replace />
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/eat-common-dao/pom.xml" />
-        <option value="$PROJECT_DIR$/eat-common-config/src/main/resources/application-common_config.properties" />
-        <option value="$PROJECT_DIR$/eat-common-config/src/main/resources/application-service_config.properties" />
         <option value="$PROJECT_DIR$/eat-common-config/src/main/resources/application-jdbc_config.properties" />
         <option value="$PROJECT_DIR$/eat-user-service/src/main/resources/druid_config.properties" />
         <option value="$PROJECT_DIR$/eat-common-config/src/main/resources/application-durid_config.properties" />
@@ -173,7 +229,6 @@
         <option value="$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/dao/BaseMapper.java" />
         <option value="$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/dao/UserMapper.java" />
         <option value="$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/mapper/test.js" />
-        <option value="$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/mapper/BaseMapper.java" />
         <option value="$PROJECT_DIR$/eat-user-api/src/main/java/com/opsigte/eat/user/api/entity/UserEntity.java" />
         <option value="$PROJECT_DIR$/eat-common/pom.xml" />
         <option value="$PROJECT_DIR$/eat-common-config/pom.xml" />
@@ -187,9 +242,7 @@
         <option value="$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/EatUserServiceApplication.java" />
         <option value="$PROJECT_DIR$/eat-common-core/src/main/java/com/opsigte/eat/common/core/page/PageBean.java" />
         <option value="$PROJECT_DIR$/eat-common-core/src/main/java/com/opsigte/eat/common/core/utils/PageParamUtil.java" />
-        <option value="$PROJECT_DIR$/eat-user-api/src/main/java/com/opsigte/eat/user/api/UserService.java" />
         <option value="$PROJECT_DIR$/eat-common-core/src/main/java/com/opsigte/eat/common/core/page/PageParam.java" />
-        <option value="$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/eat-user-service/src/main/resources/mybatis/mybatis.cfg.xml" />
         <option value="$PROJECT_DIR$/eat-user-service/src/main/resources/mybatis/mapper/EUser.Mapper.xml" />
         <option value="$PROJECT_DIR$/eat-user-service/src/test/java/com/opsigte/eat/user/service/EatUserServiceApplicationTests.java" />
@@ -206,10 +259,16 @@
         <option value="$PROJECT_DIR$/eat-cache-service/src/test/java/com/opsigte/eatcacheservice/EatCacheServiceApplicationTests.java" />
         <option value="$PROJECT_DIR$/eat-parent/pom.xml" />
         <option value="$PROJECT_DIR$/eat-gateway/pom.xml" />
-        <option value="$PROJECT_DIR$/eat-user-service/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/eat-gateway/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/eat-gateway/src/main/resources/logback-spring.xml" />
+        <option value="$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/mapper/BaseMapper.java" />
+        <option value="$PROJECT_DIR$/eat-user-api/src/main/java/com/opsigte/eat/user/api/UserService.java" />
+        <option value="$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/eat-gateway/src/main/java/com/opsigte/eatgateway/controller/EUserController.java" />
+        <option value="$PROJECT_DIR$/eat-gateway/src/main/java/com/opsigte/eatgateway/EatGatewayApplication.java" />
+        <option value="$PROJECT_DIR$/eat-common-config/src/main/resources/application-port_config.properties" />
+        <option value="$PROJECT_DIR$/eat-gateway/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/eat-order-service/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/eat-user-service/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -229,25 +288,52 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="1934" />
     <option name="height" value="1047" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <hideEmptyPackages ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="eat" type="b2602c69:ProjectViewProjectNode" />
               <item name="eat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eat" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-common-config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eat" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-common-config" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eat" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-common-config" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eat" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-common-config" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="eat" type="b2602c69:ProjectViewProjectNode" />
@@ -321,11 +407,6 @@
             <path>
               <item name="eat" type="b2602c69:ProjectViewProjectNode" />
               <item name="eat" type="462c0819:PsiDirectoryNode" />
-              <item name="eat-parent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eat" type="462c0819:PsiDirectoryNode" />
               <item name="eat-user-service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -347,12 +428,22 @@
               <item name="eat-user-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eat" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -368,7 +459,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/eat-gateway/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/eat-common-config/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -387,8 +478,8 @@
       <recent name="com.opsigte.eatcacheservice.core" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\java\tools\idea\code\demo\eat\eat-gateway\src\main\resources" />
       <recent name="E:\java\tools\idea\code\demo\eat\eat-common-config\src\main\resources" />
+      <recent name="E:\java\tools\idea\code\demo\eat\eat-gateway\src\main\resources" />
       <recent name="E:\java\tools\idea\code\demo\eat\eat-user-service\src\main\resources" />
       <recent name="E:\java\tools\idea\code\demo\eat\eat-user-service\src\main\resources\mybatis\mapper" />
       <recent name="E:\java\tools\idea\code\demo\eat\eat-user-service\src\main\resources\mybatis" />
@@ -412,7 +503,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EatCacheServiceApplicationTests.testExecuteAsyncTask">
+  <component name="RunManager" selected="Spring Boot.EatUserServiceApplication">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -825,6 +916,10 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.EatUserServiceApplicationTests.testDatasource" />
+      <item itemvalue="JUnit.EatCacheServiceApplicationTests.testRedisSet" />
+      <item itemvalue="JUnit.EatUserServiceApplicationTests" />
+      <item itemvalue="JUnit.EatCacheServiceApplicationTests.testLock" />
+      <item itemvalue="JUnit.EatCacheServiceApplicationTests.testExecuteAsyncTask" />
       <item itemvalue="Maven.eat-user-api [clean,install]" />
       <item itemvalue="Maven.eat-common-config [clean,install]" />
       <item itemvalue="Maven.eat-order-service [clean,package]" />
@@ -840,10 +935,6 @@
       <item itemvalue="Spring Boot.EatCommonDaoApplication" />
       <item itemvalue="Spring Boot.EatCommonCoreApplication" />
       <item itemvalue="Spring Boot.EatCommonCoreApplication (1)" />
-      <item itemvalue="JUnit.EatCacheServiceApplicationTests.testRedisSet" />
-      <item itemvalue="JUnit.EatUserServiceApplicationTests" />
-      <item itemvalue="JUnit.EatCacheServiceApplicationTests.testLock" />
-      <item itemvalue="JUnit.EatCacheServiceApplicationTests.testExecuteAsyncTask" />
       <item itemvalue="Spring Boot.EatGatewayApplication" />
       <item itemvalue="Spring Boot.EatUserServiceApplication" />
     </list>
@@ -877,7 +968,8 @@
       <workItem from="1562987242855" duration="15923000" />
       <workItem from="1563012727633" duration="79657000" />
       <workItem from="1563429927505" duration="14059000" />
-      <workItem from="1563507158901" duration="27546000" />
+      <workItem from="1563507158901" duration="27679000" />
+      <workItem from="1563770983748" duration="2593000" />
     </task>
     <servers />
   </component>
@@ -914,7 +1006,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198574000" />
+    <option name="totallyTimeSpent" value="201300000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -926,10 +1018,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49908257" visible="true" weight="0.19296375" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49908257" visible="true" weight="0.19509594" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="JRebel" order="2" sideWeight="0.50091743" side_tool="true" weight="0.20682302" />
       <window_info id="Image Layers" order="3" />
@@ -941,7 +1033,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.25586593" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.3039106" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" visible="true" weight="0.4111732" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
@@ -1009,54 +1101,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/5.1.2/pagehelper-5.1.2.jar!/com/github/pagehelper/Page.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/5.1.2/pagehelper-5.1.2.jar!/com/github/pagehelper/page/PageMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="43" column="19" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/5.1.2/pagehelper-5.1.2.pom">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eat-user-api/src/main/java/com/opsigte/eat/user/api/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="2" column="49" lean-forward="true" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/5.1.10/pagehelper-5.1.10.jar!/com/github/pagehelper/util/PageObjectUtil.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/5.1.10/pagehelper-5.1.10.jar!/com/github/pagehelper/page/PageMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eat-common-core/src/main/java/com/opsigte/eat/common/core/page/PageParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eat-common-core/src/main/java/com/opsigte/eat/common/core/utils/PageParamUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1124,16 +1168,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
           <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="79" column="27" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1241,20 +1275,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eat-common-config/src/main/resources/application-service_config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eat-cache-service/src/main/resources/redis-config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-cache-service/src/main/resources/redis-config.properties" />
     <entry file="uml://MAVEN/com.opsigte:eat-cache-service:0.0.1-SNAPSHOT">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1336,9 +1357,10 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.9789076118535734" x="492.31097524781865" y="1496.1712471063097" />
+          <settings layout="Hierarchic Group" zoom="0.9789076118535734" x="492.0" y="1496.0" />
           <SelectedNodes />
           <Categories />
+          <SCOPE>All</SCOPE>
           <VISIBILITY>All</VISIBILITY>
         </state>
       </provider>
@@ -1523,48 +1545,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eat-parent/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="36" column="65" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eat-order-service/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="40" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eat-user-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="81" column="40" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eat-gateway/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/eat-gateway/src/main/resources/logback-spring.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
           <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eat-user-service/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="16" selection-start-line="14" selection-start-column="31" selection-end-line="24" />
         </state>
       </provider>
     </entry>
@@ -1575,20 +1559,127 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eat-gateway/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/eat-parent/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="36" column="65" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-user-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/mapper/BaseMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/dao/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-user-api/src/main/java/com/opsigte/eat/user/api/entity/UserEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-user-api/src/main/java/com/opsigte/eat/user/api/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="99" column="44" selection-start-line="99" selection-start-column="44" selection-end-line="99" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eat-gateway/src/main/java/com/opsigte/eatgateway/controller/EUserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="476">
+          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-gateway/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-common-config/src/main/resources/application-service_config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-gateway/src/main/java/com/opsigte/eatgateway/EatGatewayApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="11" column="65" lean-forward="true" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/EatUserServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-common-config/src/main/resources/application-port_config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-gateway/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-order-service/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-user-service/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
         </state>
       </provider>
     </entry>
