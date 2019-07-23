@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/eat-gateway" />
+    <file type="web" url="file://$PROJECT_DIR$/e-gateway" />
   </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
@@ -20,6 +20,17 @@
         <option value="$PROJECT_DIR$/eat-common-core/pom.xml" />
         <option value="$PROJECT_DIR$/eat-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/eat-common/pom.xml" />
+        <option value="$PROJECT_DIR$/e-common-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/e-common/pom.xml" />
+        <option value="$PROJECT_DIR$/e-common-config/pom.xml" />
+        <option value="$PROJECT_DIR$/e-common-core/pom.xml" />
+        <option value="$PROJECT_DIR$/e-cache-api/pom.xml" />
+        <option value="$PROJECT_DIR$/e-cache-service/pom.xml" />
+        <option value="$PROJECT_DIR$/e-user-api/pom.xml" />
+        <option value="$PROJECT_DIR$/e-user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/e-order-api/pom.xml" />
+        <option value="$PROJECT_DIR$/e-order-service/pom.xml" />
+        <option value="$PROJECT_DIR$/e-gateway/pom.xml" />
       </list>
     </option>
   </component>

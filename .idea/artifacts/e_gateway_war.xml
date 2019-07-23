@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="e-gateway:war">
+    <output-path>$PROJECT_DIR$/e-gateway/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>e-gateway</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="e-gateway-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="e-gateway:war exploded" />
+    </root>
+  </artifact>
+</component>

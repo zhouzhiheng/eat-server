@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/e-cache-api/e-cache-api.iml" filepath="$PROJECT_DIR$/e-cache-api/e-cache-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/e-cache-service/e-cache-service.iml" filepath="$PROJECT_DIR$/e-cache-service/e-cache-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/e-common/e-common.iml" filepath="$PROJECT_DIR$/e-common/e-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/e-common-config/e-common-config.iml" filepath="$PROJECT_DIR$/e-common-config/e-common-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/e-common-core/e-common-core.iml" filepath="$PROJECT_DIR$/e-common-core/e-common-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/e-common-parent/e-common-parent.iml" filepath="$PROJECT_DIR$/e-common-parent/e-common-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/e-gateway/e-gateway.iml" filepath="$PROJECT_DIR$/e-gateway/e-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/e-order-api/e-order-api.iml" filepath="$PROJECT_DIR$/e-order-api/e-order-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/e-order-service/e-order-service.iml" filepath="$PROJECT_DIR$/e-order-service/e-order-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/e-user-api/e-user-api.iml" filepath="$PROJECT_DIR$/e-user-api/e-user-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/e-user-service/e-user-service.iml" filepath="$PROJECT_DIR$/e-user-service/e-user-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/eat.iml" filepath="$PROJECT_DIR$/.idea/eat.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eat-cache-api/eat-cache-api.iml" filepath="$PROJECT_DIR$/eat-cache-api/eat-cache-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eat-cache-service/eat-cache-service.iml" filepath="$PROJECT_DIR$/eat-cache-service/eat-cache-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eat-common/eat-common.iml" filepath="$PROJECT_DIR$/eat-common/eat-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eat-common-config/eat-common-config.iml" filepath="$PROJECT_DIR$/eat-common-config/eat-common-config.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eat-common-core/eat-common-core.iml" filepath="$PROJECT_DIR$/eat-common-core/eat-common-core.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eat-gateway/eat-gateway.iml" filepath="$PROJECT_DIR$/eat-gateway/eat-gateway.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eat-order-api/eat-order-api.iml" filepath="$PROJECT_DIR$/eat-order-api/eat-order-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eat-order-service/eat-order-service.iml" filepath="$PROJECT_DIR$/eat-order-service/eat-order-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eat-parent/eat-parent.iml" filepath="$PROJECT_DIR$/eat-parent/eat-parent.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eat-user-api/eat-user-api.iml" filepath="$PROJECT_DIR$/eat-user-api/eat-user-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eat-user-service/eat-user-service.iml" filepath="$PROJECT_DIR$/eat-user-service/eat-user-service.iml" />
     </modules>
   </component>
 </project>

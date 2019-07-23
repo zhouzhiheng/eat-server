@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="eat-gateway-0.0.1-SNAPSHOT.war">
+    <root id="archive" name="eat-gateway-${eat-gateway.version}.war">
       <element id="artifact" artifact-name="eat-gateway:war exploded" />
     </root>
   </artifact>

@@ -1,10 +1,10 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="eat-gateway:war exploded">
-    <output-path>$PROJECT_DIR$/eat-gateway/target/eat-gateway-${eat-gateway.version}</output-path>
+  <artifact type="exploded-war" name="e-gateway:war exploded">
+    <output-path>$PROJECT_DIR$/e-gateway/target/e-gateway-0.0.1-SNAPSHOT</output-path>
     <properties id="maven-jee-properties">
       <options>
         <exploded>true</exploded>
-        <module>eat-gateway</module>
+        <module>e-gateway</module>
         <packaging>war</packaging>
       </options>
     </properties>
@@ -46,17 +46,25 @@
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.26" />
           <element id="library" level="project" name="Maven: org.springframework:spring-core:5.1.7.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.1.7.RELEASE" />
-          <element id="library" level="project" name="Maven: com.opsigte:eat-common-config:0.0.1-SNAPSHOT" />
-          <element id="library" level="project" name="Maven: com.opsigte:eat-common-core:0.0.1-SNAPSHOT" />
-          <element id="library" level="project" name="Maven: com.opsigte:eat-common:0.0.1-SNAPSHOT" />
+          <element id="archive" name="e-common-0.0.1-SNAPSHOT.jar">
+            <element id="module-output" name="e-common" />
+          </element>
           <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.47" />
           <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.8.1" />
           <element id="library" level="project" name="Maven: com.github.pagehelper:pagehelper:5.1.10" />
           <element id="library" level="project" name="Maven: com.github.jsqlparser:jsqlparser:2.0" />
-          <element id="archive" name="eat-user-api-0.0.1-SNAPSHOT.jar">
+          <element id="archive" name="e-common-config-0.0.1-SNAPSHOT.jar">
+            <element id="module-output" name="e-common-config" />
+          </element>
+          <element id="archive" name="e-common-core-0.0.1-SNAPSHOT.jar">
+            <element id="module-output" name="e-common-core" />
+          </element>
+          <element id="archive" name="e-user-api-0.0.1-SNAPSHOT.jar">
             <element id="module-output" name="e-user-api" />
           </element>
-          <element id="library" level="project" name="Maven: com.opsigte:eat-order-api:0.0.1-SNAPSHOT" />
+          <element id="archive" name="e-order-api-0.0.1-SNAPSHOT.jar">
+            <element id="module-output" name="e-order-api" />
+          </element>
           <element id="library" level="project" name="Maven: com.alibaba.boot:dubbo-spring-boot-starter:0.2.0" />
           <element id="library" level="project" name="Maven: com.alibaba:dubbo:2.6.2" />
           <element id="library" level="project" name="Maven: org.javassist:javassist:3.20.0-GA" />
@@ -71,7 +79,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/e-gateway/target/eat-gateway-${eat-gateway.version}/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/e-gateway/target/e-gateway-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="e-gateway/web/Web" />
     </root>

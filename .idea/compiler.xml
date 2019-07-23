@@ -6,43 +6,45 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="eat-order-api" />
-        <module name="eat-common-core" />
-        <module name="eat-user-service" />
-        <module name="eat-user-api" />
-        <module name="eat-gateway" />
-        <module name="eat-cache-api" />
-        <module name="eat-order-service" />
-        <module name="eat-common" />
-        <module name="eat-common-config" />
-        <module name="eat-cache-service" />
+        <module name="e-order-api" />
+        <module name="e-common-core" />
+        <module name="e-cache-service" />
+        <module name="e-common" />
+        <module name="e-user-api" />
+        <module name="e-order-service" />
+        <module name="e-cache-api" />
+        <module name="e-user-service" />
+        <module name="e-gateway" />
+        <module name="e-common-config" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="eat-cache-api" target="1.8" />
-      <module name="eat-cache-service" target="1.8" />
-      <module name="eat-common" target="1.8" />
-      <module name="eat-common-config" target="1.8" />
-      <module name="eat-common-core" target="1.8" />
-      <module name="eat-gateway" target="1.8" />
-      <module name="eat-order-api" target="1.8" />
-      <module name="eat-order-service" target="1.8" />
-      <module name="eat-parent" target="1.8" />
-      <module name="eat-user-api" target="1.8" />
-      <module name="eat-user-service" target="1.8" />
+      <module name="e-cache-api" target="1.8" />
+      <module name="e-cache-service" target="1.8" />
+      <module name="e-common" target="1.8" />
+      <module name="e-common-config" target="1.8" />
+      <module name="e-common-core" target="1.8" />
+      <module name="e-common-parent" target="1.8" />
+      <module name="e-gateway" target="1.8" />
+      <module name="e-order-api" target="1.8" />
+      <module name="e-order-service" target="1.8" />
+      <module name="e-user-api" target="1.8" />
+      <module name="e-user-service" target="1.8" />
+      <module name="eat-user-service" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="eat-cache-api" options="-parameters" />
-      <module name="eat-cache-service" options="-parameters" />
-      <module name="eat-common" options="-parameters" />
-      <module name="eat-common-config" options="-parameters" />
-      <module name="eat-common-core" options="-parameters" />
-      <module name="eat-gateway" options="-parameters" />
-      <module name="eat-order-api" options="-parameters" />
-      <module name="eat-order-service" options="-parameters" />
-      <module name="eat-user-api" options="-parameters" />
+      <module name="e-cache-api" options="-parameters" />
+      <module name="e-cache-service" options="-parameters" />
+      <module name="e-common" options="-parameters" />
+      <module name="e-common-config" options="-parameters" />
+      <module name="e-common-core" options="-parameters" />
+      <module name="e-gateway" options="-parameters" />
+      <module name="e-order-api" options="-parameters" />
+      <module name="e-order-service" options="-parameters" />
+      <module name="e-user-api" options="-parameters" />
+      <module name="e-user-service" options="-parameters" />
       <module name="eat-user-service" options="-parameters" />
     </option>
   </component>

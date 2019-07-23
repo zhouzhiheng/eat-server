@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!--e父工程继承springboot父工程项目，e子项目基础e父工程-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.5.RELEASE</version>
+        <relativePath/>
+    </parent>
+
+
+    <groupId>com.opsigte</groupId>
+    <artifactId>e-common-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>e-common-parent</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <!--springboot 版本号-->
+        <springboot.version>2.1.5.RELEASE</springboot.version>
+
+        <!--子模块版本号管理-->
+        <e-common-config.version>0.0.1-SNAPSHOT</e-common-config.version>
+        <e-common-core.version>0.0.1-SNAPSHOT</e-common-core.version>
+        <e-common.version>0.0.1-SNAPSHOT</e-common.version>
+        <e-user-api.version>0.0.1-SNAPSHOT</e-user-api.version>
+        <e-user-service.version>0.0.1-SNAPSHOT</e-user-service.version>
+        <e-order-api.version>0.0.1-SNAPSHOT</e-order-api.version>
+        <e-order-service.version>0.0.1-SNAPSHOT</e-order-service.version>
+        <e-cache-api.version>0.0.1-SNAPSHOT</e-cache-api.version>
+        <e-cache-service.version>0.0.1-SNAPSHOT</e-cache-service.version>
+        <e-gateway.version>0.0.1-SNAPSHOT</e-gateway.version>
+
+        <!--第三方jar版本号管理-->
+        <fastjson.version>1.2.47</fastjson.version>
+        <alibaba-spring-boot-dubbo.version>0.2.0</alibaba-spring-boot-dubbo.version>
+        <!--<zookeeper.version>3.5.3-beta</zookeeper.version>-->
+        <lombok.version>1.16.20</lombok.version>
+        <common-lang3.version>3.8.1</common-lang3.version>
+        <mybatis-spring-boot.version>2.0.1</mybatis-spring-boot.version>
+        <mysql.version>5.1.47</mysql.version>
+        <alibaba-druid.version>1.1.9</alibaba-druid.version>
+        <pagehelper.version>5.1.10</pagehelper.version>
+    </properties>
+
+
+    <dependencyManagement>
+        <dependencies>
+
+            <!--第三方jar依赖管理-->
+
+            <!--springboot-starter-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter</artifactId>
+                <!--排除slf4j-log4j12,log4j-->
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>slf4j-log4j12</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>log4j</groupId>
+                        <artifactId>log4j</artifactId>
+                    </exclusion>
+                </exclusions>
+                <version>${springboot.version}</version>
+            </dependency>
+
+            <!--springboot-redis-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>${springboot.version}</version>
+            </dependency>
+
+
+            <!--FastJson-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
+            <!--springboot-dubbo-->
+            <dependency>
+                <groupId>com.alibaba.boot</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <!--排除slf4j-log4j12,log4j-->
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>slf4j-log4j12</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>log4j</groupId>
+                        <artifactId>log4j</artifactId>
+                    </exclusion>
+                </exclusions>
+                <version>${alibaba-spring-boot-dubbo.version}</version>
+            </dependency>
+
+
+            <!--zookeeper-->
+          <!--  <dependency>
+                <groupId>org.apache.zookeeper</groupId>
+                <artifactId>zookeeper</artifactId>
+                &lt;!&ndash;排除slf4j-log4j12,log4j&ndash;&gt;
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>slf4j-log4j12</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>slf4j-api</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>log4j</groupId>
+                        <artifactId>log4j</artifactId>
+                    </exclusion>
+                </exclusions>
+                <version>${zookeeper.version}</version>
+            </dependency>
+-->
+
+            <!--lombok-->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <scope>provided</scope><!--打包的时候排除此jar-->
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${common-lang3.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${alibaba-druid.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper</artifactId>
+                <version>${pagehelper.version}</version>
+            </dependency>
+
+
+        </dependencies>
+    </dependencyManagement>
+
+</project>
