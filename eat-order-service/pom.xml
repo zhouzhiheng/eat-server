@@ -6,6 +6,7 @@
         <groupId>com.opsigte</groupId>
         <artifactId>eat-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../eat-parent</relativePath>
     </parent>
 
 
@@ -43,6 +44,21 @@
         </dependency>
 
         <!--项目jar依赖-->
+        <dependency>
+            <groupId>com.opsigte</groupId>
+            <artifactId>eat-common</artifactId>
+            <version>${eat-common.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.opsigte</groupId>
+            <artifactId>eat-common-config</artifactId>
+            <version>${eat-common-config.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.opsigte</groupId>
+            <artifactId>eat-common-core</artifactId>
+            <version>${eat-common-core.version}</version>
+        </dependency>
         <dependency>
             <groupId>com.opsigte</groupId>
             <artifactId>eat-order-api</artifactId>

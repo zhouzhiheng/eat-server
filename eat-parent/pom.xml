@@ -7,6 +7,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.5.RELEASE</version>
+        <relativePath/>
     </parent>
 
 
@@ -26,6 +27,7 @@
         <!--子模块版本号管理-->
         <eat-common-config.version>0.0.1-SNAPSHOT</eat-common-config.version>
         <eat-common-core.version>0.0.1-SNAPSHOT</eat-common-core.version>
+        <eat-common.version>0.0.1-SNAPSHOT</eat-common.version>
         <eat-user-api.version>0.0.1-SNAPSHOT</eat-user-api.version>
         <eat-user-service.version>0.0.1-SNAPSHOT</eat-user-service.version>
         <eat-order-api.version>0.0.1-SNAPSHOT</eat-order-api.version>
@@ -156,6 +158,5 @@
 
         </dependencies>
     </dependencyManagement>
-
 
 </project>

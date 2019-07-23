@@ -6,7 +6,7 @@
         <groupId>com.opsigte</groupId>
         <artifactId>eat-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <!--<relativePath>../eat-parent</relativePath>-->
+        <relativePath>../eat-parent</relativePath>
     </parent>
 
     <artifactId>eat-cache-service</artifactId>
@@ -27,20 +27,22 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-
         </plugins>
-
     </build>
 
 
     <dependencies>
-
 
         <!--项目jar依赖-->
         <dependency>
             <groupId>com.opsigte</groupId>
             <artifactId>eat-cache-api</artifactId>
             <version>${eat-cache-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.opsigte</groupId>
+            <artifactId>eat-common</artifactId>
+            <version>${eat-common.version}</version>
         </dependency>
         <dependency>
             <groupId>com.opsigte</groupId>
@@ -63,22 +65,6 @@
             <groupId>com.alibaba.boot</groupId>
             <artifactId>dubbo-spring-boot-starter</artifactId>
         </dependency>
-
-        <!--<dependency>
-            <groupId>org.apache.zookeeper</groupId>
-            <artifactId>zookeeper</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-log4j12</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>log4j</groupId>
-                    <artifactId>log4j</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>-->
-
     </dependencies>
 
 

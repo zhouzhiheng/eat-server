@@ -6,12 +6,12 @@
         <groupId>com.opsigte</groupId>
         <artifactId>eat-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <!--<relativePath>../eat-parent</relativePath>-->
+        <relativePath>../eat-parent</relativePath>
     </parent>
 
 
     <artifactId>eat-user-api</artifactId>
-    <version>${eat-user-api.version}</version>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>eat-user-api</name>
 
@@ -21,11 +21,16 @@
         <java.version>1.8</java.version>
     </properties>
 
+
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.opsigte</groupId>
+            <artifactId>eat-common</artifactId>
+            <version>${eat-common.version}</version>
         </dependency>
         <dependency>
             <groupId>com.opsigte</groupId>
@@ -33,8 +38,9 @@
             <version>${eat-common-core.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

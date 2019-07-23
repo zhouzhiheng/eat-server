@@ -11,7 +11,6 @@
       <list>
         <option value="$PROJECT_DIR$/eat-order-api/pom.xml" />
         <option value="$PROJECT_DIR$/eat-parent/pom.xml" />
-        <option value="$PROJECT_DIR$/eat-common/pom.xml" />
         <option value="$PROJECT_DIR$/eat-user-api/pom.xml" />
         <option value="$PROJECT_DIR$/eat-user-service/pom.xml" />
         <option value="$PROJECT_DIR$/eat-order-service/pom.xml" />
@@ -20,6 +19,7 @@
         <option value="$PROJECT_DIR$/eat-common-config/pom.xml" />
         <option value="$PROJECT_DIR$/eat-common-core/pom.xml" />
         <option value="$PROJECT_DIR$/eat-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/eat-common/pom.xml" />
       </list>
     </option>
   </component>

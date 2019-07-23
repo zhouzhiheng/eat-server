@@ -18,13 +18,12 @@
         <module name="eat-cache-service" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8">
       <module name="eat-cache-api" target="1.8" />
       <module name="eat-cache-service" target="1.8" />
       <module name="eat-common" target="1.8" />
       <module name="eat-common-config" target="1.8" />
       <module name="eat-common-core" target="1.8" />
-      <module name="eat-common-dao" target="1.8" />
       <module name="eat-gateway" target="1.8" />
       <module name="eat-order-api" target="1.8" />
       <module name="eat-order-service" target="1.8" />
@@ -40,7 +39,6 @@
       <module name="eat-common" options="-parameters" />
       <module name="eat-common-config" options="-parameters" />
       <module name="eat-common-core" options="-parameters" />
-      <module name="eat-common-dao" options="-parameters" />
       <module name="eat-gateway" options="-parameters" />
       <module name="eat-order-api" options="-parameters" />
       <module name="eat-order-service" options="-parameters" />

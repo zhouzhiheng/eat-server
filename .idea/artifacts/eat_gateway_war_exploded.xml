@@ -46,6 +46,12 @@
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.26" />
           <element id="library" level="project" name="Maven: org.springframework:spring-core:5.1.7.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.1.7.RELEASE" />
+          <element id="archive" name="eat-common-config-0.0.1-SNAPSHOT.jar">
+            <element id="module-output" name="eat-common-config" />
+          </element>
+          <element id="archive" name="eat-common-core-0.0.1-SNAPSHOT.jar">
+            <element id="module-output" name="eat-common-core" />
+          </element>
           <element id="archive" name="eat-common-0.0.1-SNAPSHOT.jar">
             <element id="module-output" name="eat-common" />
           </element>
@@ -53,12 +59,6 @@
           <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.8.1" />
           <element id="library" level="project" name="Maven: com.github.pagehelper:pagehelper:5.1.10" />
           <element id="library" level="project" name="Maven: com.github.jsqlparser:jsqlparser:2.0" />
-          <element id="archive" name="eat-common-config-0.0.1-SNAPSHOT.jar">
-            <element id="module-output" name="eat-common-config" />
-          </element>
-          <element id="archive" name="eat-common-core-0.0.1-SNAPSHOT.jar">
-            <element id="module-output" name="eat-common-core" />
-          </element>
           <element id="archive" name="eat-user-api-0.0.1-SNAPSHOT.jar">
             <element id="module-output" name="eat-user-api" />
           </element>

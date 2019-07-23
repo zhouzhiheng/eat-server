@@ -6,6 +6,7 @@
         <groupId>com.opsigte</groupId>
         <artifactId>eat-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../eat-parent</relativePath>
     </parent>
 
 
@@ -22,19 +23,18 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>com.opsigte</groupId>
+            <artifactId>eat-common</artifactId>
+            <version>${eat-common.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
 

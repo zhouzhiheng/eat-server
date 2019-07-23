@@ -5,9 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3751a1e-f27a-4cb7-b7d1-61ed534930d3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/eat-gateway/src/main/java/com/opsigte/eatgateway/EatGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eat-gateway/src/main/java/com/opsigte/eatgateway/EatGatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eat-gateway/src/main/java/com/opsigte/eatgateway/controller/EUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/eat-gateway/src/main/java/com/opsigte/eatgateway/controller/EUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eat-user-service/src/main/resources/mybatis/mapper/EUser.Mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eat-user-service/src/main/resources/mybatis/mapper/EUser.Mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eat-cache-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eat-cache-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eat-cache-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eat-cache-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eat-common-config/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eat-common-config/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eat-common-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eat-common-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eat-common-core/src/main/java/com/opsigte/eat/common/core/page/PageBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/eat-common-core/src/main/java/com/opsigte/eat/common/core/page/PageBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eat-common-core/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eat-common-core/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eat-order-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eat-order-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eat-order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eat-order-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eat-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eat-parent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eat-user-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eat-user-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eat-user-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eat-user-api/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eat-user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eat-user-service/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/eat-order-api/target/" />
     <ignored path="$PROJECT_DIR$/eat-parent/target/" />
@@ -57,53 +66,63 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eat-gateway/src/main/java/com/opsigte/eatgateway/EatGatewayApplication.java">
+        <entry file="file://$PROJECT_DIR$/eat-user-api/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="22" column="50" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+            <state relative-caret-position="235">
+              <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
             </state>
           </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eat-gateway/src/main/java/com/opsigte/eatgateway/controller/EUserController.java">
+        <entry file="file://$PROJECT_DIR$/eat-cache-api/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#667#668#0" expanded="true" />
-                <element signature="e#691#692#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="196">
+              <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
             </state>
           </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/dao/UserMapper.java">
+        <entry file="file://$PROJECT_DIR$/eat-cache-service/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+            <state relative-caret-position="132">
+              <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
             </state>
           </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eat-order-api/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/eat-user-service/src/main/resources/mybatis/mapper/EUser.Mapper.xml">
+        <entry file="file://$PROJECT_DIR$/eat-order-service/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+            <state relative-caret-position="221">
+              <caret line="83" column="21" lean-forward="true" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
             </state>
           </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://7e668c5a-e40d-4d5a-8778-186e63f3dfa9/schema/eat_me/table/e_user">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+        <entry file="file://$PROJECT_DIR$/eat-user-service/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="61" column="21" selection-start-line="46" selection-start-column="7" selection-end-line="61" selection-end-column="21" />
             </state>
           </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
     </leaf>
@@ -119,10 +138,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>eat.order.service.version</find>
-      <find>alibaba.spring.boot.dubbo</find>
-      <find>setInitialSize</find>
-      <find>initialSize</find>
       <find>mybatis</find>
       <find>max</find>
       <find>maxWait</find>
@@ -149,9 +164,16 @@
       <find>getset</find>
       <find>getset(</find>
       <find>20881</find>
+      <find>alibaba.spring.boot.dubbo.version</find>
+      <find>mybatis.spring.boot.version</find>
+      <find>alibaba.druid.version</find>
+      <find>end configuration</find>
     </findStrings>
     <replaceStrings>
       <replace />
+      <replace>alibaba-spring-boot-dubbo.version</replace>
+      <replace>mybatis-spring-boot.version</replace>
+      <replace>alibaba-druid.version</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -160,31 +182,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/eat-user-service/src/main/resources/mybatis/mapper/EUser.xml" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/7e668c5a-e40d-4d5a-8778-186e63f3dfa9/console.sql" />
-        <option value="$PROJECT_DIR$/eat-user-service/src/main/resources/mybatis/mybatis-config.xml" />
-        <option value="$PROJECT_DIR$/eat-user-service/src/main/resources/mybatis/mapper/EUserMapper.xml" />
-        <option value="$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/dao/BaseMapper.java" />
-        <option value="$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/dao/UserMapper.java" />
         <option value="$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/mapper/test.js" />
-        <option value="$PROJECT_DIR$/eat-user-api/src/main/java/com/opsigte/eat/user/api/entity/UserEntity.java" />
-        <option value="$PROJECT_DIR$/eat-common/pom.xml" />
-        <option value="$PROJECT_DIR$/eat-common-config/pom.xml" />
-        <option value="$PROJECT_DIR$/eat-common/src/main/java/com/opsigte/eat/common/utils/StringUtil.java" />
         <option value="$PROJECT_DIR$/eat-user-service/src/main/resources/logback-spring.xml" />
-        <option value="$PROJECT_DIR$/eat-common-core/pom.xml" />
-        <option value="$PROJECT_DIR$/eat-user-api/pom.xml" />
         <option value="$PROJECT_DIR$/eat-common-core/src/main/java/com/opsigte/eat/common/core/enums.java" />
         <option value="$PROJECT_DIR$/eat-common-core/src/main/java/com/opsigte/eat/common/core/enums/ErrorCode.java" />
         <option value="$PROJECT_DIR$/eat-common-core/src/main/java/com/opsigte/eat/common/core/utils/Resp.java" />
         <option value="$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/EatUserServiceApplication.java" />
-        <option value="$PROJECT_DIR$/eat-common-core/src/main/java/com/opsigte/eat/common/core/page/PageBean.java" />
         <option value="$PROJECT_DIR$/eat-common-core/src/main/java/com/opsigte/eat/common/core/utils/PageParamUtil.java" />
         <option value="$PROJECT_DIR$/eat-common-core/src/main/java/com/opsigte/eat/common/core/page/PageParam.java" />
         <option value="$PROJECT_DIR$/eat-user-service/src/test/java/com/opsigte/eat/user/service/EatUserServiceApplicationTests.java" />
         <option value="$PROJECT_DIR$/eat-cache-service/src/main/resources/redis-config.properties" />
-        <option value="$PROJECT_DIR$/eat-user-service/pom.xml" />
-        <option value="$PROJECT_DIR$/eat-cache-service/pom.xml" />
         <option value="$PROJECT_DIR$/eat-common-config/src/main/resources/application-redis_config.properties" />
         <option value="$PROJECT_DIR$/eat-cache-service/src/main/java/com/opsigte/eatcacheservice/core/RedisManager.java" />
         <option value="$PROJECT_DIR$/eat-cache-service/src/main/java/com/opsigte/eatcacheservice/utils/RedisLockUtil.java" />
@@ -192,15 +199,11 @@
         <option value="$PROJECT_DIR$/eat-cache-service/src/main/java/com/opsigte/eatcacheservice/impl/CacheServiceImpl.java" />
         <option value="$PROJECT_DIR$/eat-cache-api/src/main/java/com/opsigte/eatcacheapi/CacheService.java" />
         <option value="$PROJECT_DIR$/eat-cache-service/src/test/java/com/opsigte/eatcacheservice/EatCacheServiceApplicationTests.java" />
-        <option value="$PROJECT_DIR$/eat-parent/pom.xml" />
-        <option value="$PROJECT_DIR$/eat-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/eat-gateway/src/main/resources/logback-spring.xml" />
         <option value="$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/mapper/BaseMapper.java" />
-        <option value="$PROJECT_DIR$/eat-user-api/src/main/java/com/opsigte/eat/user/api/UserService.java" />
         <option value="$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/eat-common-config/src/main/resources/application-port_config.properties" />
         <option value="$PROJECT_DIR$/eat-gateway/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/eat-order-service/pom.xml" />
         <option value="$PROJECT_DIR$/eat-user-service/src/main/resources/mybatis/mybatis.cfg.xml" />
         <option value="$PROJECT_DIR$/eat-order-service/src/main/resources/logback-spring.xml" />
         <option value="$PROJECT_DIR$/eat-order-service/src/main/resources/mybatis/mybatis.cfg.xml" />
@@ -211,6 +214,25 @@
         <option value="$PROJECT_DIR$/eat-gateway/src/main/java/com/opsigte/eatgateway/EatGatewayApplication.java" />
         <option value="$PROJECT_DIR$/eat-gateway/src/main/java/com/opsigte/eatgateway/controller/EUserController.java" />
         <option value="$PROJECT_DIR$/eat-user-service/src/main/resources/mybatis/mapper/EUser.Mapper.xml" />
+        <option value="$PROJECT_DIR$/eat-user-api/src/main/java/com/opsigte/eat/user/api/entity/UserEntity.java" />
+        <option value="$PROJECT_DIR$/eat-common/src/main/java/com/opsigte/eat/common/utils/StringUtil.java" />
+        <option value="$PROJECT_DIR$/eat-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/eat-common-core/src/main/java/com/opsigte/eat/common/core/utils/StringUtil.java" />
+        <option value="$PROJECT_DIR$/eat-common-core/src/main/java/com/opsigte/eat/common/core/page/PageBean.java" />
+        <option value="$PROJECT_DIR$/eat-user-api/src/main/java/com/opsigte/eat/user/api/UserService.java" />
+        <option value="$PROJECT_DIR$/eat-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/eat-common/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/eat-common-config/pom.xml" />
+        <option value="$PROJECT_DIR$/eat-common-core/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/eat-common/pom.xml" />
+        <option value="$PROJECT_DIR$/eat-common-core/pom.xml" />
+        <option value="$PROJECT_DIR$/eat-user-api/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/eat-cache-api/pom.xml" />
+        <option value="$PROJECT_DIR$/eat-user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/eat-user-api/pom.xml" />
+        <option value="$PROJECT_DIR$/eat-cache-service/pom.xml" />
+        <option value="$PROJECT_DIR$/eat-order-api/pom.xml" />
+        <option value="$PROJECT_DIR$/eat-order-service/pom.xml" />
       </list>
     </option>
   </component>
@@ -219,12 +241,12 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="eat-cache-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="eat-order-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="eat-cache-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+          <item name="eat-order-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Run Configurations" type="21c1f71a:MavenProjectsStructure$RunConfigurationsNode" />
         </path>
       </expand>
       <select />
@@ -254,25 +276,69 @@
             <path>
               <item name="eat" type="b2602c69:ProjectViewProjectNode" />
               <item name="eat" type="462c0819:PsiDirectoryNode" />
-              <item name="eat-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-cache-api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="eat" type="b2602c69:ProjectViewProjectNode" />
               <item name="eat" type="462c0819:PsiDirectoryNode" />
-              <item name="eat-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-cache-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eat" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eat" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="eat" type="b2602c69:ProjectViewProjectNode" />
               <item name="eat" type="462c0819:PsiDirectoryNode" />
-              <item name="eat-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="eat" type="b2602c69:ProjectViewProjectNode" />
               <item name="eat" type="462c0819:PsiDirectoryNode" />
-              <item name="eat-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eat" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eat" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-common-config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eat" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-common-config" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eat" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-common-config" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eat" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-common-config" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -280,21 +346,101 @@
             <path>
               <item name="eat" type="b2602c69:ProjectViewProjectNode" />
               <item name="eat" type="462c0819:PsiDirectoryNode" />
-              <item name="eat-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-common-config" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="eatgateway" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="eat" type="b2602c69:ProjectViewProjectNode" />
               <item name="eat" type="462c0819:PsiDirectoryNode" />
-              <item name="eat-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-common-config" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eat" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-common-config" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eat" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-common-config" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="eatcommonconfig" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eat" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-common-core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eat" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-common-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eat" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-common-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="eatgateway" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eat" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-common-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eat" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-order-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eat" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-order-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eat" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-parent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eat" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-user-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eat" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-user-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eat" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-user-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eat" type="462c0819:PsiDirectoryNode" />
+              <item name="eat-user-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="eat" type="b2602c69:ProjectViewProjectNode" />
@@ -321,25 +467,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eat" type="462c0819:PsiDirectoryNode" />
-              <item name="eat-user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eat" type="462c0819:PsiDirectoryNode" />
-              <item name="eat-user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -361,13 +488,13 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/eat-common-core" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/eat-common/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15234375" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="RecentsManager">
@@ -405,7 +532,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.eat-common-core [clean,install]">
+  <component name="RunManager" selected="Maven.eat-parent [clean,install]">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -508,6 +635,47 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="eat-cache-api [clean,install]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="true" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/eat-cache-api" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
     <configuration name="eat-cache-service [clean,package]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
@@ -673,6 +841,47 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="eat-order-api [clean,install]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="#JAVA_HOME" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="true" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/eat-order-api" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <configuration name="eat-order-service [clean,package]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -709,6 +918,47 @@
             </option>
             <option name="resolveToWorkspace" value="false" />
             <option name="workingDirPath" value="$PROJECT_DIR$/eat-order-service" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="eat-parent [clean,install]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="true" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/eat-parent" />
           </MavenRunnerParameters>
         </option>
       </MavenSettings>
@@ -907,6 +1157,9 @@
       <item itemvalue="Maven.eat-common [clean,install]" />
       <item itemvalue="Maven.eat-common-core [clean,install]" />
       <item itemvalue="Maven.eat-user-api [clean,install]" />
+      <item itemvalue="Maven.eat-cache-api [clean,install]" />
+      <item itemvalue="Maven.eat-order-api [clean,install]" />
+      <item itemvalue="Maven.eat-parent [clean,install]" />
       <item itemvalue="Maven.eat-common-config [clean,install]" />
       <item itemvalue="Maven.eat-order-service [clean,package]" />
       <item itemvalue="Maven.eat-cache-service [clean,package]" />
@@ -955,7 +1208,7 @@
       <workItem from="1563012727633" duration="79657000" />
       <workItem from="1563429927505" duration="14059000" />
       <workItem from="1563507158901" duration="27679000" />
-      <workItem from="1563770983748" duration="4814000" />
+      <workItem from="1563770983748" duration="22127000" />
     </task>
     <servers />
   </component>
@@ -992,7 +1245,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203521000" />
+    <option name="totallyTimeSpent" value="220834000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1005,6 +1258,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49908257" visible="true" weight="0.19509594" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1017,16 +1271,16 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.25586593" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" visible="true" weight="0.4055866" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.2916201" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.4055866" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="7" sideWeight="0.49946696" weight="0.5318436" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32960895" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3575419" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49946696" weight="0.3575419" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.33743018" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" weight="0.34860334" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32960895" />
       <window_info anchor="bottom" id="Database Changes" order="13" weight="0.32960895" />
       <window_info anchor="bottom" id="Version Control" order="14" />
@@ -1037,7 +1291,7 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" sideWeight="0.49840257" weight="0.17803837" />
+      <window_info anchor="right" id="Maven" order="3" sideWeight="0.49840257" visible="true" weight="0.2196162" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Key Promoter X" order="5" />
       <window_info anchor="right" id="Database" order="6" weight="0.120469086" />
@@ -1086,301 +1340,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="uml://MAVEN/com.opsigte:eat-user-service:0.0.1-SNAPSHOT">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>MAVEN</ID>
-          <OriginalElement>com.opsigte:eat-user-service:0.0.1-SNAPSHOT</OriginalElement>
-          <nodes>
-            <node x="" y="">com.opsigte:eat-user-service:0.0.1-SNAPSHOT</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.5.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot:jar:2.1.5.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.5.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.5.RELEASE/ch.qos.logback:logback-classic:jar:1.2.3</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.5.RELEASE/ch.qos.logback:logback-classic:jar:1.2.3/ch.qos.logback:logback-core:jar:1.2.3</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.5.RELEASE/org.apache.logging.log4j:log4j-to-slf4j:jar:2.11.2</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.5.RELEASE/org.apache.logging.log4j:log4j-to-slf4j:jar:2.11.2/org.apache.logging.log4j:log4j-api:jar:2.11.2</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.5.RELEASE/org.slf4j:jul-to-slf4j:jar:1.7.26</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.5.RELEASE/javax.annotation:javax.annotation-api:jar:1.3.2</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.5.RELEASE/org.yaml:snakeyaml:jar:1.23</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-test:jar:2.1.5.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-test-autoconfigure:jar:2.1.5.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0/net.minidev:json-smart:jar:2.3</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0/net.minidev:json-smart:jar:2.3/net.minidev:accessors-smart:jar:1.2</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0/net.minidev:json-smart:jar:2.3/net.minidev:accessors-smart:jar:1.2/org.ow2.asm:asm:jar:5.0.4</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/junit:junit:jar:4.12</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.assertj:assertj-core:jar:3.11.1</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.mockito:mockito-core:jar:2.23.4</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.mockito:mockito-core:jar:2.23.4/net.bytebuddy:byte-buddy:jar:1.9.12</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.mockito:mockito-core:jar:2.23.4/net.bytebuddy:byte-buddy-agent:jar:1.9.12</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.mockito:mockito-core:jar:2.23.4/org.objenesis:objenesis:jar:2.6</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.hamcrest:hamcrest-core:jar:1.3</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.hamcrest:hamcrest-library:jar:1.3</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.skyscreamer:jsonassert:jar:1.5.0</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.skyscreamer:jsonassert:jar:1.5.0/com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.springframework:spring-core:jar:5.1.7.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.springframework:spring-core:jar:5.1.7.RELEASE/org.springframework:spring-jcl:jar:5.1.7.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.springframework:spring-test:jar:5.1.7.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.xmlunit:xmlunit-core:jar:2.6.2</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.5.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.1.5.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.1.5.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.9.8</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.1.5.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.9.8/com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.1.5.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.9.8/com.fasterxml.jackson.core:jackson-core:jar:2.9.8</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.1.5.RELEASE/com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.9.8</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.1.5.RELEASE/com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.8</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.1.5.RELEASE/com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.9.8</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:2.1.5.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:2.1.5.RELEASE/org.apache.tomcat.embed:tomcat-embed-core:jar:9.0.19</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:2.1.5.RELEASE/org.apache.tomcat.embed:tomcat-embed-el:jar:9.0.19</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:2.1.5.RELEASE/org.apache.tomcat.embed:tomcat-embed-websocket:jar:9.0.19</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.5.RELEASE/org.hibernate.validator:hibernate-validator:jar:6.0.16.Final</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.5.RELEASE/org.hibernate.validator:hibernate-validator:jar:6.0.16.Final/javax.validation:validation-api:jar:2.0.1.Final</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.5.RELEASE/org.hibernate.validator:hibernate-validator:jar:6.0.16.Final/org.jboss.logging:jboss-logging:jar:3.3.2.Final</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.5.RELEASE/org.hibernate.validator:hibernate-validator:jar:6.0.16.Final/com.fasterxml:classmate:jar:1.4.0</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.5.RELEASE/org.springframework:spring-web:jar:5.1.7.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.5.RELEASE/org.springframework:spring-web:jar:5.1.7.RELEASE/org.springframework:spring-beans:jar:5.1.7.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.5.RELEASE/org.springframework:spring-webmvc:jar:5.1.7.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.5.RELEASE/org.springframework:spring-webmvc:jar:5.1.7.RELEASE/org.springframework:spring-aop:jar:5.1.7.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.5.RELEASE/org.springframework:spring-webmvc:jar:5.1.7.RELEASE/org.springframework:spring-context:jar:5.1.7.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.1.5.RELEASE/org.springframework:spring-webmvc:jar:5.1.7.RELEASE/org.springframework:spring-expression:jar:5.1.7.RELEASE</node>
-            <node x="" y="">com.opsigte:eat-common:jar:0.0.1-SNAPSHOT</node>
-            <node x="" y="">com.opsigte:eat-common:jar:0.0.1-SNAPSHOT/com.alibaba:fastjson:jar:1.2.47</node>
-            <node x="" y="">com.opsigte:eat-common:jar:0.0.1-SNAPSHOT/org.apache.commons:commons-lang3:jar:3.8.1</node>
-            <node x="" y="">com.opsigte:eat-common:jar:0.0.1-SNAPSHOT/com.github.pagehelper:pagehelper:jar:5.1.10</node>
-            <node x="" y="">com.opsigte:eat-common:jar:0.0.1-SNAPSHOT/com.github.pagehelper:pagehelper:jar:5.1.10/com.github.jsqlparser:jsqlparser:jar:2.0</node>
-            <node x="" y="">com.opsigte:eat-common-config:jar:0.0.1-SNAPSHOT</node>
-            <node x="" y="">com.opsigte:eat-common-core:jar:0.0.1-SNAPSHOT</node>
-            <node x="" y="">com.opsigte:eat-user-api:jar:0.0.1-SNAPSHOT</node>
-            <node x="" y="">com.opsigte:eat-cache-api:jar:0.0.1-SNAPSHOT</node>
-            <node x="" y="">com.alibaba.boot:dubbo-spring-boot-starter:jar:0.2.0</node>
-            <node x="" y="">com.alibaba.boot:dubbo-spring-boot-starter:jar:0.2.0/com.alibaba:dubbo:jar:2.6.2</node>
-            <node x="" y="">com.alibaba.boot:dubbo-spring-boot-starter:jar:0.2.0/com.alibaba:dubbo:jar:2.6.2/org.javassist:javassist:jar:3.20.0-GA</node>
-            <node x="" y="">com.alibaba.boot:dubbo-spring-boot-starter:jar:0.2.0/com.alibaba:dubbo:jar:2.6.2/org.jboss.netty:netty:jar:3.2.5.Final</node>
-            <node x="" y="">com.alibaba.boot:dubbo-spring-boot-starter:jar:0.2.0/org.apache.zookeeper:zookeeper:jar:3.5.3-beta</node>
-            <node x="" y="">com.alibaba.boot:dubbo-spring-boot-starter:jar:0.2.0/org.apache.zookeeper:zookeeper:jar:3.5.3-beta/commons-cli:commons-cli:jar:1.2</node>
-            <node x="" y="">com.alibaba.boot:dubbo-spring-boot-starter:jar:0.2.0/org.apache.zookeeper:zookeeper:jar:3.5.3-beta/io.netty:netty:jar:3.10.5.Final</node>
-            <node x="" y="">com.alibaba.boot:dubbo-spring-boot-starter:jar:0.2.0/org.apache.curator:curator-framework:jar:2.12.0</node>
-            <node x="" y="">com.alibaba.boot:dubbo-spring-boot-starter:jar:0.2.0/org.apache.curator:curator-framework:jar:2.12.0/org.apache.curator:curator-client:jar:2.12.0</node>
-            <node x="" y="">com.alibaba.boot:dubbo-spring-boot-starter:jar:0.2.0/org.apache.curator:curator-framework:jar:2.12.0/org.apache.curator:curator-client:jar:2.12.0/com.google.guava:guava:jar:16.0.1</node>
-            <node x="" y="">com.alibaba.boot:dubbo-spring-boot-starter:jar:0.2.0/com.alibaba.boot:dubbo-spring-boot-autoconfigure:jar:0.2.0</node>
-            <node x="" y="">org.mybatis.spring.boot:mybatis-spring-boot-starter:jar:2.0.1</node>
-            <node x="" y="">org.mybatis.spring.boot:mybatis-spring-boot-starter:jar:2.0.1/org.springframework.boot:spring-boot-starter-jdbc:jar:2.1.5.RELEASE</node>
-            <node x="" y="">org.mybatis.spring.boot:mybatis-spring-boot-starter:jar:2.0.1/org.springframework.boot:spring-boot-starter-jdbc:jar:2.1.5.RELEASE/com.zaxxer:HikariCP:jar:3.2.0</node>
-            <node x="" y="">org.mybatis.spring.boot:mybatis-spring-boot-starter:jar:2.0.1/org.springframework.boot:spring-boot-starter-jdbc:jar:2.1.5.RELEASE/org.springframework:spring-jdbc:jar:5.1.7.RELEASE</node>
-            <node x="" y="">org.mybatis.spring.boot:mybatis-spring-boot-starter:jar:2.0.1/org.springframework.boot:spring-boot-starter-jdbc:jar:2.1.5.RELEASE/org.springframework:spring-jdbc:jar:5.1.7.RELEASE/org.springframework:spring-tx:jar:5.1.7.RELEASE</node>
-            <node x="" y="">org.mybatis.spring.boot:mybatis-spring-boot-starter:jar:2.0.1/org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:jar:2.0.1</node>
-            <node x="" y="">org.mybatis.spring.boot:mybatis-spring-boot-starter:jar:2.0.1/org.mybatis:mybatis:jar:3.5.1</node>
-            <node x="" y="">org.mybatis.spring.boot:mybatis-spring-boot-starter:jar:2.0.1/org.mybatis:mybatis-spring:jar:2.0.1</node>
-            <node x="" y="">mysql:mysql-connector-java:jar:5.1.47</node>
-            <node x="" y="">com.alibaba:druid-spring-boot-starter:jar:1.1.9</node>
-            <node x="" y="">com.alibaba:druid-spring-boot-starter:jar:1.1.9/com.alibaba:druid:jar:1.1.9</node>
-            <node x="" y="">com.alibaba:druid-spring-boot-starter:jar:1.1.9/org.slf4j:slf4j-api:jar:1.7.26</node>
-            <node x="" y="">com.alibaba:druid-spring-boot-starter:jar:1.1.9/org.springframework.boot:spring-boot-autoconfigure:jar:2.1.5.RELEASE</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.9309124767225325" x="673.0" y="1317.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>All</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eat-cache-service/src/main/resources/redis-config.properties" />
-    <entry file="uml://MAVEN/com.opsigte:eat-cache-service:0.0.1-SNAPSHOT">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>MAVEN</ID>
-          <OriginalElement>com.opsigte:eat-cache-service:0.0.1-SNAPSHOT</OriginalElement>
-          <nodes>
-            <node x="" y="">com.opsigte:eat-cache-service:0.0.1-SNAPSHOT</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.5.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot:jar:2.1.5.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-autoconfigure:jar:2.1.5.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.5.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.5.RELEASE/ch.qos.logback:logback-classic:jar:1.2.3</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.5.RELEASE/ch.qos.logback:logback-classic:jar:1.2.3/ch.qos.logback:logback-core:jar:1.2.3</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.5.RELEASE/org.apache.logging.log4j:log4j-to-slf4j:jar:2.11.2</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.5.RELEASE/org.apache.logging.log4j:log4j-to-slf4j:jar:2.11.2/org.apache.logging.log4j:log4j-api:jar:2.11.2</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.5.RELEASE/org.slf4j:jul-to-slf4j:jar:1.7.26</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.5.RELEASE/javax.annotation:javax.annotation-api:jar:1.3.2</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.5.RELEASE/org.yaml:snakeyaml:jar:1.23</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/org.springframework.data:spring-data-redis:jar:2.1.8.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/org.springframework.data:spring-data-redis:jar:2.1.8.RELEASE/org.springframework.data:spring-data-keyvalue:jar:2.1.8.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/org.springframework.data:spring-data-redis:jar:2.1.8.RELEASE/org.springframework.data:spring-data-keyvalue:jar:2.1.8.RELEASE/org.springframework.data:spring-data-commons:jar:2.1.8.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/org.springframework.data:spring-data-redis:jar:2.1.8.RELEASE/org.springframework:spring-tx:jar:5.1.7.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/org.springframework.data:spring-data-redis:jar:2.1.8.RELEASE/org.springframework:spring-tx:jar:5.1.7.RELEASE/org.springframework:spring-beans:jar:5.1.7.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/org.springframework.data:spring-data-redis:jar:2.1.8.RELEASE/org.springframework:spring-oxm:jar:5.1.7.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/org.springframework.data:spring-data-redis:jar:2.1.8.RELEASE/org.springframework:spring-aop:jar:5.1.7.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/org.springframework.data:spring-data-redis:jar:2.1.8.RELEASE/org.springframework:spring-context-support:jar:5.1.7.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/org.springframework.data:spring-data-redis:jar:2.1.8.RELEASE/org.slf4j:slf4j-api:jar:1.7.26</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/io.lettuce:lettuce-core:jar:5.1.6.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/io.lettuce:lettuce-core:jar:5.1.6.RELEASE/io.netty:netty-common:jar:4.1.36.Final</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/io.lettuce:lettuce-core:jar:5.1.6.RELEASE/io.netty:netty-handler:jar:4.1.36.Final</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/io.lettuce:lettuce-core:jar:5.1.6.RELEASE/io.netty:netty-handler:jar:4.1.36.Final/io.netty:netty-buffer:jar:4.1.36.Final</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/io.lettuce:lettuce-core:jar:5.1.6.RELEASE/io.netty:netty-handler:jar:4.1.36.Final/io.netty:netty-codec:jar:4.1.36.Final</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/io.lettuce:lettuce-core:jar:5.1.6.RELEASE/io.netty:netty-transport:jar:4.1.36.Final</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/io.lettuce:lettuce-core:jar:5.1.6.RELEASE/io.netty:netty-transport:jar:4.1.36.Final/io.netty:netty-resolver:jar:4.1.36.Final</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/io.lettuce:lettuce-core:jar:5.1.6.RELEASE/io.projectreactor:reactor-core:jar:3.2.9.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.1.5.RELEASE/io.lettuce:lettuce-core:jar:5.1.6.RELEASE/io.projectreactor:reactor-core:jar:3.2.9.RELEASE/org.reactivestreams:reactive-streams:jar:1.0.2</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-test:jar:2.1.5.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.springframework.boot:spring-boot-test-autoconfigure:jar:2.1.5.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0/net.minidev:json-smart:jar:2.3</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0/net.minidev:json-smart:jar:2.3/net.minidev:accessors-smart:jar:1.2</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0/net.minidev:json-smart:jar:2.3/net.minidev:accessors-smart:jar:1.2/org.ow2.asm:asm:jar:5.0.4</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/junit:junit:jar:4.12</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.assertj:assertj-core:jar:3.11.1</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.mockito:mockito-core:jar:2.23.4</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.mockito:mockito-core:jar:2.23.4/net.bytebuddy:byte-buddy:jar:1.9.12</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.mockito:mockito-core:jar:2.23.4/net.bytebuddy:byte-buddy-agent:jar:1.9.12</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.mockito:mockito-core:jar:2.23.4/org.objenesis:objenesis:jar:2.6</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.hamcrest:hamcrest-core:jar:1.3</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.hamcrest:hamcrest-library:jar:1.3</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.skyscreamer:jsonassert:jar:1.5.0</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.skyscreamer:jsonassert:jar:1.5.0/com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.springframework:spring-core:jar:5.1.7.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.springframework:spring-core:jar:5.1.7.RELEASE/org.springframework:spring-jcl:jar:5.1.7.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.springframework:spring-test:jar:5.1.7.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.1.5.RELEASE/org.xmlunit:xmlunit-core:jar:2.6.2</node>
-            <node x="" y="">com.alibaba.boot:dubbo-spring-boot-starter:jar:0.2.0</node>
-            <node x="" y="">com.alibaba.boot:dubbo-spring-boot-starter:jar:0.2.0/com.alibaba:dubbo:jar:2.6.2</node>
-            <node x="" y="">com.alibaba.boot:dubbo-spring-boot-starter:jar:0.2.0/com.alibaba:dubbo:jar:2.6.2/org.springframework:spring-context:jar:5.1.7.RELEASE</node>
-            <node x="" y="">com.alibaba.boot:dubbo-spring-boot-starter:jar:0.2.0/com.alibaba:dubbo:jar:2.6.2/org.springframework:spring-context:jar:5.1.7.RELEASE/org.springframework:spring-expression:jar:5.1.7.RELEASE</node>
-            <node x="" y="">com.alibaba.boot:dubbo-spring-boot-starter:jar:0.2.0/com.alibaba:dubbo:jar:2.6.2/org.javassist:javassist:jar:3.20.0-GA</node>
-            <node x="" y="">com.alibaba.boot:dubbo-spring-boot-starter:jar:0.2.0/com.alibaba:dubbo:jar:2.6.2/org.jboss.netty:netty:jar:3.2.5.Final</node>
-            <node x="" y="">com.alibaba.boot:dubbo-spring-boot-starter:jar:0.2.0/org.apache.zookeeper:zookeeper:jar:3.4.9</node>
-            <node x="" y="">com.alibaba.boot:dubbo-spring-boot-starter:jar:0.2.0/org.apache.zookeeper:zookeeper:jar:3.4.9/jline:jline:jar:0.9.94</node>
-            <node x="" y="">com.alibaba.boot:dubbo-spring-boot-starter:jar:0.2.0/org.apache.zookeeper:zookeeper:jar:3.4.9/io.netty:netty:jar:3.10.5.Final</node>
-            <node x="" y="">com.alibaba.boot:dubbo-spring-boot-starter:jar:0.2.0/org.apache.curator:curator-framework:jar:2.12.0</node>
-            <node x="" y="">com.alibaba.boot:dubbo-spring-boot-starter:jar:0.2.0/org.apache.curator:curator-framework:jar:2.12.0/org.apache.curator:curator-client:jar:2.12.0</node>
-            <node x="" y="">com.alibaba.boot:dubbo-spring-boot-starter:jar:0.2.0/org.apache.curator:curator-framework:jar:2.12.0/org.apache.curator:curator-client:jar:2.12.0/org.apache.zookeeper:zookeeper:jar:3.4.8</node>
-            <node x="" y="">com.alibaba.boot:dubbo-spring-boot-starter:jar:0.2.0/org.apache.curator:curator-framework:jar:2.12.0/org.apache.curator:curator-client:jar:2.12.0/com.google.guava:guava:jar:16.0.1</node>
-            <node x="" y="">com.alibaba.boot:dubbo-spring-boot-starter:jar:0.2.0/com.alibaba.boot:dubbo-spring-boot-autoconfigure:jar:0.2.0</node>
-            <node x="" y="">com.opsigte:eat-common:jar:0.0.1-SNAPSHOT</node>
-            <node x="" y="">com.opsigte:eat-common:jar:0.0.1-SNAPSHOT/com.alibaba:fastjson:jar:1.2.47</node>
-            <node x="" y="">com.opsigte:eat-common:jar:0.0.1-SNAPSHOT/org.apache.commons:commons-lang3:jar:3.8.1</node>
-            <node x="" y="">com.opsigte:eat-common:jar:0.0.1-SNAPSHOT/com.github.pagehelper:pagehelper:jar:5.1.10</node>
-            <node x="" y="">com.opsigte:eat-common:jar:0.0.1-SNAPSHOT/com.github.pagehelper:pagehelper:jar:5.1.10/com.github.jsqlparser:jsqlparser:jar:2.0</node>
-            <node x="" y="">com.opsigte:eat-cache-api:jar:0.0.1-SNAPSHOT</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.9789076118535734" x="492.0" y="1496.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>All</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.8.RELEASE/spring-data-redis-2.1.8.RELEASE.jar!/org/springframework/data/redis/connection/lettuce/LettuceExceptionConverter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="41" column="110" selection-start-line="41" selection-start-column="110" selection-end-line="41" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eat-user-service/src/test/java/com/opsigte/eat/user/service/EatUserServiceApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="33" column="32" lean-forward="true" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-          <folding>
-            <element signature="e#895#896#0" expanded="true" />
-            <element signature="e#1026#1027#0" expanded="true" />
-            <element signature="e#1077#1078#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar!/org/springframework/boot/autoconfigure/data/redis/RedisProperties.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2961">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.8.RELEASE/spring-data-redis-2.1.8.RELEASE.jar!/org/springframework/data/redis/support/collections/RedisProperties.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3101">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar!/org/springframework/boot/autoconfigure/session/RedisSessionProperties.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-231">
-          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar!/org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="16" column="56" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.8.RELEASE/spring-data-redis-2.1.8.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="801" column="33" selection-start-line="801" selection-start-column="33" selection-end-line="801" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eat-common-config/src/main/resources/application-redis_config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eat-cache-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="64" column="24" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eat-cache-service/src/main/java/com/opsigte/eatcacheservice/EatCacheServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="10" column="41" lean-forward="true" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-          <folding>
-            <element signature="e#117893#117894#0" expanded="true" />
-            <element signature="e#117955#117956#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/concurrent/Executor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="127" column="17" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.7.RELEASE/spring-context-5.1.7.RELEASE.jar!/org/springframework/scheduling/annotation/AsyncConfigurer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.7.RELEASE/spring-context-5.1.7.RELEASE.jar!/org/springframework/scheduling/annotation/AsyncConfigurerSupport.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -1467,25 +1426,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eat-parent/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="36" column="65" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/mapper/BaseMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eat-user-api/src/main/java/com/opsigte/eat/user/api/entity/UserEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1502,22 +1446,6 @@
           <caret line="2" column="34" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="34" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eat-user-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="90" column="21" lean-forward="true" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eat-order-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="77" column="57" lean-forward="true" selection-start-line="77" selection-start-column="57" selection-end-line="77" selection-end-column="57" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/eat-user-service/src/main/java/com/opsigte/eat/user/service/EatUserServiceApplication.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1592,35 +1520,10 @@
     <entry file="file://$PROJECT_DIR$/eat-cache-api/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/eat-gateway/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-504">
-          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/eat-gateway/src/main/java/com/opsigte/eatgateway/EatGatewayApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
-          <caret line="22" column="50" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://7e668c5a-e40d-4d5a-8778-186e63f3dfa9/schema/eat_me/table/e_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eat-user-api/src/main/java/com/opsigte/eat/user/api/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -1637,7 +1540,7 @@
     <entry file="file://$PROJECT_DIR$/eat-gateway/src/main/java/com/opsigte/eatgateway/controller/EUserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#667#668#0" expanded="true" />
@@ -1655,10 +1558,218 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/eat-user-service/src/main/resources/mybatis/mapper/EUser.Mapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        <state relative-caret-position="304">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
+    </entry>
+    <entry file="das://7e668c5a-e40d-4d5a-8778-186e63f3dfa9/schema/eat_me/table/e_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-user-api/src/main/java/com/opsigte/eat/user/api/entity/UserEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-common/src/main/java/com/opsigte/eat/common/utils/StringUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="202" column="20" selection-start-line="202" selection-start-column="20" selection-end-line="202" selection-end-column="20" />
+          <folding>
+            <element signature="e#822#823#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
+            <element signature="e#1129#1130#0" expanded="true" />
+            <element signature="e#1750#1751#0" expanded="true" />
+            <element signature="e#1801#1802#0" expanded="true" />
+            <element signature="e#2005#2006#0" expanded="true" />
+            <element signature="e#2056#2057#0" expanded="true" />
+            <element signature="e#2262#2263#0" expanded="true" />
+            <element signature="e#2334#2335#0" expanded="true" />
+            <element signature="e#2451#2452#0" expanded="true" />
+            <element signature="e#2519#2520#0" expanded="true" />
+            <element signature="e#2635#2636#0" expanded="true" />
+            <element signature="e#2686#2687#0" expanded="true" />
+            <element signature="e#3733#3741#0" expanded="true" />
+            <element signature="e#4352#4353#0" expanded="true" />
+            <element signature="e#4404#4405#0" expanded="true" />
+            <element signature="e#4464#4465#0" expanded="true" />
+            <element signature="e#4509#4510#0" expanded="true" />
+            <element signature="e#5121#5122#0" expanded="true" />
+            <element signature="e#5179#5180#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-gateway/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-common-core/src/main/java/com/opsigte/eat/common/core/utils/StringUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="53" column="1" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-common-core/src/main/java/com/opsigte/eat/common/core/page/PageBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="e#757#758#0" expanded="true" />
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#963#964#0" expanded="true" />
+            <element signature="e#1016#1017#0" expanded="true" />
+            <element signature="e#1060#1061#0" expanded="true" />
+            <element signature="e#1097#1098#0" expanded="true" />
+            <element signature="e#1129#1130#0" expanded="true" />
+            <element signature="e#1180#1181#0" expanded="true" />
+            <element signature="e#1222#1223#0" expanded="true" />
+            <element signature="e#1252#1253#0" expanded="true" />
+            <element signature="e#1280#1281#0" expanded="true" />
+            <element signature="e#1320#1321#0" expanded="true" />
+            <element signature="e#1354#1355#0" expanded="true" />
+            <element signature="e#1386#1387#0" expanded="true" />
+            <element signature="e#1413#1414#0" expanded="true" />
+            <element signature="e#1454#1455#0" expanded="true" />
+            <element signature="e#1486#1487#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-user-api/src/main/java/com/opsigte/eat/user/api/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-cache-api/src/main/java/com/opsigte/eatcacheapi/EatCacheApiApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-common/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-common-config/src/test/java/com/opsigte/eatcommonconfig/EatCommonConfigApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-common-core/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-user-api/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-common-config/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-common-core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="42" selection-end-column="21" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-parent/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-736">
+          <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-cache-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-user-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-order-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-user-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="61" column="21" selection-start-line="46" selection-start-column="7" selection-end-line="61" selection-end-column="21" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-cache-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-user-service/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eat-order-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="83" column="21" lean-forward="true" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
   </component>
   <component name="masterDetails">
