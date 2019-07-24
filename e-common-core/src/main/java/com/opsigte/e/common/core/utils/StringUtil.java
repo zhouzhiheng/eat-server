@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 /**
  * @Project: com.opsigte.e.common.utils
  * @Class: StringUtil
- * @Description: String字符串工具类.
+ * @Description: 统一String字符串工具类.
  * @Author: opsigte
  * @Date: 2019/7/23 20:51
  * @version 1.0.0

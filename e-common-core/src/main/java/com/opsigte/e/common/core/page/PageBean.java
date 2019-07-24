@@ -1,18 +1,20 @@
 package com.opsigte.e.common.core.page;
 
 import com.github.pagehelper.PageInfo;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.util.List;
 
 /**
- * @Project: com.opsigte.eat.common.core.page
+ * @Project: com.opsigte.e.common.core.page
  * @Class: PageBean
- * @Description: 分页对象
+ * @Description: 统一返回分页对象
  * @Author: opsigte
- * @Date: 2019/7/16 23:01
+ * @Date: 2019/7/24 9:06
  * @version 1.0.0
  */
+@Data
 public class PageBean<T> implements Serializable {
     private static final long serialVersionUID = 2046352945524278277L;
 
@@ -37,45 +39,6 @@ public class PageBean<T> implements Serializable {
      */
     private List<T> list;
 
-    public Integer getCurrentPage() {
-        return currentPage;
-    }
-
-    public void setCurrentPage(Integer currentPage) {
-        this.currentPage = currentPage;
-    }
-
-    public Integer getNumPerPage() {
-        return numPerPage;
-    }
-
-    public void setNumPerPage(Integer numPerPage) {
-        this.numPerPage = numPerPage;
-    }
-
-    public Integer getTotalPage() {
-        return totalPage;
-    }
-
-    public void setTotalPage(Integer totalPage) {
-        this.totalPage = totalPage;
-    }
-
-    public Long getTotal() {
-        return total;
-    }
-
-    public void setTotal(Long total) {
-        this.total = total;
-    }
-
-    public List<T> getList() {
-        return list;
-    }
-
-    public void setList(List<T> list) {
-        this.list = list;
-    }
 
     /**
      * 将PageHelper分页后的list转为分页信息

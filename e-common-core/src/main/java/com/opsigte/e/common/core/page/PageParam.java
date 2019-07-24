@@ -4,12 +4,13 @@ import lombok.Data;
 
 import java.io.Serializable;
 
+
 /**
- * @Project: com.opsigte.eat.common.core.page
+ * @Project: com.opsigte.e.common.core.page
  * @Class: PageParam
- * @Description: 分页入参
+ * @Description: 统一分页入参
  * @Author: opsigte
- * @Date: 2019/7/16 16:09
+ * @Date: 2019/7/24 9:07
  * @version 1.0.0
  */
 @Data

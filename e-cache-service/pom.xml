@@ -46,6 +46,11 @@
         </dependency>
         <dependency>
             <groupId>com.opsigte</groupId>
+            <artifactId>e-common-core</artifactId>
+            <version>${e-common-core.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.opsigte</groupId>
             <artifactId>e-common-config</artifactId>
             <version>${e-common-config.version}</version>
         </dependency>
