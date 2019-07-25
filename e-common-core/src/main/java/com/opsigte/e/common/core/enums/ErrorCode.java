@@ -1,12 +1,11 @@
 package com.opsigte.e.common.core.enums;
 
 /**
- * @Project: com.opsigte.e.common.core.enums
- * @Class: ErrorCode
- * @Description: 统一返回状态码和message
- * @Author: opsigte
- * @Date: 2019/7/23 22:50
- * @version 1.0.0
+ * <p> @ClassName: <i>ErrorCode<T></i></p>
+ * <p> @Description: <i>统一返回状态码和message</i></p>
+ * <p> @Author: <i>opsigte</i></p>
+ * <p> @Created date: <i>2019/7/25 17:20</i></p>
+ * <p> @Version: <i>V1.0</i> </p>
  */
 public enum ErrorCode {
     SYSTEM_ERROR(500, "系统错误"),

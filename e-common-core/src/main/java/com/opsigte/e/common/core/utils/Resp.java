@@ -8,12 +8,11 @@ import java.util.Map;
 
 
 /**
- * @Project: com.opsigte.e.common.core.utils
- * @Class: Resp
- * @Description: Restful统一JSON响应封装类
- * @Author: opsigte
- * @Date: 2019/7/23 22:52
- * @version 1.0.0
+ * <p> @ClassName: <i>Resp<T></i></p>
+ * <p> @Description: <i>Restful统一JSON响应封装类</i></p>
+ * <p> @Author: <i>opsigte</i></p>
+ * <p> @Created date: <i>2019/7/25 17:20</i></p>
+ * <p> @Version: <i>V1.0</i> </p>
  */
 @Data
 public class Resp<T> implements Serializable {

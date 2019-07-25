@@ -5,13 +5,13 @@ import lombok.Data;
 import java.io.Serializable;
 
 
+
 /**
- * @Project: com.opsigte.e.common.core.page
- * @Class: PageParam
- * @Description: 统一分页入参
- * @Author: opsigte
- * @Date: 2019/7/24 9:07
- * @version 1.0.0
+ * <p> @ClassName: <i>PageParam<T></i></p>
+ * <p> @Description: <i>统一分页入参</i></p>
+ * <p> @Author: <i>opsigte</i></p>
+ * <p> @Created date: <i>2019/7/25 17:20</i></p>
+ * <p> @Version: <i>V1.0</i> </p>
  */
 @Data
 public class PageParam implements Serializable {

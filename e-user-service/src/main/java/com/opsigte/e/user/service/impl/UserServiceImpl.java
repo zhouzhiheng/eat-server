@@ -11,7 +11,7 @@ import com.opsigte.e.common.core.page.PageParam;
 import com.opsigte.e.common.core.utils.StringUtil;
 import com.opsigte.e.user.api.UserService;
 import com.opsigte.e.user.api.entity.UserEntity;
-import com.opsigte.e.user.service.dao.UserMapper;
+import com.opsigte.e.user.service.mapper.UserMapper;
 import com.opsigte.e.cache.api.CacheService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Propagation;
@@ -42,10 +42,8 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<UserEntity> getAllUser() {
 
-        PageHelper.startPage(0, 10);
-        List<UserEntity> userAll = userMapper.listAll();
+        List<UserEntity> userAll = userMapper.selectListAll();
 
-        PageInfo pageInfo = new PageInfo(userAll);
         System.out.println(JSON.toJSONString(userAll));
         return userAll;
     }
@@ -89,7 +87,7 @@ public class UserServiceImpl implements UserService {
         setPage(pageParam);
 //        PageHelper.startPage(5, 5);
 
-        List<UserEntity> userAll = userMapper.listByPage(map);
+        List<UserEntity> userAll = userMapper.selectListByPage(map);
 
         PageBean<UserEntity> pageBean = PageBean.restPage(userAll);
         System.out.println(JSON.toJSONString(pageBean));
@@ -105,12 +103,23 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Integer insert(UserEntity userEntity) {
+    public int insert(UserEntity userEntity) {
         int insert = userMapper.insert(userEntity);
         if (insert == 1) {
             return userEntity.getId();
         }
         return 0;
+    }
+
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED)
+    public int deleteByPrimaryId(Integer id) {
+        int i = userMapper.deleteByPrimaryId(id);
+
+        int a = 1 / 0;
+
+        return i;
     }
 
 

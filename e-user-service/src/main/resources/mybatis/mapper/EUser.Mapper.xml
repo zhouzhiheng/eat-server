@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.opsigte.e.user.service.dao.UserMapper">
+<mapper namespace="com.opsigte.e.user.service.mapper.UserMapper">
 
 	<!-- 可根据自己的需求，是否要使用 -->
 	<resultMap type="UserEntity" id="baseMap">
@@ -15,11 +15,11 @@
 		id,name,age
 	</sql>
 
-    <select id="listAll" resultMap="baseMap">
+    <select id="selectListAll" resultMap="baseMap">
         select * from e_user
     </select>
 
-    <select id="listByPage" resultMap="baseMap" parameterType="java.util.Map">
+    <select id="selectListByPage" resultMap="baseMap" parameterType="java.util.Map">
         select * from e_user where sort != #{sort}  order by sort desc
     </select>
 
@@ -30,4 +30,8 @@
     <insert id="insert" parameterType="UserEntity" useGeneratedKeys="true" keyColumn="id">
          insert into e_user (name,age,sort) value (#{name},#{age},#{sort})
     </insert>
+
+    <delete id="deleteByPrimaryId" parameterType="integer">
+        delete from e_user where id = #{id}
+    </delete>
 </mapper>

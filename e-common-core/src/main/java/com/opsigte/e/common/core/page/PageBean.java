@@ -6,13 +6,13 @@ import lombok.Data;
 import java.io.Serializable;
 import java.util.List;
 
+
 /**
- * @Project: com.opsigte.e.common.core.page
- * @Class: PageBean
- * @Description: 统一返回分页对象
- * @Author: opsigte
- * @Date: 2019/7/24 9:06
- * @version 1.0.0
+ * <p> @ClassName: <i>PageBean<T></i></p>
+ * <p> @Description: <i>统一返回分页对象</i></p>
+ * <p> @Author: <i>opsigte</i></p>
+ * <p> @Created date: <i>2019/7/25 17:20</i></p>
+ * <p> @Version: <i>V1.0</i> </p>
  */
 @Data
 public class PageBean<T> implements Serializable {

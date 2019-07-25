@@ -5,57 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3751a1e-f27a-4cb7-b7d1-61ed534930d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/e-order-service/src/main/java/com/opsigte/e/order/service/EOrderServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e-user-api/src/main/java/com/opsigte/e/user/api/EUserApiApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e-user-api/src/test/java/com/opsigte/e/user/api/EUserApiApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e-user-service/src/main/java/com/opsigte/e/user/service/EUserServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e-user-service/src/test/java/com/opsigte/e/user/service/EUserServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-cache-api/src/main/java/com/opsigte/eatcacheapi/CacheService.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-cache-api/src/main/java/com/opsigte/e/cache/api/CacheService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-cache-api/src/main/java/com/opsigte/eatcacheapi/EatCacheApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-cache-api/src/main/java/com/opsigte/e/cache/api/ECacheApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-cache-api/src/test/java/com/opsigte/eatcacheapi/EatCacheApiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-cache-api/src/test/java/com/opsigte/e/cache/api/ECacheApiApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-cache-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/e-cache-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-cache-service/src/main/java/com/opsigte/eatcacheservice/EatCacheServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-cache-service/src/main/java/com/opsigte/e/cache/service/ECacheServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-cache-service/src/main/java/com/opsigte/eatcacheservice/ThreadConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-cache-service/src/main/java/com/opsigte/eatcacheservice/core/RedisManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-cache-service/src/main/java/com/opsigte/e/cache/service/core/RedisManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-cache-service/src/main/java/com/opsigte/eatcacheservice/impl/CacheServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-cache-service/src/main/java/com/opsigte/e/cache/service/impl/CacheServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-cache-service/src/main/java/com/opsigte/eatcacheservice/utils/RedisLockUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-cache-service/src/main/java/com/opsigte/e/cache/service/utils/RedisLockUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-cache-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/e-cache-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-cache-service/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/e-cache-service/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-cache-service/src/test/java/com/opsigte/eatcacheservice/EatCacheServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-cache-service/src/test/java/com/opsigte/e/cache/service/ECacheServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-common-config/src/main/java/com/opsigte/e/common/config/EatCommonConfigApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-common-config/src/main/java/com/opsigte/e/common/config/ECommonConfigApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-common-config/src/main/java/com/opsigte/e/common/config/utils/PublicConfigUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-common-config/src/main/java/com/opsigte/e/common/config/utils/PublicReadConfigUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-common-config/src/test/java/com/opsigte/e/common/config/EatCommonConfigApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-common-config/src/test/java/com/opsigte/e/common/config/ECommonConfigApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/EatCommonCoreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/ECommonCoreApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/enums/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/enums/ErrorCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/page/PageBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/page/PageBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/page/PageParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/page/PageParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/utils/Resp.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/utils/Resp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/utils/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/utils/StringUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-common-core/src/test/java/com/opsigte/e/common/core/EatCommonCoreApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-common-core/src/test/java/com/opsigte/e/common/core/ECommonCoreApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-common/src/main/java/com/opsigte/e/common/EatCommonApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-common/src/main/java/com/opsigte/e/common/ECommonApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-gateway/src/main/java/com/opsigte/eatgateway/EatGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-gateway/src/main/java/com/opsigte/e/gateway/EGatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-gateway/src/main/java/com/opsigte/eatgateway/ServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-gateway/src/main/java/com/opsigte/e/gateway/ServletInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-gateway/src/main/java/com/opsigte/eatgateway/controller/EUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-gateway/src/main/java/com/opsigte/e/gateway/controller/EUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/e-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-gateway/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/e-gateway/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-gateway/src/test/java/com/opsigte/eatgateway/EatGatewayApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-gateway/src/test/java/com/opsigte/e/gateway/EGatewayApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-order-api/src/main/java/com/opsigte/eat/order/api/EatOrderApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-order-api/src/main/java/com/opsigte/e/order/api/EOrderApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-order-api/src/main/java/com/opsigte/eat/order/api/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-order-api/src/main/java/com/opsigte/e/order/api/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-order-api/src/main/java/com/opsigte/eat/order/api/entity/OrderEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-order-api/src/main/java/com/opsigte/e/order/api/entity/OrderEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-order-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/e-order-api/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-order-api/src/test/java/com/opsigte/eat/order/api/EatOrderApiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-order-api/src/test/java/com/opsigte/e/order/api/EOrderApiApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-order-service/src/main/java/com/opsigte/eat/order/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-order-service/src/main/java/com/opsigte/e/order/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/e-order-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-order-service/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/e-order-service/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-order-service/src/main/resources/mybatis/mybatis.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/e-order-service/src/main/resources/mybatis/mybatis.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-order-service/src/test/java/com/opsigte/eat/order/service/EatOrderServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-order-service/src/test/java/com/opsigte/e/order/service/EOrderServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-user-api/src/main/java/com/opsigte/eat/user/api/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-user-api/src/main/java/com/opsigte/e/user/api/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-user-api/src/main/java/com/opsigte/eat/user/api/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-user-api/src/main/java/com/opsigte/e/user/api/entity/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-user-service/src/main/java/com/opsigte/eat/user/service/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-user-service/src/main/java/com/opsigte/e/user/service/dao/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-user-service/src/main/java/com/opsigte/eat/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-user-service/src/main/java/com/opsigte/e/user/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-user-service/src/main/java/com/opsigte/eat/user/service/mapper/BaseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-user-service/src/main/java/com/opsigte/e/user/service/mapper/BaseMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-user-api/src/main/java/com/opsigte/e/user/api/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-user-api/src/main/java/com/opsigte/e/user/api/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-user-service/src/main/java/com/opsigte/e/user/service/EUserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-user-service/src/main/java/com/opsigte/e/user/service/EUserServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-user-service/src/main/java/com/opsigte/e/user/service/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-user-service/src/main/java/com/opsigte/e/user/service/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-user-service/src/main/java/com/opsigte/e/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-user-service/src/main/java/com/opsigte/e/user/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-user-service/src/main/java/com/opsigte/e/user/service/mapper/BaseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/mapper/BaseMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e-user-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/e-user-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-user-service/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/e-user-service/src/main/resources/logback-spring.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e-user-service/src/main/resources/mybatis/mapper/EUser.Mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/e-user-service/src/main/resources/mybatis/mapper/EUser.Mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e-user-service/src/main/resources/mybatis/mybatis.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/e-user-service/src/main/resources/mybatis/mybatis.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e-user-service/src/test/java/com/opsigte/e/user/service/EUserServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/e-user-service/src/test/java/com/opsigte/e/user/service/EUserServiceApplicationTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/eat-order-api/target/" />
     <ignored path="$PROJECT_DIR$/eat-parent/target/" />
@@ -102,69 +64,23 @@
         <option value="collation" />
       </set>
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="192.168.0.136" type="feb32156:DbDataSourceImpl" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/e-order-service/src/main/java/com/opsigte/e/order/service/impl/OrderServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/e-order-service/src/main/resources/mybatis/mybatis.cfg.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="41" column="67" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/e-order-service/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/e-user-api/src/main/java/com/opsigte/e/user/api/entity/UserEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/e-user-api/src/main/java/com/opsigte/e/user/api/EUserApiApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/e-user-service/src/main/java/com/opsigte/e/user/service/EUserServiceApplication.java">
+        <entry file="file://$PROJECT_DIR$/e-user-service/src/test/java/com/opsigte/e/user/service/EUserServiceApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+            <state relative-caret-position="-178">
+              <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+              <folding>
+                <element signature="method#testPage#0;class#EUserServiceApplicationTests#0" />
+                <element signature="method#testUpdate#0;class#EUserServiceApplicationTests#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -182,7 +98,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>支付成功</find>
       <find>web</find>
       <find>spring-boot-starter-web</find>
       <find>start</find>
@@ -209,9 +124,10 @@
       <find>end configuration</find>
       <find>log</find>
       <find>e-common</find>
-      <find>eat</find>
       <find>sCacheService</find>
       <find>static</find>
+      <find>eat-common-config</find>
+      <find>eat</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -228,19 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/eat-order-service/pom.xml" />
-        <option value="$PROJECT_DIR$/e-common-parent/pom.xml" />
-        <option value="$PROJECT_DIR$/e-common/pom.xml" />
-        <option value="$PROJECT_DIR$/e-common-core/pom.xml" />
-        <option value="$PROJECT_DIR$/e-common-config/pom.xml" />
-        <option value="$PROJECT_DIR$/e-common/src/main/java/com/opsigte/e/common/utils/StringUtil.java" />
-        <option value="$PROJECT_DIR$/e-common-config/src/main/java/com/opsigte/e/common/config/utils/PublicConfigUtil.java" />
-        <option value="$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/utils/PageParamUtil.java" />
-        <option value="$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/enums/ErrorCode.java" />
-        <option value="$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/utils/Resp.java" />
-        <option value="$PROJECT_DIR$/eat-user-api/pom.xml" />
-        <option value="$PROJECT_DIR$/e-cache-api/pom.xml" />
-        <option value="$PROJECT_DIR$/e-user-api/pom.xml" />
         <option value="$PROJECT_DIR$/e-user-service/pom.xml" />
         <option value="$PROJECT_DIR$/e-order-api/pom.xml" />
         <option value="$PROJECT_DIR$/e-order-service/pom.xml" />
@@ -252,7 +155,6 @@
         <option value="$PROJECT_DIR$/e-cache-service/src/main/resources/logback-spring.xml" />
         <option value="$PROJECT_DIR$/e-common-config/src/main/resources/application-jdbc_config.properties" />
         <option value="$PROJECT_DIR$/e-user-service/src/main/java/com/opsigte/e/user/service/EatUserServiceApplication.java" />
-        <option value="$PROJECT_DIR$/e-user-service/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/e-cache-api/src/main/java/com/opsigte/e/cache/api/ECacheApiApplication.java" />
         <option value="$PROJECT_DIR$/e-cache-service/pom.xml" />
         <option value="$PROJECT_DIR$/e-cache-service/src/main/java/com/opsigte/e/cache/service/core/RedisManager.java" />
@@ -264,10 +166,6 @@
         <option value="$PROJECT_DIR$/e-cache-service/src/main/java/com/opsigte/e/cache/service/utils/RedisLockUtil.java" />
         <option value="$PROJECT_DIR$/e-cache-api/src/main/java/com/opsigte/e/cache/api/CacheService.java" />
         <option value="$PROJECT_DIR$/e-common/src/main/java/com/opsigte/e/common/ECommonApplication.java" />
-        <option value="$PROJECT_DIR$/e-common-config/src/main/java/com/opsigte/e/common/config/utils/PublicReadConfigUtil.java" />
-        <option value="$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/page/PageParam.java" />
-        <option value="$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/page/PageBean.java" />
-        <option value="$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/utils/StringUtil.java" />
         <option value="$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/ECommonCoreApplication.java" />
         <option value="$PROJECT_DIR$/e-gateway/src/main/java/com/opsigte/e/gateway/EGatewayApplication.java" />
         <option value="$PROJECT_DIR$/e-gateway/src/main/resources/application.properties" />
@@ -276,33 +174,40 @@
         <option value="$PROJECT_DIR$/e-order-service/src/main/java/com/opsigte/e/order/service/impl/OrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/e-order-service/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/e-user-api/src/main/java/com/opsigte/e/user/api/EUserApiApplication.java" />
-        <option value="$PROJECT_DIR$/e-user-api/src/main/java/com/opsigte/e/user/api/UserService.java" />
         <option value="$PROJECT_DIR$/e-order-api/src/main/java/com/opsigte/e/order/api/OrderService.java" />
+        <option value="$PROJECT_DIR$/e-order-service/src/main/java/com/opsigte/e/order/service/EOrderServiceApplication.java" />
+        <option value="$PROJECT_DIR$/e-user-service/src/main/java/com/opsigte/e/user/service/dao/UserMapper.java" />
+        <option value="$PROJECT_DIR$/e-common-config/src/main/java/com/opsigte/e/common/config/utils/TestAuthor.java" />
+        <option value="$PROJECT_DIR$/e-common-config/src/main/java/com/opsigte/e/common/config/utils/TestAa.java" />
+        <option value="$PROJECT_DIR$/e-common-config/src/main/java/com/opsigte/e/common/config/utils/Tests.java" />
+        <option value="$PROJECT_DIR$/e-common-config/src/main/java/com/opsigte/e/common/config/utils/PublicReadConfigUtil.java" />
+        <option value="$PROJECT_DIR$/e-user-service/src/main/java/com/opsigte/e/user/service/EUserServiceApplication.java" />
+        <option value="$PROJECT_DIR$/e-user-service/src/main/java/com/opsigte/e/user/service/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/e-user-service/src/main/resources/application.properties" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/mapper/BaseMapper.java" />
+        <option value="$PROJECT_DIR$/e-user-service/src/main/resources/mybatis/mapper/EUser.Mapper.xml" />
+        <option value="$PROJECT_DIR$/e-user-api/src/main/java/com/opsigte/e/user/api/UserService.java" />
         <option value="$PROJECT_DIR$/e-user-service/src/main/java/com/opsigte/e/user/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/e-user-service/src/test/java/com/opsigte/e/user/service/EUserServiceApplicationTests.java" />
+        <option value="$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/enums/ErrorCode.java" />
+        <option value="$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/page/PageBean.java" />
+        <option value="$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/page/PageParam.java" />
+        <option value="$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/utils/StringUtil.java" />
+        <option value="$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/utils/Resp.java" />
       </list>
     </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="e-cache-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="e-cache-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="84" />
-    <option name="y" value="254" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="975" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -313,6 +218,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -336,14 +242,14 @@
               <item name="eat" type="462c0819:PsiDirectoryNode" />
               <item name="e-user-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="eat" type="b2602c69:ProjectViewProjectNode" />
               <item name="eat" type="462c0819:PsiDirectoryNode" />
               <item name="e-user-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -351,46 +257,15 @@
               <item name="eat" type="462c0819:PsiDirectoryNode" />
               <item name="e-user-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eat" type="462c0819:PsiDirectoryNode" />
-              <item name="e-user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eat" type="462c0819:PsiDirectoryNode" />
-              <item name="e-user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eat" type="462c0819:PsiDirectoryNode" />
-              <item name="e-user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -411,7 +286,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15234375" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="RecentsManager">
@@ -449,7 +324,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ECacheServiceApplicationTests.testLock">
+  <component name="RunManager" selected="JUnit.EUserServiceApplicationTests.testPage">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -496,17 +371,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ECacheServiceApplicationTests.testRedisTemplateSerializer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="e-cache-service" />
+    <configuration name="EUserServiceApplicationTests.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="e-user-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.opsigte.e.cache.service.*" />
+          <option name="PATTERN" value="com.opsigte.e.user.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.opsigte.e.cache.service" />
-      <option name="MAIN_CLASS_NAME" value="com.opsigte.e.cache.service.ECacheServiceApplicationTests" />
-      <option name="METHOD_NAME" value="testRedisTemplateSerializer" />
+      <option name="PACKAGE_NAME" value="com.opsigte.e.user.service" />
+      <option name="MAIN_CLASS_NAME" value="com.opsigte.e.user.service.EUserServiceApplicationTests" />
+      <option name="METHOD_NAME" value="testDelete" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EUserServiceApplicationTests.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="e-user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.opsigte.e.user.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.opsigte.e.user.service" />
+      <option name="MAIN_CLASS_NAME" value="com.opsigte.e.user.service.EUserServiceApplicationTests" />
+      <option name="METHOD_NAME" value="testInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EUserServiceApplicationTests.testPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="e-user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.opsigte.e.user.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.opsigte.e.user.service" />
+      <option name="MAIN_CLASS_NAME" value="com.opsigte.e.user.service.EUserServiceApplicationTests" />
+      <option name="METHOD_NAME" value="testPage" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -971,93 +880,30 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="EatCacheApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="e-cache-api" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.opsigte.eatcacheapi.EatCacheApiApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EatCacheServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="ECacheServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="e-cache-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.opsigte.e.cache.service.ECacheServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EatCacheServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="e-cache-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.opsigte.eatcacheservice.EatCacheServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EatCommonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="e-common" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.opsigte.eat.common.EatCommonApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EatCommonConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="e-common-config" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.opsigte.eatcommonconfig.EatCommonConfigApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EatCommonCoreApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="e-common-core" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.opsigte.eat.common.core.EatCommonCoreApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EatCommonCoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="e-common-core" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.opsigte.eatcommoncore.EatCommonCoreApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EatCommonDaoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="eat-common-dao" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.opsigte.eatcommondao.EatCommonDaoApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EatGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="EGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="e-gateway" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.opsigte.eatgateway.EatGatewayApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.opsigte.e.gateway.EGatewayApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EatOrderApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="e-order-api" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.opsigte.eat.order.api.EatOrderApiApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EatOrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="EOrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="e-order-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.opsigte.eat.order.service.EatOrderServiceApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.opsigte.e.order.service.EOrderServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EatUserApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="e-user-api" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.opsigte.eat.user.api.EatUserApiApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EatUserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="eat-user-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.opsigte.eat.user.service.EatUserServiceApplication" />
+    <configuration name="EUserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="e-user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.opsigte.e.user.service.EUserServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -1081,6 +927,8 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.ECacheServiceApplicationTests.testHset" />
+      <item itemvalue="JUnit.ECacheServiceApplicationTests.testLock" />
       <item itemvalue="Maven.e-common-parent [clean,install]" />
       <item itemvalue="Maven.e-common [clean,install]" />
       <item itemvalue="Maven.e-common-config [clean,install]" />
@@ -1092,28 +940,21 @@
       <item itemvalue="Maven.e-order-api [clean,install]" />
       <item itemvalue="Maven.e-order-service [clean,package]" />
       <item itemvalue="Maven.e-gateway [clean,package]" />
-      <item itemvalue="Spring Boot.EatCacheApiApplication" />
-      <item itemvalue="Spring Boot.EatCacheServiceApplication" />
-      <item itemvalue="Spring Boot.EatOrderApiApplication" />
-      <item itemvalue="Spring Boot.EatOrderServiceApplication" />
-      <item itemvalue="Spring Boot.EatCommonApplication" />
-      <item itemvalue="Spring Boot.EatUserApiApplication" />
-      <item itemvalue="Spring Boot.EatCommonConfigApplication" />
-      <item itemvalue="Spring Boot.EatCommonDaoApplication" />
-      <item itemvalue="Spring Boot.EatCommonCoreApplication" />
-      <item itemvalue="Spring Boot.EatCommonCoreApplication (1)" />
-      <item itemvalue="Spring Boot.EatGatewayApplication" />
-      <item itemvalue="Spring Boot.EatUserServiceApplication" />
-      <item itemvalue="Spring Boot.EatCacheServiceApplication (1)" />
-      <item itemvalue="JUnit.ECacheServiceApplicationTests.testRedisTemplateSerializer" />
-      <item itemvalue="JUnit.ECacheServiceApplicationTests.testHset" />
-      <item itemvalue="JUnit.ECacheServiceApplicationTests.testLock" />
+      <item itemvalue="JUnit.EUserServiceApplicationTests.testPage" />
+      <item itemvalue="JUnit.EUserServiceApplicationTests.testInsert" />
+      <item itemvalue="JUnit.EUserServiceApplicationTests.testDelete" />
+      <item itemvalue="Spring Boot.ECacheServiceApplication" />
+      <item itemvalue="Spring Boot.EOrderServiceApplication" />
+      <item itemvalue="Spring Boot.EGatewayApplication" />
+      <item itemvalue="Spring Boot.EUserServiceApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EUserServiceApplicationTests.testPage" />
+        <item itemvalue="JUnit.EUserServiceApplicationTests.testDelete" />
+        <item itemvalue="JUnit.EUserServiceApplicationTests.testInsert" />
         <item itemvalue="JUnit.ECacheServiceApplicationTests.testLock" />
         <item itemvalue="JUnit.ECacheServiceApplicationTests.testHset" />
-        <item itemvalue="JUnit.ECacheServiceApplicationTests.testRedisTemplateSerializer" />
       </list>
     </recent_temporary>
   </component>
@@ -1138,44 +979,45 @@
       <workItem from="1563012727633" duration="79657000" />
       <workItem from="1563429927505" duration="14059000" />
       <workItem from="1563507158901" duration="27679000" />
-      <workItem from="1563770983748" duration="40930000" />
+      <workItem from="1563770983748" duration="41724000" />
+      <workItem from="1564027565333" duration="9726000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ECacheServiceApplicationTests_testRedisTemplateSerializer - 2019.07.24 at 09h 51m 17s.xml">
-      <configuration name="ECacheServiceApplicationTests.testRedisTemplateSerializer" configurationId="JUnit" />
+    <history-entry file="EUserServiceApplicationTests_testPage - 2019.07.25 at 17h 55m 52s.xml">
+      <configuration name="EUserServiceApplicationTests.testPage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ECacheServiceApplicationTests_testHset - 2019.07.24 at 10h 09m 48s.xml">
-      <configuration name="ECacheServiceApplicationTests.testHset" configurationId="JUnit" />
+    <history-entry file="EUserServiceApplicationTests_testInsert - 2019.07.25 at 18h 04m 36s.xml">
+      <configuration name="EUserServiceApplicationTests.testInsert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ECacheServiceApplicationTests_testHset - 2019.07.24 at 10h 13m 22s.xml">
-      <configuration name="ECacheServiceApplicationTests.testHset" configurationId="JUnit" />
+    <history-entry file="EUserServiceApplicationTests_testInsert - 2019.07.25 at 18h 06m 13s.xml">
+      <configuration name="EUserServiceApplicationTests.testInsert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ECacheServiceApplicationTests_testHset - 2019.07.24 at 10h 14m 49s.xml">
-      <configuration name="ECacheServiceApplicationTests.testHset" configurationId="JUnit" />
+    <history-entry file="EUserServiceApplicationTests_testInsert - 2019.07.25 at 18h 06m 59s.xml">
+      <configuration name="EUserServiceApplicationTests.testInsert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ECacheServiceApplicationTests_testHset - 2019.07.24 at 10h 16m 42s.xml">
-      <configuration name="ECacheServiceApplicationTests.testHset" configurationId="JUnit" />
+    <history-entry file="EUserServiceApplicationTests_testInsert - 2019.07.25 at 18h 10m 59s.xml">
+      <configuration name="EUserServiceApplicationTests.testInsert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ECacheServiceApplicationTests_testHset - 2019.07.24 at 10h 19m 41s.xml">
-      <configuration name="ECacheServiceApplicationTests.testHset" configurationId="JUnit" />
+    <history-entry file="EUserServiceApplicationTests_testInsert - 2019.07.25 at 18h 12m 51s.xml">
+      <configuration name="EUserServiceApplicationTests.testInsert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ECacheServiceApplicationTests_testHset - 2019.07.24 at 10h 22m 24s.xml">
-      <configuration name="ECacheServiceApplicationTests.testHset" configurationId="JUnit" />
+    <history-entry file="EUserServiceApplicationTests_testDelete - 2019.07.25 at 18h 16m 34s.xml">
+      <configuration name="EUserServiceApplicationTests.testDelete" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ECacheServiceApplicationTests_testLock - 2019.07.24 at 21h 00m 47s.xml">
-      <configuration name="ECacheServiceApplicationTests.testLock" configurationId="JUnit" />
+    <history-entry file="EUserServiceApplicationTests_testDelete - 2019.07.25 at 18h 17m 28s.xml">
+      <configuration name="EUserServiceApplicationTests.testDelete" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ECacheServiceApplicationTests_testLock - 2019.07.24 at 21h 02m 41s.xml">
-      <configuration name="ECacheServiceApplicationTests.testLock" configurationId="JUnit" />
+    <history-entry file="EUserServiceApplicationTests_testDelete - 2019.07.25 at 18h 18m 13s.xml">
+      <configuration name="EUserServiceApplicationTests.testDelete" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ECacheServiceApplicationTests_testLock - 2019.07.24 at 21h 12m 00s.xml">
-      <configuration name="ECacheServiceApplicationTests.testLock" configurationId="JUnit" />
+    <history-entry file="EUserServiceApplicationTests_testDelete - 2019.07.25 at 18h 18m 52s.xml">
+      <configuration name="EUserServiceApplicationTests.testDelete" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="239637000" />
+    <option name="totallyTimeSpent" value="250157000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1190,7 +1032,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49908257" visible="true" weight="0.19509594" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49908257" visible="true" weight="0.22228146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="JRebel" order="2" sideWeight="0.50091743" side_tool="true" weight="0.20682302" />
       <window_info id="Image Layers" order="3" />
@@ -1208,7 +1050,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="7" sideWeight="0.49946696" weight="0.5318436" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32960895" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49946696" weight="0.3575419" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49946696" weight="0.21005587" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" weight="0.34860334" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32960895" />
@@ -1218,13 +1060,14 @@
       <window_info anchor="bottom" id="JRebel Console" order="16" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="17" weight="0.32960895" />
       <window_info anchor="bottom" id="Database Console" order="18" weight="0.36536312" />
+      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" sideWeight="0.49840257" weight="0.17324094" />
+      <window_info anchor="right" id="Maven" order="3" sideWeight="0.49840257" visible="true" weight="0.17324094" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Key Promoter X" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.120469086" />
+      <window_info anchor="right" id="Database" order="6" weight="0.15138593" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
@@ -1263,6 +1106,11 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>userEntity.getId()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>PageHelper.startPage(5, 5)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -1270,128 +1118,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/e-cache-api/src/main/java/com/opsigte/e/cache/api/ECacheApiApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding>
-            <element signature="e#258#259#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e-cache-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.8.RELEASE/spring-data-redis-2.1.8.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="72" column="41" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e-common-config/src/main/resources/application-port_config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e-cache-service/src/main/java/com/opsigte/e/cache/service/core/RedisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="12" column="55" lean-forward="true" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e-cache-service/src/main/java/com/opsigte/e/cache/service/core/RedisManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.5.RELEASE/spring-boot-autoconfigure-2.1.5.RELEASE.jar!/org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e-cache-service/src/main/java/com/opsigte/e/cache/service/ECacheServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e-cache-service/src/test/java/com/opsigte/e/cache/service/ECacheServiceApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="47" column="47" lean-forward="true" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
-          <folding>
-            <element signature="e#901#909#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e-cache-service/src/main/java/com/opsigte/e/cache/service/impl/CacheServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e-cache-api/src/main/java/com/opsigte/e/cache/api/CacheService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e-cache-service/src/main/java/com/opsigte/e/cache/service/ThreadConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e-cache-service/src/main/java/com/opsigte/e/cache/service/utils/RedisLockUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-          <folding>
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e-cache-service/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e-common/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/e-common/src/main/java/com/opsigte/e/common/ECommonApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1446,32 +1172,26 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.1416243654822336" x="616.1424002411475" y="520.0791462872387" />
+          <settings layout="Hierarchic Group" zoom="1.1416243654822336" x="616.0" y="520.0" />
           <SelectedNodes />
           <Categories />
+          <SCOPE>All</SCOPE>
           <VISIBILITY>All</VISIBILITY>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/e-common-config/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
         </state>
       </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/e-common-config/src/main/resources/application-common_config.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
           <caret line="1" column="36" lean-forward="true" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e-common-config/src/main/resources/application-druid_config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -1493,51 +1213,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e-common-config/src/main/java/com/opsigte/e/common/config/utils/PublicReadConfigUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/page/PageParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/page/PageBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/enums/ErrorCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/utils/StringUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/utils/Resp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-420">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
         </state>
       </provider>
     </entry>
@@ -1569,13 +1244,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e-user-service/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1658,31 +1326,203 @@
     <entry file="file://$PROJECT_DIR$/e-user-api/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/e-user-api/src/main/java/com/opsigte/e/user/api/UserService.java">
+    <entry file="file://$PROJECT_DIR$/e-order-service/src/main/java/com/opsigte/e/order/service/EOrderServiceApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e-user-service/src/main/java/com/opsigte/e/user/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="30" column="3" lean-forward="true" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
+        <state relative-caret-position="224">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/e-user-api/src/main/java/com/opsigte/e/user/api/EUserApiApplication.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-user-service/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-common-config/src/main/resources/application-druid_config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-common-config/src/main/java/com/opsigte/e/common/config/utils/TestAuthor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-common-config/src/main/java/com/opsigte/e/common/config/utils/TestAa.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
-          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-common-config/src/main/java/com/opsigte/e/common/config/utils/Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" selection-start-line="2" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-common-config/src/main/java/com/opsigte/e/common/config/utils/PublicReadConfigUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-user-api/src/main/java/com/opsigte/e/user/api/entity/UserEntityDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-user-service/src/main/resources/mybatis/mybatis.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.7.RELEASE/spring-aop-5.1.7.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="187" column="5" lean-forward="true" selection-start-line="187" selection-start-column="5" selection-end-line="187" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/e-user-service/src/main/java/com/opsigte/e/user/service/EUserServiceApplication.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-user-api/src/main/java/com/opsigte/e/user/api/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-user-service/src/main/java/com/opsigte/e/user/service/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" column="46" lean-forward="true" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://7e668c5a-e40d-4d5a-8778-186e63f3dfa9/schema/eat_me/table/e_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-user-service/src/main/resources/mybatis/mapper/EUser.Mapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/page/PageBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/enums/ErrorCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-user-service/src/main/java/com/opsigte/e/user/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/mapper/BaseMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="6" selection-start-line="6" selection-end-line="12" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/page/PageParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/utils/StringUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-common-core/src/main/java/com/opsigte/e/common/core/utils/Resp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-common-config/src/main/java/com/opsigte/e/common/config/ECommonConfigApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-user-service/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-user-service/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e-user-service/src/test/java/com/opsigte/e/user/service/EUserServiceApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-178">
+          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+          <folding>
+            <element signature="method#testPage#0;class#EUserServiceApplicationTests#0" />
+            <element signature="method#testUpdate#0;class#EUserServiceApplicationTests#0" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -63,4 +63,23 @@ public class EUserServiceApplicationTests {
         userEntity.setId(1);
         System.out.println(userService.update(userEntity));
     }
+
+    @Test
+    public void testInsert(){
+        UserEntity userEntity = new UserEntity();
+        //userEntity.setId(1);
+        userEntity.setName("张三4");
+        userEntity.setAge(11);
+        userEntity.setSort(1);
+
+        System.out.println("result:" + userService.insert(userEntity));
+
+        System.out.println("id:" + userEntity.getId());
+
+    }
+
+    @Test
+    public void testDelete(){
+        System.out.println(userService.deleteByPrimaryId(3));
+    }
 }
