@@ -104,11 +104,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public int insert(UserEntity userEntity) {
-        int insert = userMapper.insert(userEntity);
-        if (insert == 1) {
-            return userEntity.getId();
-        }
-        return 0;
+        return userMapper.insert(userEntity);
     }
 
 

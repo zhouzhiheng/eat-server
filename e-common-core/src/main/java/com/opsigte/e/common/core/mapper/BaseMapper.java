@@ -57,7 +57,7 @@ public interface BaseMapper<T> {
      * @param t 实体对象
      * @return int 1-插入成功;0-插入失败
      */
-    int insert(T t);
+    Integer insert(T t);
 
     /**
      * 根据主键id删除数据

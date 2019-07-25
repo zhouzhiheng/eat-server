@@ -23,9 +23,4 @@ public class EGatewayApplication extends WebMvcConfigurationSupport {
         System.out.println("=====Dubbo provider is start !!! =======");
     }
 
-    @Override
-    protected void configurePathMatch(PathMatchConfigurer configurer) {
-        // 忽略请求后缀 如：todo.json , todo.html todo ----> 相应的todo映射方法
-        configurer.setUseSuffixPatternMatch(true);
-    }
 }
