@@ -1,9 +1,10 @@
 package com.opsigte.e.cache.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.opsigte.e.cache.service.core.RedisManager;
-import com.opsigte.e.common.core.utils.StringUtil;
 import com.opsigte.e.cache.api.CacheService;
+import com.opsigte.e.cache.service.core.RedisManager;
+import com.opsigte.e.common.core.constant.RedisConstant;
+import com.opsigte.e.common.core.utils.StringUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
@@ -12,7 +13,7 @@ import java.util.Set;
 
 /**
  * @Project: com.opsigte.e.cache.service.impl
- * @Class: CacheServiceImpl
+ * @Class: redisManagerImpl
  * @Description: 缓存服务Dubbo接口实现类
  * @Author: opsigte
  * @Date: 2019/7/24 9:05
@@ -25,8 +26,91 @@ public class CacheServiceImpl implements CacheService {
 	private RedisManager redisManager;
 
 
+
+    /**
+     * 设置一个存在有效期的锁
+     * @param key    redis key
+     * @param expire 过期时间，单位秒
+     * @return true 加锁成功（获取到锁）;false 加锁失败（没有获取到锁）
+     */
     @Override
-    public Boolean setnx(String key, String value) {
+    public boolean expireSimpleLock(String key, int expire) {
+        boolean flag = redisManager.setnx(key, "1");
+
+        if (flag) {
+            redisManager.expire(key, expire);
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * 续时锁：
+     * 1.如果抢到锁，返回true
+     * 2.如果没抢到锁，根据当前时间判断锁的旧的时间是否已经过期，如果过期，设置新的时间，返回true；入宫没过期，返回false
+     * @param key redis key
+     * @return true 加锁成功（获取到锁）;false 加锁失败（没有获取到锁）
+     */
+    @Override
+    public boolean continueExpireLock(String key) {
+        return continueExpireLock(key, RedisConstant.JUDGELOCKEXPIRE);
+    }
+
+
+    /**
+     * 续时锁：
+     * 1.如果抢到锁，返回true
+     * 2.如果没抢到锁，根据当前时间判断锁的旧的时间是否已经过期，如果过期，设置新的时间，返回true；入宫没过期，返回false
+     * @param key redis key
+     * @param expire 过期时间，单位秒
+     * @return true 加锁成功（获取到锁）;false 加锁失败（没有获取到锁）
+     */
+    @Override
+    public boolean continueExpireLock(String key, int expire) {
+        long value = System.currentTimeMillis() + expire;
+        boolean flag = redisManager.setnx(key, String.valueOf(value));
+
+        if (flag) {
+            return true;
+        }
+
+        long oldExpireTime = Long.parseLong(this.get(key, "0"));
+        if (oldExpireTime < System.currentTimeMillis()) {
+            //超时
+            long newExpireTime = System.currentTimeMillis() + expire;
+            long currentExpireTime = Long.parseLong(redisManager.getSet(key, String.valueOf(newExpireTime)));
+            if (currentExpireTime == oldExpireTime) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * 释放 有效期锁
+     * @param key 锁的key
+     */
+    @Override
+    public void unLockExpireSimpleLock(String key) {
+        redisManager.del(key);
+    }
+
+    /**
+     * 释放 续时锁
+     *
+     * @param key 锁的key
+     */
+    @Override
+    public void unLockContinueExpireLock(String key) {
+        long oldExpireTime = Long.parseLong(this.get(key, "0"));
+        if (oldExpireTime > System.currentTimeMillis()) {
+            redisManager.del(key);
+        }
+    }
+
+    @Override
+    public boolean setnx(String key, String value) {
         if (StringUtil.isEmpty(key)) {
             return false;
         }

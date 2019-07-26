@@ -30,7 +30,7 @@ public class EUserController {
 
         int insert = userService.insert(userEntity);
         if (insert != 0) {
-            return JSON.toJSONString("添加成功" + userEntity.getId());
+            return JSON.toJSONString("添加成功" + insert);
         }
         return "添加失败";
 

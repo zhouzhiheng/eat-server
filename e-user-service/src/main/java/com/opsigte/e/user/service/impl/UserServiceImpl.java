@@ -5,18 +5,19 @@ import com.alibaba.dubbo.config.annotation.Service;
 import com.alibaba.dubbo.rpc.RpcException;
 import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
+import com.opsigte.e.cache.api.CacheService;
 import com.opsigte.e.common.core.page.PageBean;
 import com.opsigte.e.common.core.page.PageParam;
 import com.opsigte.e.common.core.utils.StringUtil;
 import com.opsigte.e.user.api.UserService;
 import com.opsigte.e.user.api.entity.UserEntity;
 import com.opsigte.e.user.service.mapper.UserMapper;
-import com.opsigte.e.cache.api.CacheService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -103,8 +104,33 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public int insert(UserEntity userEntity) {
-        return userMapper.insert(userEntity);
+    public Integer insert(UserEntity userEntity) {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        Date requestDate = new Date();
+        System.out.println("请求时间:" + sdf.format(requestDate));
+
+        // 模拟业务处理
+        boolean a = cacheService.expireSimpleLock("a", 60);
+        if (a) {
+
+            try {
+                Thread.sleep(5000);
+                Integer insert = userMapper.insert(userEntity);
+                if (insert == 1) {
+                    // 释放锁
+                    cacheService.unLockExpireSimpleLock("a");
+                    System.out.println("获取锁成功，插入成功：current user id :" + userEntity.getId() + ",," + sdf.format(new Date()));
+                    return userEntity.getId();
+                }
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        } else {
+            System.out.println("此次插入没有抢到锁，插入失败:" + sdf.format(requestDate));;
+        }
+
+        return 0;
+
     }
 
 

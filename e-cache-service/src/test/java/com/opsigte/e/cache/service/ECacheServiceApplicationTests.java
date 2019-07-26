@@ -1,7 +1,6 @@
 package com.opsigte.e.cache.service;
 
 import com.opsigte.e.cache.api.CacheService;
-import com.opsigte.e.cache.service.utils.RedisLockUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,7 +44,7 @@ public class ECacheServiceApplicationTests {
         while (true) {
 
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
-            System.out.println(RedisLockUtil.expireSimpleLock("a", 30) + " time:" + sdf.format(new Date()));
+            System.out.println(cacheService.expireSimpleLock("a", 30) + " time:" + sdf.format(new Date()));
 
             try {
 

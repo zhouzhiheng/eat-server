@@ -25,7 +25,7 @@ public interface UserService {
 
     int update(UserEntity userEntity);
 
-    int insert(UserEntity userEntity);
+    Integer insert(UserEntity userEntity);
 
     int deleteByPrimaryId(Integer id);
 
