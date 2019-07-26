@@ -1,4 +1,4 @@
-package com.opsigte.e.common.config.utils;
+package com.opsigte.e.common.core.utils;
 
 
 import org.slf4j.Logger;
@@ -29,7 +29,7 @@ public class PublicReadConfigUtil {
 
     static {
         try {
-            properties.load(PublicReadConfigUtil.class.getClassLoader().getResourceAsStream("common_config.properties"));
+            properties.load(PublicReadConfigUtil.class.getClassLoader().getResourceAsStream("application-common_config.properties"));
         } catch (Exception var1) {
             log.error("加载public_system.properties文件异常" + var1);
         }

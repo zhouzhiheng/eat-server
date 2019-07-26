@@ -1,6 +1,5 @@
-package com.opsigte.e.common.core.utils;
+package com.opsigte.e.common.core.response;
 
-import com.opsigte.e.common.core.enums.ErrorCode;
 import lombok.Data;
 
 import java.io.Serializable;

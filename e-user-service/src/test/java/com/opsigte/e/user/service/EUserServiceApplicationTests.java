@@ -1,5 +1,6 @@
 package com.opsigte.e.user.service;
 
+import com.opsigte.e.common.core.utils.PublicReadConfigUtil;
 import com.opsigte.e.common.core.page.PageParam;
 import com.opsigte.e.user.api.UserService;
 import com.opsigte.e.user.api.entity.UserEntity;
@@ -81,5 +82,10 @@ public class EUserServiceApplicationTests {
     @Test
     public void testDelete(){
         System.out.println(userService.deleteByPrimaryId(3));
+    }
+
+    @Test
+    public void testConfigValue(){
+        System.out.println(PublicReadConfigUtil.readConfig("test_value2"));
     }
 }

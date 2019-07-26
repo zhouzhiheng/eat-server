@@ -1,4 +1,4 @@
-package com.opsigte.e.common.core.enums;
+package com.opsigte.e.common.core.response;
 
 /**
  * <p> @ClassName: <i>ErrorCode<T></i></p>
