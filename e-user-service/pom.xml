@@ -70,12 +70,6 @@
             <artifactId>e-cache-api</artifactId>
             <version>${e-cache-api.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.opsigte</groupId>
-            <artifactId>e-cache-service</artifactId>
-            <version>${e-cache-service.version}</version>
-        </dependency>
-
 
 
         <!--第三方jar依赖-->
