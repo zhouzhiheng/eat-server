@@ -7,7 +7,7 @@ package com.opsigte.e.common.core.constant;
  * <p> @Created date: <i>2019/7/26 10:55</i></p>
  * <p> @Version: <i>V1.0</i> </p>
  */
-public class RedisConstant {
+public abstract class RedisConstant {
 
     /**
      * 续时锁的默认有效期时间
