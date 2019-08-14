@@ -4,7 +4,7 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.opsigte.e.order.api.OrderService;
 import com.opsigte.e.order.api.entity.OrderEntity;
-import com.opsigte.e.user.api.UserService;
+import com.opsigte.e.user.api.EUserService;
 import com.opsigte.e.user.api.entity.UserEntity;
 
 import java.util.ArrayList;
@@ -22,7 +22,7 @@ import java.util.List;
 public class OrderServiceImpl implements OrderService {
 
     @Reference(check = false,version = "1.0.0")
-    private UserService userService;
+    private EUserService EUserService;
 
     @Override
     public List<OrderEntity> getAllOrders() {
@@ -42,7 +42,7 @@ public class OrderServiceImpl implements OrderService {
 
         List<OrderEntity> resList = new ArrayList<OrderEntity>();
         for (OrderEntity orderEntity : list) {
-            UserEntity userByUid = userService.getUserByUid(orderEntity.getUid());
+            UserEntity userByUid = EUserService.getUserByUid(orderEntity.getUid());
             if (userByUid != null) {
                 orderEntity.setUserName(userByUid.getName());
             } else {

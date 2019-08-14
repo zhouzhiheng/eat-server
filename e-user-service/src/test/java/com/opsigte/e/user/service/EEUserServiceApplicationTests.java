@@ -2,7 +2,7 @@ package com.opsigte.e.user.service;
 
 import com.opsigte.e.common.core.utils.PublicReadConfigUtil;
 import com.opsigte.e.common.core.page.PageParam;
-import com.opsigte.e.user.api.UserService;
+import com.opsigte.e.user.api.EUserService;
 import com.opsigte.e.user.api.entity.UserEntity;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,10 +17,10 @@ import java.util.Map;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
-public class EUserServiceApplicationTests {
+public class EEUserServiceApplicationTests {
 
     @Autowired
-    private UserService userService;
+    private EUserService EUserService;
 
     @Resource
     private DataSource dataSource;
@@ -33,12 +33,12 @@ public class EUserServiceApplicationTests {
 
     @Test
     public void testGetUserBy(){
-        userService.getUserByUid("1");
+        EUserService.getUserByUid("1");
     }
 
     @Test
     public void testFindUserAll(){
-        userService.getAllUser();
+        EUserService.getAllUser();
     }
 
     @Test
@@ -54,7 +54,7 @@ public class EUserServiceApplicationTests {
         map.put("sort", 2);
 
         PageParam pageParam = new PageParam(0,3);
-        userService.listByPage(pageParam,map);
+        EUserService.listByPage(pageParam,map);
     }
 
     @Test
@@ -62,7 +62,7 @@ public class EUserServiceApplicationTests {
         UserEntity userEntity = new UserEntity();
         userEntity.setName("test3333");
         userEntity.setId(1);
-        System.out.println(userService.update(userEntity));
+        System.out.println(EUserService.update(userEntity));
     }
 
     @Test
@@ -73,7 +73,7 @@ public class EUserServiceApplicationTests {
         userEntity.setAge(11);
         userEntity.setSort(1);
 
-        System.out.println("result:" + userService.insert(userEntity));
+        System.out.println("result:" + EUserService.insert(userEntity));
 
         System.out.println("id:" + userEntity.getId());
 
@@ -81,7 +81,7 @@ public class EUserServiceApplicationTests {
 
     @Test
     public void testDelete(){
-        System.out.println(userService.deleteByPrimaryId(3));
+        System.out.println(EUserService.deleteByPrimaryId(3));
     }
 
     @Test

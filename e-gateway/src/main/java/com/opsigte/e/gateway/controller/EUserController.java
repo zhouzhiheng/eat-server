@@ -2,9 +2,12 @@ package com.opsigte.e.gateway.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.fastjson.JSON;
-import com.opsigte.e.user.api.UserService;
-import com.opsigte.e.user.api.entity.UserEntity;
-import org.springframework.web.bind.annotation.*;
+import com.opsigte.e.user.api.EUserService;
+import com.opsigte.e.user.api.entity.EUserEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 public class EUserController {
 
     @Reference(version = "1.0.0", check = false)
-    private UserService userService;
+    private EUserService userService;
 
     @RequestMapping(value = "todo")
     public String todo (String name){
@@ -23,7 +26,7 @@ public class EUserController {
     }
 
     @PostMapping(value = "insertUser")
-    public Object insertUser(@RequestBody UserEntity userEntity, HttpServletRequest request, HttpServletResponse response) {
+    public Object insertUser(@RequestBody EUserEntity userEntity, HttpServletRequest request, HttpServletResponse response) {
         if (userEntity == null) {
             return "参数错误";
         }

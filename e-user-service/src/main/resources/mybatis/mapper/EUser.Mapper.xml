@@ -1,37 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-
-<mapper namespace="com.opsigte.e.user.service.mapper.UserMapper">
-
-	<!-- 可根据自己的需求，是否要使用 -->
-	<resultMap type="UserEntity" id="baseMap">
-		<result property="id" column="id" />
-		<result property="name" column="name" />
-		<result property="name" column="name" />
-		<result property="age" column="age" />
-	</resultMap>
-
-	<sql id="Base_Column_List">
-		id,name,age
-	</sql>
-
-    <select id="selectListAll" resultMap="baseMap">
-        select * from e_user
+<mapper namespace="com.opsigte.e.user.service.mapper.EUserMapper">
+    <resultMap id="BaseResultMap" type="com.opsigte.e.user.api.entity.EUserEntity">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="account_id" jdbcType="INTEGER" property="accountId"/>
+        <result column="phone" jdbcType="CHAR" property="phone"/>
+        <result column="login_password" jdbcType="VARCHAR" property="loginPassword"/>
+        <result column="pay_password" jdbcType="VARCHAR" property="payPassword"/>
+        <result column="status" jdbcType="BIT" property="status"/>
+        <result column="nick_name" jdbcType="VARCHAR" property="nickName"/>
+        <result column="head_img_id" jdbcType="INTEGER" property="headImgId"/>
+        <result column="head_img_url" jdbcType="VARCHAR" property="headImgUrl"/>
+        <result column="is_setting_switch" jdbcType="CHAR" property="isSettingSwitch"/>
+        <result column="source" jdbcType="BIT" property="source"/>
+        <result column="promo_code" jdbcType="CHAR" property="promoCode"/>
+        <result column="remark" jdbcType="VARCHAR" property="remark"/>
+        <result column="version" jdbcType="INTEGER" property="version"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="updated_time" jdbcType="TIMESTAMP" property="updatedTime"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, account_id, phone, login_password, pay_password, `status`, nick_name, head_img_id,
+    head_img_url, is_setting_switch, `source`, promo_code, remark, version, create_time,
+    updated_time
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from e_user
+        where id = #{id,jdbcType=INTEGER}
     </select>
-
-    <select id="selectListByPage" resultMap="baseMap" parameterType="java.util.Map">
-        select * from e_user where sort != #{sort}  order by sort desc
+    <select id="selectListByMap" parameterType="java.util.Map" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from e_user
+        <where>
+            <if test="id != null">
+                id = #{id}
+            </if>
+            <if test="accountId != null">
+              and account_id = #{accountId,jdbcType=INTEGER},
+            </if>
+            <if test="phone != null">
+                and phone = #{phone,jdbcType=CHAR},
+            </if>
+            <if test="loginPassword != null">
+                and login_password = #{loginPassword,jdbcType=VARCHAR},
+            </if>
+            <if test="payPassword != null">
+                and pay_password = #{payPassword,jdbcType=VARCHAR},
+            </if>
+            <if test="status != null">
+                and `status` = #{status,jdbcType=BIT},
+            </if>
+            <if test="nickName != null">
+                and nick_name = #{nickName,jdbcType=VARCHAR},
+            </if>
+            <if test="headImgId != null">
+                and head_img_id = #{headImgId,jdbcType=INTEGER},
+            </if>
+            <if test="headImgUrl != null">
+                and head_img_url = #{headImgUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="isSettingSwitch != null">
+                and is_setting_switch = #{isSettingSwitch,jdbcType=CHAR},
+            </if>
+            <if test="source != null">
+                and `source` = #{source,jdbcType=BIT},
+            </if>
+            <if test="promoCode != null">
+                and promo_code = #{promoCode,jdbcType=CHAR},
+            </if>
+            <if test="remark != null">
+                and remark = #{remark,jdbcType=VARCHAR},
+            </if>
+            <if test="version != null">
+                and version = #{version,jdbcType=INTEGER},
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updatedTime != null">
+                and updated_time = #{updatedTime,jdbcType=TIMESTAMP},
+            </if>
+        </where>
     </select>
-
-    <update id="update" parameterType="UserEntity">
-        update e_user set name = #{name} where id = #{id}
-    </update>
-
-    <insert id="insert" parameterType="UserEntity" keyProperty="id" useGeneratedKeys="true">
-         insert into e_user (name,age,sort) value (#{name},#{age},#{sort})
-    </insert>
-
-    <delete id="deleteByPrimaryId" parameterType="integer">
-        delete from e_user where id = #{id}
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        delete
+        from e_user
+        where id = #{id,jdbcType=INTEGER}
     </delete>
+    <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.opsigte.e.user.api.entity.EUserEntity"
+            useGeneratedKeys="true">
+        insert into e_user (account_id, phone, login_password,
+                            pay_password, `status`, nick_name,
+                            head_img_id, head_img_url, is_setting_switch,
+                            `source`, promo_code, remark,
+                            version, create_time, updated_time)
+        values (#{accountId,jdbcType=INTEGER}, #{phone,jdbcType=CHAR}, #{loginPassword,jdbcType=VARCHAR},
+                #{payPassword,jdbcType=VARCHAR}, #{status,jdbcType=BIT}, #{nickName,jdbcType=VARCHAR},
+                #{headImgId,jdbcType=INTEGER}, #{headImgUrl,jdbcType=VARCHAR}, #{isSettingSwitch,jdbcType=CHAR},
+                #{source,jdbcType=BIT}, #{promoCode,jdbcType=CHAR}, #{remark,jdbcType=VARCHAR},
+                #{version,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, #{updatedTime,jdbcType=TIMESTAMP})
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.opsigte.e.user.api.entity.EUserEntity">
+        update e_user
+        <set>
+            <if test="accountId != null">
+                account_id = #{accountId,jdbcType=INTEGER},
+            </if>
+            <if test="phone != null">
+                phone = #{phone,jdbcType=CHAR},
+            </if>
+            <if test="loginPassword != null">
+                login_password = #{loginPassword,jdbcType=VARCHAR},
+            </if>
+            <if test="payPassword != null">
+                pay_password = #{payPassword,jdbcType=VARCHAR},
+            </if>
+            <if test="status != null">
+                `status` = #{status,jdbcType=BIT},
+            </if>
+            <if test="nickName != null">
+                nick_name = #{nickName,jdbcType=VARCHAR},
+            </if>
+            <if test="headImgId != null">
+                head_img_id = #{headImgId,jdbcType=INTEGER},
+            </if>
+            <if test="headImgUrl != null">
+                head_img_url = #{headImgUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="isSettingSwitch != null">
+                is_setting_switch = #{isSettingSwitch,jdbcType=CHAR},
+            </if>
+            <if test="source != null">
+                `source` = #{source,jdbcType=BIT},
+            </if>
+            <if test="promoCode != null">
+                promo_code = #{promoCode,jdbcType=CHAR},
+            </if>
+            <if test="remark != null">
+                remark = #{remark,jdbcType=VARCHAR},
+            </if>
+            <if test="version != null">
+                version = #{version,jdbcType=INTEGER},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updatedTime != null">
+                updated_time = #{updatedTime,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.opsigte.e.user.api.entity.EUserEntity">
+        update e_user
+        set account_id        = #{accountId,jdbcType=INTEGER},
+            phone             = #{phone,jdbcType=CHAR},
+            login_password    = #{loginPassword,jdbcType=VARCHAR},
+            pay_password      = #{payPassword,jdbcType=VARCHAR},
+            `status`          = #{status,jdbcType=BIT},
+            nick_name         = #{nickName,jdbcType=VARCHAR},
+            head_img_id       = #{headImgId,jdbcType=INTEGER},
+            head_img_url      = #{headImgUrl,jdbcType=VARCHAR},
+            is_setting_switch = #{isSettingSwitch,jdbcType=CHAR},
+            `source`          = #{source,jdbcType=BIT},
+            promo_code        = #{promoCode,jdbcType=CHAR},
+            remark            = #{remark,jdbcType=VARCHAR},
+            version           = #{version,jdbcType=INTEGER},
+            create_time       = #{createTime,jdbcType=TIMESTAMP},
+            updated_time      = #{updatedTime,jdbcType=TIMESTAMP}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
 </mapper>

@@ -41,15 +41,22 @@ public interface BaseMapper<T> {
      * @param id 主键id
      * @return T
      */
-    T selectByPrimaryId(Integer id);
+    T selectByPrimaryKey(Integer id);
 
     /**
-     * 修改数据
+     * 修改表中所有的数据
      *
-     * @param t 实体对象
+     * @param t 实体对象，字段为null也会修改
      * @return int 1-修改成功;0-修改失败
      */
-    int update(T t);
+    int updateByPrimaryKey(T t);
+
+    /**
+     * 根据条件修改表中数据
+     * @param t 实体对象，字段为null不会修改
+     * @return int 1-修改成功;0-修改失败
+     */
+    int updateByPrimaryKeySelective(T t);
 
     /**
      * 插入数据
@@ -64,7 +71,7 @@ public interface BaseMapper<T> {
      * @param id 主键id
      * @return int 1-删除成功;0-删除失败
      */
-    int deleteByPrimaryId(Integer id);
+    int deleteByPrimaryKey(Integer id);
 
     /**
      * 根据条件删除数据
