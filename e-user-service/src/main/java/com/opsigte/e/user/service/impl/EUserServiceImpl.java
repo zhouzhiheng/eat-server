@@ -45,7 +45,7 @@ public class EUserServiceImpl implements EUserService {
 
     @Override
     public Integer insert(EUserEntity userEntity) {
-        return null;
+        return userServiceBiz.insert(userEntity);
     }
 
     @Override
