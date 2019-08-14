@@ -27,6 +27,15 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+
+               <!-- <configuration>
+                    <excludeGroupIds>
+                        org.springframework.boot,
+                        org.springframework,
+                        com.alibaba,
+                        com.github.pagehelper
+                    </excludeGroupIds>
+                </configuration>-->
             </plugin>
         </plugins>
     </build>
