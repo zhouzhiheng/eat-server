@@ -16,6 +16,13 @@ public interface CacheService {
     boolean expireSimpleLock(String key, int expire);
 
     /**
+     * 设置一个存在有效期的锁
+     * @param key    redis key
+     * @return true 加锁成功（获取到锁）;false 加锁失败（没有获取到锁）
+     */
+    boolean expireSimpleLock(String key);
+
+    /**
      * 续时锁：
      * 1.如果抢到锁，返回true
      * 2.如果没抢到锁，根据当前时间判断锁的旧的时间是否已经过期，如果过期，设置新的时间，返回true；入宫没过期，返回false
@@ -153,6 +160,15 @@ public interface CacheService {
      * @return 
      */
     long incr(String key, long delta);
+
+    /**
+     * @param key   键
+     * @param delta 默认从0开始递增
+     * @Title: incr
+     * @Description: TODO 递增
+     * @return 
+     */
+    long incr(String key);
 
     /**
      * @param key   键

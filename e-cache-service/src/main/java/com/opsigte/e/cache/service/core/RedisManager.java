@@ -182,6 +182,16 @@ public class RedisManager {
 		return redisTemplate.opsForValue().increment(key, delta);
 	}
 
+    /**
+     * @Title: incr
+     * @Description: TODO 递增
+     * @param key 键
+     * @param delta 默认从0递增
+     * @return 
+     */
+    public long incr(String key) {
+        return redisTemplate.opsForValue().increment(key);
+    }
 
 	/**
 	 * @Title: decr

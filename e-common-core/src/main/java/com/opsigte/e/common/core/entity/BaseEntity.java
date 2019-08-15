@@ -19,7 +19,7 @@ public class BaseEntity implements Serializable {
     /**
      * 主键id，自增
      */
-    private Long id;
+    private Integer id;
 
     /**
      * 备注

@@ -45,6 +45,11 @@ public class CacheServiceImpl implements CacheService {
         return false;
     }
 
+    @Override
+    public boolean expireSimpleLock(String key) {
+        return expireSimpleLock(key,RedisConstant.EXPIRELOCKEXPIRE);
+    }
+
     /**
      * 续时锁：
      * 1.如果抢到锁，返回true
@@ -54,7 +59,7 @@ public class CacheServiceImpl implements CacheService {
      */
     @Override
     public boolean continueExpireLock(String key) {
-        return continueExpireLock(key, RedisConstant.JUDGELOCKEXPIRE);
+        return continueExpireLock(key, RedisConstant.CONTINUELOCKEXPIRE);
     }
 
 
@@ -195,7 +200,15 @@ public class CacheServiceImpl implements CacheService {
 		return redisManager.incr(key, delta);
 	}
 
-	@Override
+    @Override
+    public long incr(String key) {
+        if (StringUtil.isEmpty(key)) {
+            return 0;
+        }
+        return redisManager.incr(key);
+    }
+
+    @Override
 	public long decr(String key, long delta) {
 		if (StringUtil.isEmpty(key)) {
 			return 0;

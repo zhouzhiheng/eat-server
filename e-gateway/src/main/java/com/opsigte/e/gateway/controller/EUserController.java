@@ -42,6 +42,13 @@ public class EUserController {
         return JSON.toJSONString(userById);
     }
 
+    @GetMapping(value = "getUserById/{id}")
+    public String getUserById2(@PathVariable("id") Integer id){
+        EUserEntity userById = userService.getUserById(id);
+        return JSON.toJSONString(userById);
+    }
+
+
 
 
 }

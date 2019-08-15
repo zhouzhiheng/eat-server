@@ -18,7 +18,7 @@ public class ECacheServiceApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ECacheServiceApplication.class, args);
-        System.out.println("======Dubbo provide is start!!!=========");
+        System.out.println("=========Dubbo provide is start!!!=========");
     }
 
 }

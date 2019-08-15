@@ -12,7 +12,12 @@ public abstract class RedisConstant {
     /**
      * 续时锁的默认有效期时间
      */
-    public static final int JUDGELOCKEXPIRE = 60;
+    public static final int CONTINUELOCKEXPIRE = 60;
+
+    /**
+     * 过期锁的默认有效期时间
+     */
+    public static final int EXPIRELOCKEXPIRE = 60;
 
 
 }

@@ -42,11 +42,35 @@ public class EUserServiceBiz {
     }
 
     public Integer insert(EUserEntity userEntity) {
-        userEntity.setRemark("");
-        userEntity.setCreateTime(new Date());
-        userEntity.setUpdatedTime(new Date());
-        userEntity.setVersion(1);
-        return userMapper.insert(userEntity);
+        boolean insert1 = cacheService.expireSimpleLock("insert");
+        // cacheService.exp
+        if (insert1) {
+            userEntity.setRemark("");
+            userEntity.setCreateTime(new Date());
+            userEntity.setUpdatedTime(new Date());
+            userEntity.setVersion(1);
+            Integer resultId = 0;
+            try {
+                Integer insert = userMapper.insert(userEntity);
+                if (insert == 1) {
+                    resultId = userEntity.getId();
+                    System.out.println("插入用户成功，当前线程：" + Thread.currentThread().getId() +
+                            ",redis中一共统计成功的数量：" + cacheService.incr("insertTrue"));
+
+                } else {
+                    System.out.println("插入用户失败，当前线程：" + Thread.currentThread().getId() +
+                            ",redis中一共统计失败的数量：" + cacheService.incr("insertFalse"));
+                }
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return resultId;
+        } else {
+            System.out.println("没有抢到锁：");
+            return 0;
+        }
+
     }
 
 }
