@@ -5,6 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.servlet.config.annotation.PathMatchConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * @Project: com.opsigte.e.gateway
@@ -16,6 +17,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
  */
 @SpringBootApplication
 @EnableDubbo
+@EnableSwagger2
 public class EGatewayApplication extends WebMvcConfigurationSupport {
 
     public static void main(String[] args) {

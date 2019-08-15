@@ -46,6 +46,8 @@
         <mysql.version>5.1.47</mysql.version>
         <alibaba-druid.version>1.1.9</alibaba-druid.version>
         <pagehelper.version>5.1.10</pagehelper.version>
+        <springfox.swagger2.version>2.9.2</springfox.swagger2.version>
+        <springfox.swagger.ui.version>2.9.2</springfox.swagger.ui.version>
     </properties>
 
 
@@ -155,12 +157,17 @@
                 <version>${pagehelper.version}</version>
             </dependency>
 
-           <!-- <dependency>
+            <!--swagger2-->
+            <dependency>
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-swagger2</artifactId>
-                <version>2.9.2</version>
+                <version>${springfox.swagger2.version}</version>
             </dependency>
--->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${springfox.swagger.ui.version}</version>
+            </dependency>
 
 
         </dependencies>

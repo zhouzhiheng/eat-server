@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.servlet.config.annotation.PathMatchConfigurer;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 
 import java.nio.charset.Charset;
@@ -47,5 +48,21 @@ public class WebConfiguration extends WebMvcConfigurationSupport {
         // 忽略请求后缀 如：todo.json , todo.html ,todo ----> 相应的todo映射方法
         // true--忽略请求后缀，false--匹配请求后缀
         configurer.setUseSuffixPatternMatch(false);
+    }
+
+    /**
+     * 解决springboot整合swagger2.9.2版本无法访问 swagger-ui.html页面的问题
+     * @param registry
+     */
+    @Override
+    protected void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/**")
+                .addResourceLocations("classpath:/static/");
+
+        registry.addResourceHandler("swagger-ui.html")
+                .addResourceLocations("classpath:/META-INF/resources/");
+
+        registry.addResourceHandler("/webjars/**")
+                .addResourceLocations("classpath:/META-INF/resources/webjars/");
     }
 }

@@ -53,7 +53,7 @@ public class CacheServiceImpl implements CacheService {
     /**
      * 续时锁：
      * 1.如果抢到锁，返回true
-     * 2.如果没抢到锁，根据当前时间判断锁的旧的时间是否已经过期，如果过期，设置新的时间，返回true；入宫没过期，返回false
+     * 2.如果没抢到锁，根据当前时间判断锁的旧的时间是否已经过期，如果过期，设置新的时间，返回true；如果没过期，返回false
      * @param key redis key
      * @return true 加锁成功（获取到锁）;false 加锁失败（没有获取到锁）
      */

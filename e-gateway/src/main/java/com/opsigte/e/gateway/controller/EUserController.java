@@ -4,6 +4,7 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.fastjson.JSON;
 import com.opsigte.e.user.api.EUserService;
 import com.opsigte.e.user.api.entity.EUserEntity;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
@@ -16,6 +17,7 @@ public class EUserController {
     @Reference(version = "1.0.0", check = false)
     private EUserService userService;
 
+    @ApiOperation(value = "todo",notes = "todo测试接口")
     @RequestMapping(value = "todo")
     public String todo (String name){
         System.out.println("name:" + name);
