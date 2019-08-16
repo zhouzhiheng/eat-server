@@ -55,8 +55,6 @@ public class AopLog {
         Map<String, String[]> parameterMap = request.getParameterMap();
         log.info("【请求参数】：{}，", JSON.toJSONString(parameterMap));
 
-        LinkedHashMap<String,String> map = (LinkedHashMap<String, String>) request.getAttribute(HandlerMapping.URI_TEMPLATE_VARIABLES_ATTRIBUTE);
-        log.info("[aaaaa]:{}",JSON.toJSONString(map));
         Long start = System.currentTimeMillis();
         request.setAttribute(START_TIME, start);
     }

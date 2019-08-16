@@ -11,6 +11,13 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * <p> @ClassName: <i>EUserController</i></p>
+ * <p> @Description: <i>用户服务接口提供类</i></p>
+ * <p> @Author: <i>opsig</i></p>
+ * <p> @Created date: <i>2019/8/16 23:15</i></p>
+ * <p> @Version: <i>V1.0.0</i> </p>
+ */
 @Slf4j
 @RestController
 @RequestMapping("api/user")
@@ -21,7 +28,7 @@ public class EUserController {
 
     @ApiOperation(value = "todo",notes = "todo测试接口")
     @RequestMapping(value = "todo",method = {RequestMethod.GET,RequestMethod.DELETE})
-    public String todo (String name){
+    public String todo (String name,@RequestBody EUserEntity userEntity){
         log.error("sss");
         log.info("zzz");
         System.out.println("name:" + name);
