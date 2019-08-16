@@ -1,6 +1,7 @@
 package com.opsigte.e.gateway;
 
 import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
+import com.github.xiaoymin.swaggerbootstrapui.annotations.EnableSwaggerBootstrapUI;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.servlet.config.annotation.PathMatchConfigurer;
@@ -18,6 +19,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication
 @EnableDubbo
 @EnableSwagger2
+@EnableSwaggerBootstrapUI
 public class EGatewayApplication extends WebMvcConfigurationSupport {
 
     public static void main(String[] args) {

@@ -5,11 +5,13 @@ import com.alibaba.fastjson.JSON;
 import com.opsigte.e.user.api.EUserService;
 import com.opsigte.e.user.api.entity.EUserEntity;
 import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+@Slf4j
 @RestController
 @RequestMapping("api/user")
 public class EUserController {
@@ -18,8 +20,10 @@ public class EUserController {
     private EUserService userService;
 
     @ApiOperation(value = "todo",notes = "todo测试接口")
-    @RequestMapping(value = "todo")
+    @RequestMapping(value = "todo",method = {RequestMethod.GET,RequestMethod.DELETE})
     public String todo (String name){
+        log.error("sss");
+        log.info("zzz");
         System.out.println("name:" + name);
         return "todo返回";
     }
@@ -44,8 +48,8 @@ public class EUserController {
         return JSON.toJSONString(userById);
     }
 
-    @GetMapping(value = "getUserById/{id}")
-    public String getUserById2(@PathVariable("id") Integer id){
+    @GetMapping(value = "getUserById/{id}/test/{name}")
+    public String getUserById2(@PathVariable("id") Integer id,@PathVariable("name") String name){
         EUserEntity userById = userService.getUserById(id);
         return JSON.toJSONString(userById);
     }
