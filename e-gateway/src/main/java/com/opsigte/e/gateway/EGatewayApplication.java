@@ -8,13 +8,13 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
- * @Project: com.opsigte.e.gateway
- * @Class: EGatewayApplication
- * @Description: 项目统一web入口提供类
- * @Author: opsigte
- * @Date: 2019/7/24 21:27
- * @version 1.0.0
+ * <p> @ClassName: <i>EGatewayApplication</i></p>
+ * <p> @Description: <i>项目统一web入口提供类</i></p>
+ * <p> @Author: <i>opsigte</i></p>
+ * <p> @Created date: <i>2019/8/16 9:10</i></p>
+ * <p> @Version: <i>V1.0.0</i> </p>
  */
+
 @SpringBootApplication
 @EnableDubbo
 @EnableSwagger2
