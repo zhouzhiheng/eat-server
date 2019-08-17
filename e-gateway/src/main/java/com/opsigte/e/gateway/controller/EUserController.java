@@ -1,15 +1,21 @@
 package com.opsigte.e.gateway.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.alibaba.dubbo.rpc.RpcContext;
 import com.alibaba.fastjson.JSON;
+import com.opsigte.e.common.core.response.Resp;
+import com.opsigte.e.common.core.utils.UUIDUtil;
 import com.opsigte.e.user.api.EUserService;
 import com.opsigte.e.user.api.entity.EUserEntity;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.AsyncContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * <p> @ClassName: <i>EUserController</i></p>
@@ -26,9 +32,12 @@ public class EUserController {
     @Reference(version = "1.0.0", check = false)
     private EUserService userService;
 
+
+
     @ApiOperation(value = "todo",notes = "todo测试接口")
     @RequestMapping(value = "todo",method = {RequestMethod.GET,RequestMethod.DELETE})
-    public String todo (String name,@RequestBody EUserEntity userEntity){
+    public String todo (HttpServletRequest request,String name,@RequestBody EUserEntity userEntity){
+        AsyncContext asyncContext = request.getAsyncContext();
         log.error("sss");
         log.info("zzz");
         System.out.println("name:" + name);
@@ -50,9 +59,13 @@ public class EUserController {
     }
 
     @GetMapping(value = "getUserById")
-    public String getUserById(Integer id){
+    public Resp getUserById(HttpServletRequest request,Integer id){
+        String s = UUIDUtil.orderNo();
+        RpcContext.getContext().setAttachment("traceId",s);
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        log.info("当前时间:{},tradeId:{}", sdf.format(new Date()),s);
         EUserEntity userById = userService.getUserById(id);
-        return JSON.toJSONString(userById);
+        return Resp.success(userById);
     }
 
     @GetMapping(value = "getUserById/{id}/test/{name}")

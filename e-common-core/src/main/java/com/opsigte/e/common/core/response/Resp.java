@@ -16,7 +16,7 @@ import java.util.Map;
 @Data
 public class Resp<T> implements Serializable {
 
-    private static final long serialVersionUID = 1468749391542344308L;
+    private static final long serialVersionUID = 1L;
     private final static String SUCCESS_CODE = "200";
 
     /**
