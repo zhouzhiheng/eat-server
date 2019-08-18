@@ -1,18 +1,20 @@
 package com.opsigte.e.gateway.aop;
 
+import com.alibaba.dubbo.rpc.RpcContext;
 import com.alibaba.fastjson.JSON;
+import com.opsigte.e.common.core.constant.CommonConstant;
+import com.opsigte.e.common.core.utils.UUIDUtil;
 import eu.bitwalker.useragentutils.UserAgent;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
+import org.slf4j.MDC;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
-import org.springframework.web.servlet.HandlerMapping;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Objects;
 
@@ -26,7 +28,7 @@ import java.util.Objects;
 @Aspect
 @Component
 @Slf4j
-public class AopLog {
+public class WebLogAop {
     private static final String START_TIME = "request-start";
 
     /**
@@ -44,19 +46,35 @@ public class AopLog {
      */
     @Before("log()")
     public void beforeLog(JoinPoint point) {
+        requestSetTraceId();
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
-
         HttpServletRequest request = Objects.requireNonNull(attributes).getRequest();
 
         log.info("【请求 URL】：{}", request.getRequestURL());
         log.info("【请求 IP】：{}", request.getRemoteAddr());
-        log.info("【请求类名】：{}，【请求方法名】：{}", point.getSignature().getDeclaringTypeName(), point.getSignature().getName());
+        log.info("【请求方法】：{}.{}", point.getSignature().getDeclaringTypeName(), point.getSignature().getName());
 
         Map<String, String[]> parameterMap = request.getParameterMap();
-        log.info("【请求参数】：{}，", JSON.toJSONString(parameterMap));
+        log.info("【请求参数】：{}", JSON.toJSONString(parameterMap));
 
         Long start = System.currentTimeMillis();
         request.setAttribute(START_TIME, start);
+    }
+
+    /**
+     * 为每一个请求都设置一个新的traceId
+     */
+    private void requestSetTraceId(){
+        /**
+         * TODO 在此可以获取用户id
+         */
+        /*String token = request.getParameter("token");
+        String userId = StrKit.notBlank(token) ? CommonUtil.getUserId(token) : "VISITOR";
+        String uuid = CommonUtil.getUuid();*/
+
+        String traceId = UUIDUtil.generatorTraceId();
+        RpcContext.getContext().setAttachment(CommonConstant.TRACEIDKEY,traceId);
+        MDC.put(CommonConstant.TRACEIDKEY,traceId);
     }
 
     /**

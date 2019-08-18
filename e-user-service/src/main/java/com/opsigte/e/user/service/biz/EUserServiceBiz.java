@@ -2,8 +2,6 @@ package com.opsigte.e.user.service.biz;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.opsigte.e.cache.api.CacheService;
-import com.opsigte.e.common.core.utils.TraceIdUtil;
-import com.opsigte.e.user.api.EUserService;
 import com.opsigte.e.user.api.entity.EUserEntity;
 import com.opsigte.e.user.service.mapper.EUserMapper;
 import org.slf4j.Logger;
@@ -11,7 +9,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -34,8 +31,6 @@ public class EUserServiceBiz {
     private EUserMapper userMapper;
 
     public EUserEntity getUserById(Integer id) {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
-        log.info("当前时间:{},biz_tradeId:{}",sdf.format(new Date()),  TraceIdUtil.getTraceId());
         return userMapper.selectByPrimaryKey(id);
     }
 

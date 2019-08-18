@@ -1,18 +1,16 @@
 package com.opsigte.e.user.service.impl;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.dubbo.config.annotation.Service;
+import com.opsigte.e.cache.api.CacheService;
 import com.opsigte.e.common.core.page.PageBean;
 import com.opsigte.e.common.core.page.PageParam;
-import com.opsigte.e.common.core.utils.TraceIdUtil;
 import com.opsigte.e.user.api.EUserService;
 import com.opsigte.e.user.api.entity.EUserEntity;
 import com.opsigte.e.user.service.biz.EUserServiceBiz;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.Map;
 
 
@@ -30,21 +28,12 @@ public class EUserServiceImpl implements EUserService {
     @Autowired
     private EUserServiceBiz userServiceBiz;
 
+    @Reference(version = "1.0.0", check = false)
+    private CacheService cacheService;
 
     @Override
     public EUserEntity getUserById(Integer id) {
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
-        log.info("当前时间:{},service_tradeId:{}",sdf.format(new Date()), TraceIdUtil.getTraceId());
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
         if (id != null) {
             return userServiceBiz.getUserById(id);
         }

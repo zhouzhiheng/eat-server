@@ -4,10 +4,12 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.dubbo.rpc.RpcContext;
 import com.alibaba.fastjson.JSON;
 import com.opsigte.e.common.core.response.Resp;
+import com.opsigte.e.common.core.utils.TraceIdUtil;
 import com.opsigte.e.common.core.utils.UUIDUtil;
 import com.opsigte.e.user.api.EUserService;
 import com.opsigte.e.user.api.entity.EUserEntity;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.models.auth.In;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
@@ -31,6 +33,9 @@ public class EUserController {
 
     @Reference(version = "1.0.0", check = false)
     private EUserService userService;
+
+    private  Integer a = 0;
+    private static ThreadLocal<Integer> a_thread = new ThreadLocal<Integer>();
 
 
 
@@ -59,11 +64,7 @@ public class EUserController {
     }
 
     @GetMapping(value = "getUserById")
-    public Resp getUserById(HttpServletRequest request,Integer id){
-        String s = UUIDUtil.orderNo();
-        RpcContext.getContext().setAttachment("traceId",s);
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
-        log.info("当前时间:{},tradeId:{}", sdf.format(new Date()),s);
+    public Resp getUserById(Integer id){
         EUserEntity userById = userService.getUserById(id);
         return Resp.success(userById);
     }

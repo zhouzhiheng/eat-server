@@ -23,13 +23,15 @@
     
 * 技术：
     ```
-        dubbo:分布式服务
+        dubbo:分布式服务框架
         zookeeper：为分布式应用提供一致性服务的中间件
         lombok:自动生成setter/getter，简化JavaBean
         pagehelper：mybatis分页插件
-        redis：缓存中间件
+        redis：缓存中间件。使用redis解决分布式锁问题
+        logback:日志组件,配合traceId使用，方便查询日志。后期可以整合ELK(Elasticsearch,logstash,kibana)，对日志进行可视化处理
+    swagger2:动态生成Api接口文档。使用 swagger-bootstrap-ui，优化界面风格
     ```
-
+    
 * 使用：
 
   * 将 **e-common-parent** , **e-common** ,**e-common-core**  , **e-common-config**  maven install 到本地 

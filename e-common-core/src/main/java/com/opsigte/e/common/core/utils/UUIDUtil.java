@@ -4,6 +4,7 @@ package com.opsigte.e.common.core.utils;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Random;
+import java.util.UUID;
 
 /**
  * <p> @ClassName: <i>UUIDUtil</i></p>
@@ -22,5 +23,19 @@ public class UUIDUtil {
     public static String orderNo() {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmssSSS");
         return sdf.format(Calendar.getInstance().getTime()) + (new Random().nextInt(900) + 100);
+    }
+
+    /**
+     * 使用 UUID生成唯一的 TraceId
+     * @return
+     */
+    public static String generatorUUID(){
+        return UUID.randomUUID().toString();
+    }
+
+    public static String generatorTraceId(){
+        String uuid = generatorUUID();
+        uuid = uuid.replaceAll("-", "");
+        return uuid;
     }
 }
