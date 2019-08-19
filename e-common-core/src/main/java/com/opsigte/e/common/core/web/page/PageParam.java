@@ -1,4 +1,4 @@
-package com.opsigte.e.common.core.page;
+package com.opsigte.e.common.core.web.page;
 
 import lombok.Data;
 
