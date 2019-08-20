@@ -1,4 +1,4 @@
-package com.opsigte.e.common.core.filter;
+package com.opsigte.e.common.core.web.filter;
 
 import com.alibaba.dubbo.rpc.*;
 import com.opsigte.e.common.core.constant.CommonConstant;

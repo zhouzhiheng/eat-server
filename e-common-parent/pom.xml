@@ -101,13 +101,6 @@
                 <version>${springboot.version}</version>
             </dependency>
 
-            <!--springboot-web-->
-            <!--<dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-web</artifactId>
-                <version>${springboot.version}</version>
-            </dependency>-->
-
             <!--springboot-aop-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -131,6 +124,12 @@
                 <scope>test</scope>
             </dependency>
 
+          <!--springboot-amqp-->
+          <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+            <version>${springboot.version}</version>
+          </dependency>
 
 
             <!--FastJson-->

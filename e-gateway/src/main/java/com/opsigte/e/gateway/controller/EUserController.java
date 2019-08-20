@@ -1,23 +1,17 @@
 package com.opsigte.e.gateway.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.alibaba.dubbo.rpc.RpcContext;
 import com.alibaba.fastjson.JSON;
-import com.opsigte.e.common.core.response.Resp;
-import com.opsigte.e.common.core.utils.TraceIdUtil;
-import com.opsigte.e.common.core.utils.UUIDUtil;
+import com.opsigte.e.common.core.web.response.Resp;
 import com.opsigte.e.user.api.EUserService;
 import com.opsigte.e.user.api.entity.EUserEntity;
 import io.swagger.annotations.ApiOperation;
-import io.swagger.models.auth.In;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.AsyncContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 /**
  * <p> @ClassName: <i>EUserController</i></p>

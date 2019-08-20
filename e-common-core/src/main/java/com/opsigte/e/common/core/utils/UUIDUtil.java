@@ -33,6 +33,11 @@ public class UUIDUtil {
         return UUID.randomUUID().toString();
     }
 
+
+    /**
+     * 去掉UUID中的 '-',返回 32位的UUID，主要是为了调试方便复制
+     * @return
+     */
     public static String generatorTraceId(){
         String uuid = generatorUUID();
         uuid = uuid.replaceAll("-", "");

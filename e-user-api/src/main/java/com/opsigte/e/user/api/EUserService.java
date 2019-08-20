@@ -1,10 +1,9 @@
 package com.opsigte.e.user.api;
 
-import com.opsigte.e.common.core.page.PageBean;
-import com.opsigte.e.common.core.page.PageParam;
+import com.opsigte.e.common.core.web.page.PageBean;
+import com.opsigte.e.common.core.web.page.PageParam;
 import com.opsigte.e.user.api.entity.EUserEntity;
 
-import java.util.List;
 import java.util.Map;
 
 /**

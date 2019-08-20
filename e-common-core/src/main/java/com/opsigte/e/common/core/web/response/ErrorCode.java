@@ -1,4 +1,4 @@
-package com.opsigte.e.common.core.response;
+package com.opsigte.e.common.core.web.response;
 
 /**
  * <p> @ClassName: <i>ErrorCode<T></i></p>
@@ -9,6 +9,7 @@ package com.opsigte.e.common.core.response;
  */
 public enum ErrorCode {
     SYSTEM_ERROR(500, "系统错误"),
+    RPC_ERROR(501, "rpc调用失败"),
     ;
 
     private final Integer value;
