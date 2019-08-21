@@ -3,6 +3,7 @@ package com.opsigte.e.user.service.impl;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.alibaba.dubbo.rpc.RpcException;
+import com.alibaba.fastjson.JSON;
 import com.opsigte.e.cache.api.CacheService;
 import com.opsigte.e.common.core.web.page.PageBean;
 import com.opsigte.e.common.core.web.page.PageParam;
@@ -35,16 +36,19 @@ public class EUserServiceImpl implements EUserService {
 
     @Override
     public EUserEntity getUserById(Integer id) {
-        try {
+       /* try {
 
             cacheService.get("a");
         } catch (Exception e) {
             if (e instanceof RpcException) {
                 throw new EUserException(EUserException.DB_LIST_IS_NULL.getCode(), "rpc异常");
             }
-        }
+        }*/
         if (id != null) {
-            return userServiceBiz.getUserById(id);
+            EUserEntity userById = userServiceBiz.getUserById(id);
+            log.info("查询用户：{}", JSON.toJSONString(userById));
+            log.info("当前redis自增数：{}",cacheService.incr("aaa"));
+            return userById;
         }
         return null;
     }

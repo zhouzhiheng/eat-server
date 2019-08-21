@@ -10,9 +10,11 @@ package com.opsigte.e.user.service.rabbitmq;
 public class RabbitMqConstant {
 
     public static final String EXCHANGE_1 = "my-mq-exchange_1";
+    public static final String EXCHANGE_2 = "my-mq-exchange_2";
 
 
     public static final String ROUTINGKEY_1 = "spring-boot-routingKey_1";
+    public static final String ROUTINGKEY_2 = "spring-boot-routingKey_2";
 
 
     public static final String QUEUE_1 = "QUEUE_1";

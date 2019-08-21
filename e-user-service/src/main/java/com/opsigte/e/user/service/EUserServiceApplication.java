@@ -1,12 +1,11 @@
 package com.opsigte.e.user.service;
 
 import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
-import com.opsigte.e.user.service.rabbitmq.producer.MsgProducer1;
 import org.mybatis.spring.annotation.MapperScan;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 
@@ -22,6 +21,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableDubbo
 @MapperScan(value = "com.opsigte.e.user.service.mapper")
 @EnableTransactionManagement
+@EnableScheduling
 public class EUserServiceApplication {
 
     public static void main(String[] args) {
@@ -30,16 +30,7 @@ public class EUserServiceApplication {
         ConfigurableApplicationContext run = springApplication.run(args);
         System.out.println("==============DubboProvider is started!==============");
 
-        MsgProducer1 bean = run.getBean(MsgProducer1.class);
 
-        for (int i = 0; i < 3; i++) {
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            bean.sendMsg("生产者放入的消息：" + i);
-        }
 
     }
 

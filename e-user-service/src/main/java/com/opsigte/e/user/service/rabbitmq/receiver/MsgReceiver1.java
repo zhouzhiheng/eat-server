@@ -21,6 +21,12 @@ public class MsgReceiver1 {
     @RabbitHandler
     @RabbitListener(queues = RabbitMqConstant.QUEUE_1)
     public void receiver(String content){
-        log.info("消费者接收到的消息：{}", content);
+        log.info("消费者1接收到的消息：{}", content);
+    }
+
+    @RabbitHandler
+    @RabbitListener(queues = RabbitMqConstant.QUEUE_2)
+    public void receiver2(String content){
+        log.info("消费者2接收到的消息：{}", content);
     }
 }

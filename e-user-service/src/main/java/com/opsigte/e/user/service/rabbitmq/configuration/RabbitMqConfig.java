@@ -14,18 +14,16 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
+
 /**
  *<p> @ClassName: <i>RabbitMqConfig</i></p>
- *<p> @Description: <i>rabbitmq消息队列配置类</i></p>
+ *<p> @Description: <i>rabbitmq消息队列配置类.初始化创建队列、交换机，并把队列绑定到交换机</i></p>
  *<p> @Author: <i>opsigte</i></p>
  *<p> @Created date: <i>2019/8/20 17:46</i></p>
  *<p> @Version: <i>V1.0.0</i> </p>
  */
 @Configuration
 public class RabbitMqConfig {
-
-    private  int a  = 0;
-
 
     /**
      Broker:它提供一种传输服务,它的角色就是维护一条从生产者到消费者的路线，保证数据能按照指定的方式进行传输,
@@ -38,7 +36,6 @@ public class RabbitMqConfig {
      Consumer:消息消费者,就是接受消息的程序.
      Channel:消息通道,在客户端的每个连接里,可建立多个channel.
      */
-
     @Value("${spring.rabbitmq.host}")
     private String host;
 
@@ -51,12 +48,19 @@ public class RabbitMqConfig {
     @Value("${spring.rabbitmq.password}")
     private String password;
 
+    @Value("${spring.rabbitmq.virtual-host}")
+    private String virtualHost;
+
+    @Value("${spring.rabbitmq.publisher-confirms}")
+    private Boolean pubConfirm;
+
+
     @Bean
     public ConnectionFactory connectionFactory(){
         CachingConnectionFactory factory = new CachingConnectionFactory(host,port);
         factory.setUsername(username);
         factory.setPassword(password);
-        factory.setVirtualHost("/");
+        factory.setVirtualHost(virtualHost);
         /**
          * 1.对于每一个RabbitTemplate只支持一个ReturnCallback。
          * 对于返回消息，模板的mandatory属性必须被设定为true，
@@ -66,6 +70,7 @@ public class RabbitMqConfig {
          * void returnedMessage(Message message, intreplyCode, String replyText,String exchange, String routingKey);
          */
         // factory.setPublisherReturns(true);
+
         /**
          * 2.同样一个RabbitTemplate只支持一个ConfirmCallback。
          * 对于发布确认，template要求CachingConnectionFactory的publisherConfirms属性设置为true。
@@ -73,7 +78,7 @@ public class RabbitMqConfig {
          * 这个回调函数必须实现以下方法：
          * void confirm(CorrelationData correlationData, booleanack);
          */
-        factory.setPublisherConfirms(true);
+        factory.setPublisherConfirms(pubConfirm);
         return factory;
     }
 
@@ -114,8 +119,14 @@ public class RabbitMqConfig {
     }*/
 
     @Bean
-    public Binding binding(){
+    public Binding binding1(){
         return BindingBuilder.bind(new Queue(RabbitMqConstant.QUEUE_1, true))
             .to(new DirectExchange(RabbitMqConstant.EXCHANGE_1)).with(RabbitMqConstant.ROUTINGKEY_1);
+    }
+
+    @Bean
+    public Binding binding2(){
+        return BindingBuilder.bind(new Queue(RabbitMqConstant.QUEUE_2, true))
+            .to(new DirectExchange(RabbitMqConstant.EXCHANGE_2)).with(RabbitMqConstant.ROUTINGKEY_2);
     }
 }
