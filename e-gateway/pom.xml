@@ -72,9 +72,15 @@
             <artifactId>e-order-api</artifactId>
             <version>${e-order-api.version}</version>
         </dependency>
+      <dependency>
+        <groupId>com.opsigte</groupId>
+        <artifactId>e-cache-api</artifactId>
+        <version>${e-cache-api.version}</version>
+      </dependency>
 
 
-        <!--第三方jar依赖-->
+
+      <!--第三方jar依赖-->
         <dependency>
             <groupId>com.alibaba.boot</groupId>
             <artifactId>dubbo-spring-boot-starter</artifactId>

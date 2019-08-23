@@ -2,6 +2,7 @@ package com.opsigte.e.gateway.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.fastjson.JSON;
+import com.opsigte.e.cache.api.CacheService;
 import com.opsigte.e.common.core.web.response.Resp;
 import com.opsigte.e.user.api.EUserService;
 import com.opsigte.e.user.api.entity.EUserEntity;
@@ -27,10 +28,8 @@ public class EUserController {
 
     @Reference(version = "1.0.0", check = false)
     private EUserService userService;
-
-    private  Integer a = 0;
-    private static ThreadLocal<Integer> a_thread = new ThreadLocal<Integer>();
-
+    @Reference(version = "1.0.0", check = false)
+    private CacheService cacheService;
 
 
     @ApiOperation(value = "todo",notes = "todo测试接口")

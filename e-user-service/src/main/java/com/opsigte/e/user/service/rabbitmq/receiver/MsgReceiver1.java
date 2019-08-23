@@ -6,6 +6,11 @@ import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Hashtable;
+import java.util.Set;
+
 /**
  *<p> @ClassName: <i>MsgReceiver1</i></p>
  *<p> @Description: <i></i></p>
@@ -28,5 +33,19 @@ public class MsgReceiver1 {
     @RabbitListener(queues = RabbitMqConstant.QUEUE_2)
     public void receiver2(String content){
         log.info("消费者2接收到的消息：{}", content);
+    }
+
+
+    public static void main(String[] args){
+        String test = new String("a");
+        test = test.replace('b', 'c');
+        System.out.println(test);
+
+        Set<String> set = new HashSet<>();
+        set.add("a");
+
+        HashMap<String, Object> map = new HashMap<>();
+        map.put(null, null);
+        Hashtable<String, Object> hashtable = new Hashtable<>();
     }
 }
