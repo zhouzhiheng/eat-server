@@ -1,92 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>com.opsigte</groupId>
-        <artifactId>e-common-parent</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../e-common-parent</relativePath>
-    </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.opsigte</groupId>
+    <artifactId>e-common-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <relativePath>../e-common-parent</relativePath>
+  </parent>
 
 
-    <artifactId>e-order-service</artifactId>
-    <version>${e-order-service.version}</version>
-    <packaging>jar</packaging>
-    <name>e-order-service</name>
+  <artifactId>e-order-service</artifactId>
+  <version>${e-order-service.version}</version>
+  <packaging>jar</packaging>
+  <name>e-order-service</name>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.8</java.version>
-    </properties>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <java.version>1.8</java.version>
+  </properties>
 
-    <build>
-        <plugins>
-            <!--maven打包时，配置manifest文件，打入依赖的jar包-->
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+  <build>
+    <!--maven package时,指定生成的文件名称.默认后面有版本号-->
+    <finalName>${project.artifactId}</finalName>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
+    <plugins>
+      <!--maven打包时，配置manifest文件，打入依赖的jar包-->
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter</artifactId>
+    </dependency>
 
 
-        <!--项目jar依赖-->
-        <dependency>
-            <groupId>com.opsigte</groupId>
-            <artifactId>e-common</artifactId>
-            <version>${e-common.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.opsigte</groupId>
-            <artifactId>e-common-config</artifactId>
-            <version>${e-common-config.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.opsigte</groupId>
-            <artifactId>e-common-core</artifactId>
-            <version>${e-common-core.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.opsigte</groupId>
-            <artifactId>e-order-api</artifactId>
-            <version>${e-order-api.version}</version>
-        </dependency>
+    <!--项目jar依赖-->
+    <dependency>
+      <groupId>com.opsigte</groupId>
+      <artifactId>e-common</artifactId>
+      <version>${e-common.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.opsigte</groupId>
+      <artifactId>e-common-config</artifactId>
+      <version>${e-common-config.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.opsigte</groupId>
+      <artifactId>e-common-core</artifactId>
+      <version>${e-common-core.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.opsigte</groupId>
+      <artifactId>e-order-api</artifactId>
+      <version>${e-order-api.version}</version>
+    </dependency>
 
-        <dependency>
-            <groupId>com.opsigte</groupId>
-            <artifactId>e-user-api</artifactId>
-            <version>${e-user-api.version}</version>
-        </dependency>
+    <dependency>
+      <groupId>com.opsigte</groupId>
+      <artifactId>e-user-api</artifactId>
+      <version>${e-user-api.version}</version>
+    </dependency>
 
-        <!--第三方jar依赖-->
-        <dependency>
-            <groupId>com.alibaba.boot</groupId>
-            <artifactId>dubbo-spring-boot-starter</artifactId>
-        </dependency>
+    <!--第三方jar依赖-->
+    <dependency>
+      <groupId>com.alibaba.boot</groupId>
+      <artifactId>dubbo-spring-boot-starter</artifactId>
+    </dependency>
 
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-        </dependency>
+    <dependency>
+      <groupId>org.mybatis.spring.boot</groupId>
+      <artifactId>mybatis-spring-boot-starter</artifactId>
+    </dependency>
 
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+    </dependency>
 
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
-        </dependency>
-    </dependencies>
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>druid-spring-boot-starter</artifactId>
+    </dependency>
+  </dependencies>
 
 
 </project>

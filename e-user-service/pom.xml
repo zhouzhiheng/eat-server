@@ -21,7 +21,71 @@
     <java.version>1.8</java.version>
   </properties>
 
+  <!--只打包一个配置文件properties-->
+  <profiles>
+
+    <!--开发环境-->
+    <profile>
+      <id>dev</id>
+      <properties>
+        <profileActive>dev</profileActive>
+      </properties>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+    </profile>
+
+    <profile>
+      <id>test</id>
+      <properties>
+        <profileActive>test</profileActive>
+      </properties>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+      </activation>
+    </profile>
+
+    <profile>
+      <id>prod</id>
+      <properties>
+        <profileActive>prod</profileActive>
+      </properties>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+      </activation>
+    </profile>
+
+  </profiles>
+
   <build>
+    <!--maven package时,指定生成的文件名称.默认后面有版本号-->
+    <finalName>${project.artifactId}</finalName>
+
+    <resources>
+      <!--加载多环境配置,只打包某个环境下的配置文件-->
+      <resource>
+        <filtering>true</filtering>
+        <directory>src/main/resources</directory>
+        <!--排除所有的配置-->
+        <excludes>
+          <exclude>application-dev.properties</exclude>
+          <exclude>application-test.properties</exclude>
+          <exclude>application-prod.properties</exclude>
+          <exclude>application.properties</exclude>
+        </excludes>
+      </resource>
+      <resource>
+        <filtering>true</filtering>
+        <directory>src/main/resources</directory>
+        <!--引入环境需要的配置-->
+        <includes>
+          <include>application-${profileActive}.properties</include>
+          <include>application.properties</include>
+        </includes>
+      </resource>
+
+    </resources>
+
     <plugins>
       <!--maven打包时，配置manifest文件，打入依赖的jar包-->
       <plugin>
