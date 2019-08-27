@@ -11,12 +11,11 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 
 /**
- * @Project: com.opsigte.e.user.service
- * @Class: EUserServiceApplication
- * @Description: 用户服务启动类
- * @Author: opsigte
- * @Date: 2019/7/24 21:38
- * @version 1.0.0
+ * <p> @ClassName: <i>EUserServiceApplication</i></p>
+ * <p> @Description: <i>用户服务启动类</i></p>
+ * <p> @Author: <i>opsigte</i></p>
+ * <p> @Created date: <i>2019/8/26 15:28</i></p>
+ * <p> @Version: <i>V1.0.0</i> </p>
  */
 @SpringBootApplication
 @EnableDubbo

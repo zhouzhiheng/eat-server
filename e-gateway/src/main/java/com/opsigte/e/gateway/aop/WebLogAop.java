@@ -3,6 +3,7 @@ package com.opsigte.e.gateway.aop;
 import com.alibaba.dubbo.rpc.RpcContext;
 import com.alibaba.fastjson.JSON;
 import com.opsigte.e.common.core.constant.CommonConstant;
+import com.opsigte.e.common.core.utils.TraceIdUtil;
 import com.opsigte.e.common.core.utils.UUIDUtil;
 import eu.bitwalker.useragentutils.UserAgent;
 import lombok.extern.slf4j.Slf4j;
@@ -15,6 +16,7 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.Map;
 import java.util.Objects;
 
@@ -98,6 +100,9 @@ public class WebLogAop {
     public void afterReturning() {
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = Objects.requireNonNull(attributes).getRequest();
+        HttpServletResponse response = Objects.requireNonNull(attributes).getResponse();
+        // 将此次请求的traceId设置到返回头里面,方便排查错误
+        response.addHeader(CommonConstant.TRACEIDKEY,MDC.get(CommonConstant.TRACEIDKEY));
 
         Long start = (Long) request.getAttribute(START_TIME);
         Long end = System.currentTimeMillis();
