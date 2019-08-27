@@ -1,12 +1,12 @@
-package com.opsigte.e.user.service.rabbitmq.producer;
+package com.opsigte.e.message.queue.producer;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.opsigte.e.common.core.utils.UUIDUtil;
-import com.opsigte.e.user.service.rabbitmq.RabbitMqConstant;
+import com.opsigte.e.message.queue.constant.RabbitMqConstant;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.connection.CorrelationData;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 /**
  *<p> @ClassName: <i>MsgProducer1</i></p>
@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
  *<p> @Version: <i>V1.0.0</i> </p>
  */
 @Slf4j
-@Component
+@Service(version = "1.0.0",filter = "traceIdFilter")
 public class MsgProducer1 implements RabbitTemplate.ConfirmCallback{
 
     /**

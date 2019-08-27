@@ -1,6 +1,6 @@
-package com.opsigte.e.user.service.rabbitmq.configuration;
+package com.opsigte.e.message.queue.configuration;
 
-import com.opsigte.e.user.service.rabbitmq.RabbitMqConstant;
+import com.opsigte.e.message.queue.constant.RabbitMqConstant;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.core.DirectExchange;
@@ -17,7 +17,7 @@ import org.springframework.context.annotation.Scope;
 
 /**
  *<p> @ClassName: <i>RabbitMqConfig</i></p>
- *<p> @Description: <i>rabbitmq消息队列配置类.初始化创建队列、交换机，并把队列绑定到交换机</i></p>
+ *<p> @Description: <i>rabbitmq消息队列配置类.初始化创建队列、交换器，并把队列绑定到交换器</i></p>
  *<p> @Author: <i>opsigte</i></p>
  *<p> @Created date: <i>2019/8/20 17:46</i></p>
  *<p> @Version: <i>V1.0.0</i> </p>
@@ -27,7 +27,7 @@ public class RabbitMqConfig {
 
     /**
      Broker:它提供一种传输服务,它的角色就是维护一条从生产者到消费者的路线，保证数据能按照指定的方式进行传输,
-     Exchange：消息交换机,它指定消息按什么规则,路由到哪个队列。
+     Exchange：消息交换器,它指定消息按什么规则,路由到哪个队列。
      Queue:消息的载体,每个消息都会被投到一个或多个队列。
      Binding:绑定，它的作用就是把exchange和queue按照路由规则绑定起来.
      Routing Key:路由关键字,exchange根据这个关键字进行消息投递。
@@ -98,15 +98,24 @@ public class RabbitMqConfig {
 
     /**
      *  针对消费者配置
-     *   * 1. 设置交换机类型
+     *   * 1. 设置交换器类型
      *   FanoutExchange: 将消息分发到所有的绑定队列，无routingkey的概念
      *   HeadersExchange ：通过添加属性key-value匹配（不常用）
      *   DirectExchange:按照routingkey分发到指定队列
      *   TopicExchange:多关键字匹配
-     *   * 2. 将指定队列绑定到交换机
+     *   * 2. 将指定队列绑定到交换器
      *
      * @return
      */
+
+
+    @Bean
+    public DirectExchange directExchange(){
+        return new DirectExchange(RabbitMqConstant.EXCHANGE_1, true, true);
+    }
+
+
+
     /*@Bean
     public DirectExchange defaultExchange(){
         return new DirectExchange(RabbitMqConstant.EXCHANGE_1);
@@ -120,8 +129,8 @@ public class RabbitMqConfig {
 
     @Bean
     public Binding binding1(){
-        return BindingBuilder.bind(new Queue(RabbitMqConstant.QUEUE_1, true))
-            .to(new DirectExchange(RabbitMqConstant.EXCHANGE_1)).with(RabbitMqConstant.ROUTINGKEY_1);
+        return BindingBuilder.bind(new Queue(RabbitMqConstant.QUEUE_2, true,true,false))
+            .to(new DirectExchange(RabbitMqConstant.EXCHANGE_1,true,false)).with(RabbitMqConstant.ROUTINGKEY_2);
     }
 
     @Bean

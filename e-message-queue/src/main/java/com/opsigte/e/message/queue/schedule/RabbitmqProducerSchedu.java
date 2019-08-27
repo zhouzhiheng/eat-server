@@ -1,12 +1,12 @@
-package com.opsigte.e.user.service.schedule;
+package com.opsigte.e.message.queue.schedule;
 
-import com.opsigte.e.user.service.rabbitmq.producer.MsgProducer1;
+import com.opsigte.e.message.queue.producer.MsgProducer1;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 /**
- *<p> @ClassName: <i>RabbitmqProducerSchedu</i></p>
+ *<p> @ClassName: <i>RabbitmqProducerSchedue</i></p>
  *<p> @Description: <i></i></p>
  *<p> @Author: <i>opsigte</i></p>
  *<p> @Created date: <i>2019/8/21 15:33</i></p>
@@ -27,13 +27,13 @@ public class RabbitmqProducerSchedu {
         }
     }
 
-    @Scheduled(fixedRate = 1000 * 10)
+    /*@Scheduled(fixedRate = 1000 * 10)
     public void producerMsg2(){
         for (int i = 0; i < 5; i++) {
 
             producer1.sendMsg2("定时发送的数据：" + i);
 
         }
-    }
+    }*/
 
 }

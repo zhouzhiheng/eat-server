@@ -35,6 +35,7 @@
         <e-cache-api.version>0.0.1-SNAPSHOT</e-cache-api.version>
         <e-cache-service.version>0.0.1-SNAPSHOT</e-cache-service.version>
         <e-gateway.version>0.0.1-SNAPSHOT</e-gateway.version>
+        <e-message-queue.version>0.0.1-SNAPSHOT</e-message-queue.version>
 
         <!--第三方jar版本号管理-->
         <fastjson.version>1.2.47</fastjson.version>

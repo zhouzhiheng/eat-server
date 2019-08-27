@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+
   <parent>
     <groupId>com.opsigte</groupId>
     <artifactId>e-common-parent</artifactId>
@@ -10,16 +11,18 @@
   </parent>
 
 
-  <artifactId>e-user-service</artifactId>
-  <version>${e-user-service.version}</version>
+  <artifactId>e-message-queue</artifactId>
+  <version>${e-message-queue.version}</version>
   <packaging>jar</packaging>
-  <name>e-user-service</name>
+  <name>e-message-queue</name>
+
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java.version>1.8</java.version>
   </properties>
+
 
   <!--只打包一个配置文件properties-->
   <profiles>
@@ -55,6 +58,7 @@
     </profile>
   </profiles>
 
+
   <build>
     <!--maven package时,指定生成的文件名称.默认后面有版本号-->
     <finalName>${project.artifactId}</finalName>
@@ -64,7 +68,7 @@
       <resource>
         <filtering>true</filtering>
         <directory>src/main/resources</directory>
-        <!--排除所有的配置-->
+        <!--排除所有的配置文件-->
         <excludes>
           <exclude>application-dev.properties</exclude>
           <exclude>application-test.properties</exclude>
@@ -81,7 +85,6 @@
           <include>application.properties</include>
         </includes>
       </resource>
-
     </resources>
 
     <plugins>
@@ -104,7 +107,6 @@
 
 
   <dependencies>
-
     <!--项目jar依赖-->
     <dependency>
       <groupId>com.opsigte</groupId>
@@ -121,44 +123,16 @@
       <artifactId>e-common-core</artifactId>
       <version>${e-common-core.version}</version>
     </dependency>
-    <dependency>
-      <groupId>com.opsigte</groupId>
-      <artifactId>e-user-api</artifactId>
-      <version>${e-user-api.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.opsigte</groupId>
-      <artifactId>e-cache-api</artifactId>
-      <version>${e-cache-api.version}</version>
-    </dependency>
-
 
     <!--第三方jar依赖-->
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-aop</artifactId>
-    </dependency>
-
     <dependency>
       <groupId>com.alibaba.boot</groupId>
       <artifactId>dubbo-spring-boot-starter</artifactId>
     </dependency>
-
     <dependency>
-      <groupId>org.mybatis.spring.boot</groupId>
-      <artifactId>mybatis-spring-boot-starter</artifactId>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-amqp</artifactId>
     </dependency>
-
-    <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-    </dependency>
-
-    <dependency>
-      <groupId>com.alibaba</groupId>
-      <artifactId>druid-spring-boot-starter</artifactId>
-    </dependency>
-
   </dependencies>
 
 </project>

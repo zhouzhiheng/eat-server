@@ -1,6 +1,6 @@
-package com.opsigte.e.user.service.rabbitmq.receiver;
+package com.opsigte.e.message.queue.receiver;
 
-import com.opsigte.e.user.service.rabbitmq.RabbitMqConstant;
+import com.opsigte.e.message.queue.constant.RabbitMqConstant;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
@@ -35,17 +35,4 @@ public class MsgReceiver1 {
         log.info("消费者2接收到的消息：{}", content);
     }
 
-
-    public static void main(String[] args){
-        String test = new String("a");
-        test = test.replace('b', 'c');
-        System.out.println(test);
-
-        Set<String> set = new HashSet<>();
-        set.add("a");
-
-        HashMap<String, Object> map = new HashMap<>();
-        map.put(null, null);
-        Hashtable<String, Object> hashtable = new Hashtable<>();
-    }
 }
