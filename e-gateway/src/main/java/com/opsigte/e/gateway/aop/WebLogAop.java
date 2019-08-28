@@ -32,6 +32,7 @@ import java.util.Objects;
 @Slf4j
 public class WebLogAop {
     private static final String START_TIME = "request-start";
+    private static ThreadLocal<String> threadLocal = new ThreadLocal<>();
 
     /**
      * 切入点
@@ -75,6 +76,7 @@ public class WebLogAop {
         String uuid = CommonUtil.getUuid();*/
 
         String traceId = UUIDUtil.generatorTraceId();
+        threadLocal.set(traceId);
         RpcContext.getContext().setAttachment(CommonConstant.TRACEIDKEY,traceId);
         MDC.put(CommonConstant.TRACEIDKEY,traceId);
     }
@@ -102,7 +104,8 @@ public class WebLogAop {
         HttpServletRequest request = Objects.requireNonNull(attributes).getRequest();
         HttpServletResponse response = Objects.requireNonNull(attributes).getResponse();
         // 将此次请求的traceId设置到返回头里面,方便排查错误
-        response.addHeader(CommonConstant.TRACEIDKEY,MDC.get(CommonConstant.TRACEIDKEY));
+        response.addHeader(CommonConstant.TRACEIDKEY,threadLocal.get());
+        System.out.println("请求返回的traceId:" + threadLocal.get());
 
         Long start = (Long) request.getAttribute(START_TIME);
         Long end = System.currentTimeMillis();

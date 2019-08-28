@@ -44,6 +44,11 @@ public class EUserServiceImpl implements EUserService {
                 throw new EUserException(EUserException.DB_LIST_IS_NULL.getCode(), "rpc异常");
             }
         }*/
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         if (id != null) {
             EUserEntity userById = userServiceBiz.getUserById(id);
             log.info("查询用户：{}", JSON.toJSONString(userById));
