@@ -1,10 +1,7 @@
 package com.opsigte.e.message.queue.configuration;
 
 import com.opsigte.e.message.queue.constant.RabbitMqConstant;
-import org.springframework.amqp.core.Binding;
-import org.springframework.amqp.core.BindingBuilder;
-import org.springframework.amqp.core.DirectExchange;
-import org.springframework.amqp.core.Queue;
+import org.springframework.amqp.core.*;
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -12,6 +9,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Scope;
 
 
@@ -56,6 +54,7 @@ public class RabbitMqConfig {
 
 
     @Bean
+    @Primary
     public ConnectionFactory connectionFactory(){
         CachingConnectionFactory factory = new CachingConnectionFactory(host,port);
         factory.setUsername(username);
@@ -111,9 +110,18 @@ public class RabbitMqConfig {
 
     @Bean
     public DirectExchange directExchange(){
-        return new DirectExchange(RabbitMqConstant.EXCHANGE_1, true, true);
+        return new DirectExchange(RabbitMqConstant.EXCHANGE_1, true, false);
     }
 
+    @Bean
+    public TopicExchange topicExchange(){
+        return new TopicExchange(RabbitMqConstant.TOPIC_EXCHANGE_1);
+    }
+
+    @Bean
+    public FanoutExchange fanoutExchange(){
+        return new FanoutExchange(RabbitMqConstant.FANOUT_EXCHANGE_1);
+    }
 
 
     /*@Bean
@@ -129,13 +137,24 @@ public class RabbitMqConfig {
 
     @Bean
     public Binding binding1(){
-        return BindingBuilder.bind(new Queue(RabbitMqConstant.QUEUE_2, true,true,false))
-            .to(new DirectExchange(RabbitMqConstant.EXCHANGE_1,true,false)).with(RabbitMqConstant.ROUTINGKEY_2);
+        return BindingBuilder.bind(new Queue(RabbitMqConstant.QUEUE_1, true,true,false))
+            .to(new DirectExchange(RabbitMqConstant.EXCHANGE_2,true,false)).with(RabbitMqConstant.ROUTINGKEY_1);
     }
 
     @Bean
     public Binding binding2(){
         return BindingBuilder.bind(new Queue(RabbitMqConstant.QUEUE_2, true))
             .to(new DirectExchange(RabbitMqConstant.EXCHANGE_2)).with(RabbitMqConstant.ROUTINGKEY_2);
+    }
+
+    @Bean
+    public Binding topicBinding(){
+        return BindingBuilder.bind(new Queue(RabbitMqConstant.TOPIC_QUEUE_1, true, true, false))
+            .to(topicExchange()).with(RabbitMqConstant.TOPIC_ROUTINGKEY_1);
+    }
+
+    @Bean
+    public Binding fanoutBinding(){
+        return BindingBuilder.bind(new Queue(RabbitMqConstant.FANOUT_QUEUE_1)).to(fanoutExchange());
     }
 }

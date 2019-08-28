@@ -11,14 +11,20 @@ public class RabbitMqConstant {
 
     public static final String EXCHANGE_1 = "my-mq-exchange_1";
     public static final String EXCHANGE_2 = "my-mq-exchange_2";
+    public static final String TOPIC_EXCHANGE_1 = "my-topic-exchange_1";
+    public static final String FANOUT_EXCHANGE_1 = "my-fanout-exchange_1";
 
 
     public static final String ROUTINGKEY_1 = "spring-boot-routingKey_1";
     public static final String ROUTINGKEY_2 = "spring-boot-routingKey_2";
+    public static final String TOPIC_ROUTINGKEY_1 = "TOPIC_ROUTINGKEY_1";
+    public static final String FANOUT_ROUTINGKEY_1 = "FANOUT_ROUTINGKEY_1";
 
 
     public static final String QUEUE_1 = "QUEUE_1";
     public static final String QUEUE_2 = "QUEUE_2";
+    public static final String TOPIC_QUEUE_1 = "TOPIC_QUEUE_1";
+    public static final String FANOUT_QUEUE_1 = "FANOUT_QUEUE_1";
 
 
 }

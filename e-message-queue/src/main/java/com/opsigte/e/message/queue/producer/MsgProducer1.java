@@ -40,6 +40,16 @@ public class MsgProducer1 implements RabbitTemplate.ConfirmCallback{
         CorrelationData correlationData = new CorrelationData(UUIDUtil.generatorUUID());
         rabbitTemplate.convertAndSend(RabbitMqConstant.EXCHANGE_2,RabbitMqConstant.ROUTINGKEY_2,content,correlationData);
     }
+
+
+    /**
+     * 此回调必须在 publisherConfirms = true 的前提下才会执行
+     *
+     * @Title confirm
+     * @param [correlationData, ack, cause]
+     * @return void
+     * @throws
+     */
     @Override
     public void confirm(CorrelationData correlationData, boolean ack, String cause) {
         log.info("回调ID：{}", correlationData);
