@@ -76,6 +76,7 @@ public class WebLogAop {
         String uuid = CommonUtil.getUuid();*/
 
         String traceId = UUIDUtil.generatorTraceId();
+        // 将traceId放入到当前线程中,在返回时放入到response head里
         threadLocal.set(traceId);
         RpcContext.getContext().setAttachment(CommonConstant.TRACEIDKEY,traceId);
         MDC.put(CommonConstant.TRACEIDKEY,traceId);
@@ -105,7 +106,8 @@ public class WebLogAop {
         HttpServletResponse response = Objects.requireNonNull(attributes).getResponse();
         // 将此次请求的traceId设置到返回头里面,方便排查错误
         response.addHeader(CommonConstant.TRACEIDKEY,threadLocal.get());
-        System.out.println("请求返回的traceId:" + threadLocal.get());
+        // 清理内存
+        threadLocal.remove();
 
         Long start = (Long) request.getAttribute(START_TIME);
         Long end = System.currentTimeMillis();
