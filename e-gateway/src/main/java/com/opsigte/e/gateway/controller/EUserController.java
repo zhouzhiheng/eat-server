@@ -3,6 +3,7 @@ package com.opsigte.e.gateway.controller;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.fastjson.JSON;
 import com.opsigte.e.cache.api.CacheService;
+import com.opsigte.e.common.core.utils.SnowFlakeIdWorker;
 import com.opsigte.e.common.core.web.response.Resp;
 import com.opsigte.e.user.api.EUserService;
 import com.opsigte.e.user.api.entity.EUserEntity;
@@ -58,8 +59,14 @@ public class EUserController {
 
     @GetMapping(value = "getUserById")
     public Resp getUserById(Integer id){
-        EUserEntity userById = userService.getUserById(id);
-        return Resp.success(userById);
+
+        System.out.println("id:" +SnowFlakeIdWorker.getId() );
+
+        /*EUserEntity userById = userService.getUserById(id);
+        return Resp.success(userById);*/
+        EUserEntity eUserEntity = new EUserEntity();
+        eUserEntity.setAccountId(1111);
+        return Resp.success(eUserEntity);
     }
 
     @GetMapping(value = "getUserById/{id}/test/{name}")

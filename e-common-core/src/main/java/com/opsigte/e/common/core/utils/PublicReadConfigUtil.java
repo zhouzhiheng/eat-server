@@ -31,7 +31,7 @@ public class PublicReadConfigUtil {
         try {
             properties.load(PublicReadConfigUtil.class.getClassLoader().getResourceAsStream("application-common_config.properties"));
         } catch (Exception var1) {
-            log.error("加载public_system.properties文件异常" + var1);
+            log.error("加载application-common_config.properties文件异常" + var1);
         }
 
     }
