@@ -10,6 +10,8 @@ package com.opsigte.e.common.core.web.response;
 public enum ErrorCode {
     SYSTEM_ERROR(500, "系统错误"),
     RPC_ERROR(501, "rpc调用失败"),
+
+    NO_HANDLER_MAPPING_ERROR(404, "路径不存在"),
     ;
 
     private final Integer value;

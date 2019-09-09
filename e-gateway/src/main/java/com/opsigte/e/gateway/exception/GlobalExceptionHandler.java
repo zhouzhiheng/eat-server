@@ -6,6 +6,7 @@ import com.opsigte.e.common.core.web.response.Resp;
 import com.opsigte.e.user.api.exception.EUserException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.servlet.NoHandlerFoundException;
 
 /**
  * <p> @ClassName: <i>GlobalExceptionHandler</i></p>
@@ -29,5 +30,12 @@ public class GlobalExceptionHandler {
             return Resp.fail(ErrorCode.RPC_ERROR, "rpc调用异常");
         }
         return Resp.fail(ErrorCode.SYSTEM_ERROR, "系统错误");
+    }
+
+
+    @ExceptionHandler(value = NoHandlerFoundException.class)
+    public Resp handlerFoundException(Exception e){
+        return Resp.fail(ErrorCode.);
+
     }
 }
