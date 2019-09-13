@@ -35,7 +35,6 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(value = NoHandlerFoundException.class)
     public Resp handlerFoundException(Exception e){
-        return Resp.fail(ErrorCode.);
-
+        return Resp.fail(ErrorCode.NO_HANDLER_MAPPING_ERROR);
     }
 }
