@@ -1,7 +1,8 @@
 package com.opsigte.e.message.queue.schedule;
 
 import com.opsigte.e.message.queue.producer.FanoutProducer;
-import com.opsigte.e.message.queue.producer.MsgProducer1;
+import com.opsigte.e.message.queue.producer.DirectProducer;
+import com.sun.xml.internal.ws.api.server.SDDocumentFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
@@ -20,7 +21,7 @@ import java.util.Date;
 public class RabbitmqProducerSchedu {
 
     @Autowired
-    private MsgProducer1 producer1;
+    private DirectProducer directProducer;
     @Autowired
     private FanoutProducer fanoutProducer;
 
@@ -30,19 +31,16 @@ public class RabbitmqProducerSchedu {
         producer1.sendMsg("定时发送的数据：" + sdf.format(new Date()));
     }*/
 
-    @Scheduled(fixedRate = 1000 * 10)
+   /* @Scheduled(fixedRate = 1000 * 1000)
     public void fanoutProducerMsg(){
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         fanoutProducer.sendMsg("定时发送的数据：" + sdf.format(new Date()));
-    }
-
-    /*@Scheduled(fixedRate = 1000 * 10)
-    public void producerMsg2(){
-        for (int i = 0; i < 5; i++) {
-
-            producer1.sendMsg2("定时发送的数据：" + i);
-
-        }
     }*/
+
+    @Scheduled(fixedRate = 1000 * 10)
+    public void producerMsg2(){
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        directProducer.sendMsg("direct 发送的数据：" + sdf.format(new Date()));
+    }
 
 }

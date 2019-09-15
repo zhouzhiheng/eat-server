@@ -2,9 +2,11 @@ package com.opsigte.e.message.queue.configuration;
 
 import com.opsigte.e.message.queue.constant.RabbitMqConstant;
 import org.springframework.amqp.core.*;
+import org.springframework.amqp.rabbit.config.SimpleRabbitListenerContainerFactory;
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Bean;
@@ -52,7 +54,17 @@ public class RabbitMqConfig {
     @Value("${spring.rabbitmq.publisher-confirms}")
     private Boolean pubConfirm;
 
+    @Value("${spring.rabbitmq.publisher-returns}")
+    private Boolean resConfirm;
 
+    /**
+     * 定义rabbitmq连接信息
+     *
+     * @Title connectionFactory
+     * @param []
+     * @return org.springframework.amqp.rabbit.connection.ConnectionFactory
+     * @throws
+     */
     @Bean
     @Primary
     public ConnectionFactory connectionFactory(){
@@ -78,8 +90,11 @@ public class RabbitMqConfig {
          * void confirm(CorrelationData correlationData, booleanack);
          */
         factory.setPublisherConfirms(pubConfirm);
+        factory.setPublisherReturns(resConfirm);
+
         return factory;
     }
+
 
     /**
      *  Scope必须是 prototype类型
@@ -93,6 +108,24 @@ public class RabbitMqConfig {
     public RabbitTemplate rabbitTemplate() {
         return new RabbitTemplate(connectionFactory());
     }
+
+
+    /**
+     * 定义接收者使用什么方式处理接受到的消息（此方法使用json处理,需要在receiver方指定containerFactory = "jsonListenContainer"）
+     *
+     * @Title rabbitListenerContainerFactory
+     * @param []
+     * @return org.springframework.amqp.rabbit.config.SimpleRabbitListenerContainerFactory
+     * @throws
+     */
+    @Bean(name="jsonListenContainer")
+    public SimpleRabbitListenerContainerFactory rabbitListenerContainerFactory() {
+        SimpleRabbitListenerContainerFactory factory = new SimpleRabbitListenerContainerFactory();
+        factory.setMessageConverter(new Jackson2JsonMessageConverter());
+        factory.setConnectionFactory(connectionFactory());
+        return factory;
+    }
+
 
 
     /**
@@ -119,10 +152,14 @@ public class RabbitMqConfig {
     }
 
     @Bean
-    public FanoutExchange fanoutExchange(){
+    public FanoutExchange fanoutExchange1(){
         return new FanoutExchange(RabbitMqConstant.FANOUT_EXCHANGE_1);
     }
 
+    @Bean
+    public FanoutExchange fanoutExchange2(){
+        return new FanoutExchange(RabbitMqConstant.FANOUT_EXCHANGE_2,false,false);
+    }
 
     /*@Bean
     public DirectExchange defaultExchange(){
@@ -138,10 +175,10 @@ public class RabbitMqConfig {
     @Bean
     public Binding binding1(){
         return BindingBuilder.bind(new Queue(RabbitMqConstant.QUEUE_1, true,true,false))
-            .to(new DirectExchange(RabbitMqConstant.EXCHANGE_2,true,false)).with(RabbitMqConstant.ROUTINGKEY_1);
+            .to(directExchange()).with(RabbitMqConstant.ROUTINGKEY_1);
     }
 
-    @Bean
+    /*@Bean
     public Binding binding2(){
         return BindingBuilder.bind(new Queue(RabbitMqConstant.QUEUE_2, true))
             .to(new DirectExchange(RabbitMqConstant.EXCHANGE_2)).with(RabbitMqConstant.ROUTINGKEY_2);
@@ -151,10 +188,16 @@ public class RabbitMqConfig {
     public Binding topicBinding(){
         return BindingBuilder.bind(new Queue(RabbitMqConstant.TOPIC_QUEUE_1, true, true, false))
             .to(topicExchange()).with(RabbitMqConstant.TOPIC_ROUTINGKEY_1);
-    }
+    }*/
 
     @Bean
     public Binding fanoutBinding(){
-        return BindingBuilder.bind(new Queue(RabbitMqConstant.FANOUT_QUEUE_1)).to(fanoutExchange());
+        return BindingBuilder.bind(new Queue(RabbitMqConstant.FANOUT_QUEUE_1,false)).to(fanoutExchange2());
     }
+
+    @Bean
+    public Binding fanoutBinding2(){
+        return BindingBuilder.bind(new Queue(RabbitMqConstant.FANOUT_QUEUE_3,false)).to(fanoutExchange2());
+    }
+
 }

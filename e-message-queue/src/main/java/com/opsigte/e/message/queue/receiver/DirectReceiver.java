@@ -4,6 +4,7 @@ import com.opsigte.e.message.queue.constant.RabbitMqConstant;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.amqp.rabbit.annotation.RabbitListeners;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.stereotype.Component;
 
@@ -19,15 +20,15 @@ import java.util.Set;
  *<p> @Created date: <i>2019/8/20 20:26</i></p>
  *<p> @Version: <i>V1.0.0</i> </p>
  */
-@Component
 @Slf4j
-public class MsgReceiver1 {
+@Component
+@RabbitListener(queues = RabbitMqConstant.QUEUE_1,containerFactory = "jsonListenContainer")
+public class DirectReceiver {
 
-   /* @RabbitHandler
-    @RabbitListener(queues = RabbitMqConstant.QUEUE_1)
+    @RabbitHandler
     public void receiver(String content){
-        log.info("消费者1接收到的消息：{}", content);
-    }*/
+        log.info("direct消费者接收到的消息：{}", content);
+    }
 
    /* @RabbitHandler
     public void receiver2(String content){

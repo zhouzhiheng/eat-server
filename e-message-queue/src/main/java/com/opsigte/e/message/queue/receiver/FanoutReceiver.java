@@ -15,12 +15,12 @@ import org.springframework.stereotype.Component;
  */
 @Slf4j
 @Component
-@RabbitListener(queues = RabbitMqConstant.FANOUT_QUEUE_1)
+@RabbitListener(queues = RabbitMqConstant.FANOUT_QUEUE_2)
 public class FanoutReceiver {
 
 
     @RabbitHandler
     public void msg(String content){
-        log.info("fanout接收到的消息：" + content);
+        log.info("fanout2接收到的消息：" + content);
     }
 }

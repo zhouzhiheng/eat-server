@@ -3,6 +3,7 @@ package com.opsigte.e.message.queue.producer;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.opsigte.e.message.queue.constant.RabbitMqConstant;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.amqp.core.Message;
 import org.springframework.amqp.rabbit.connection.CorrelationData;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,7 @@ import org.springframework.stereotype.Component;
  */
 @Slf4j
 @Service(version = "1.0.0",filter = "traceIdFilter")
-public class FanoutProducer implements RabbitTemplate.ConfirmCallback {
+public class FanoutProducer implements RabbitTemplate.ConfirmCallback,RabbitTemplate.ReturnCallback {
 
 
     private RabbitTemplate rabbitTemplate;
@@ -30,17 +31,33 @@ public class FanoutProducer implements RabbitTemplate.ConfirmCallback {
 
 
     public void sendMsg(String content){
-        rabbitTemplate.convertAndSend(RabbitMqConstant.FANOUT_EXCHANGE_1, content);
+        // fanout exchange会忽略 routingKey参数.
+        rabbitTemplate.convertAndSend(RabbitMqConstant.FANOUT_EXCHANGE_2, "",content);
     }
 
 
+
+
     @Override
-    public void confirm(CorrelationData correlationData, boolean b, String s) {
+    public void returnedMessage(Message message, int replyCode, String replyText, String exchange, String routingKey) {
+        /**
+         * exchange到queue成功,则不回调return
+         * exchange到queue失败,则回调return(需设置mandatory=true,否则不回回调,消息就丢了)
+         */
+        log.info("消息丢失：exchange({}),routingKey({}),replyCode({}),replyText({})", exchange, routingKey,replyCode,replyText);
+    }
+
+    @Override
+    public void confirm(CorrelationData correlationData, boolean ack, String cause) {
+        /**
+         * 如果消息没有到exchange,则confirm回调,ack=false
+         * 如果消息到达exchange,则confirm回调,ack=true
+         */
         log.info("回调ID：{}", correlationData);
-        if (b) {
-            log.info("消息成功消费");
+        if (ack) {
+            log.info("消息发送成功");
         } else {
-            log.info("消息消费失败:{}", s);
+            log.info("消息发送失败:{}", cause);
         }
     }
 }
