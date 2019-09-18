@@ -1,4 +1,4 @@
-package com.opsigte.e.message.queue.produce.constant;
+package com.opsigte.e.common.core.constant;
 
 /**
  *<p> @ClassName: <i>RabbitMqConstat</i></p>

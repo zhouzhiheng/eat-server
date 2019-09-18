@@ -1,6 +1,6 @@
 package com.opsigte.e.message.queue.produce.configuration;
 
-import com.opsigte.e.message.queue.produce.constant.RabbitMqConstant;
+import com.opsigte.e.common.core.constant.RabbitMqConstant;
 import org.springframework.amqp.core.*;
 import org.springframework.amqp.rabbit.config.SimpleRabbitListenerContainerFactory;
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
@@ -23,7 +23,7 @@ import org.springframework.context.annotation.Scope;
  *<p> @Version: <i>V1.0.0</i> </p>
  */
 @Configuration
-public class RabbitMqConfig {
+public class RabbitMqProduceConfig {
 
     /**
      Broker:它提供一种传输服务,它的角色就是维护一条从生产者到消费者的路线，保证数据能按照指定的方式进行传输,

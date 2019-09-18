@@ -1,8 +1,8 @@
 package com.opsigte.e.message.queue.produce.producer;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import com.opsigte.e.common.core.constant.RabbitMqConstant;
 import com.opsigte.e.common.core.utils.UUIDUtil;
-import com.opsigte.e.message.queue.produce.constant.RabbitMqConstant;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.rabbit.connection.CorrelationData;

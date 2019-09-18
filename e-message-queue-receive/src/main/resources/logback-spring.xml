@@ -4,7 +4,7 @@
     <!-- 日志根目录，可以在配置文件中定义 logging.path（方便使用命令行启动的时候改变文件存放目录）,然后在这里使用 LOG_HOME别名，-->
     <springProperty name="LOG_HOME" scope="context" source="logging.path"/>
     <!-- 日志文件名称-->
-    <property name="LOG_PREFIX" value="e-message-queue-produce" />
+    <property name="LOG_PREFIX" value="e-message-queue-receive" />
 
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">

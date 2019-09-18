@@ -1,6 +1,6 @@
 package com.opsigte.e.message.queue.produce.receiver;
 
-import com.opsigte.e.message.queue.produce.constant.RabbitMqConstant;
+import com.opsigte.e.common.core.constant.RabbitMqConstant;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
  */
 @Slf4j
 @Component
-@RabbitListener(queues = RabbitMqConstant.QUEUE_1,containerFactory = "jsonListenContainer")
+@RabbitListener(queues = RabbitMqConstant.QUEUE_2,containerFactory = "jsonListenContainer")
 public class DirectReceiver {
 
     @RabbitHandler
