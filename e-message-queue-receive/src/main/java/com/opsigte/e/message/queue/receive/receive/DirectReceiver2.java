@@ -15,12 +15,12 @@ import org.springframework.stereotype.Component;
  */
 @Slf4j
 @Component
-@RabbitListener(queues = RabbitMqConstant.QUEUE_1,containerFactory = "jsonListenContainer",concurrency = "1",exclusive = true)
-public class DirectReceiver {
+@RabbitListener(queues = RabbitMqConstant.QUEUE_1,containerFactory = "jsonListenContainer")
+public class DirectReceiver2 {
 
     @RabbitHandler
     public void receive(String msg){
-        log.info("receive1接受到的消息：{}", msg);
+        log.info("receive2接受到的消息：{}", msg);
     }
 
 }

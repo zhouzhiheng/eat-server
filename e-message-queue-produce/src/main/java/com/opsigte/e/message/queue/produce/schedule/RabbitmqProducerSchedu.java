@@ -38,8 +38,10 @@ public class RabbitmqProducerSchedu {
 
     @Scheduled(fixedRate = 1000 * 10)
     public void producerMsg2(){
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        directProducer.sendMsg("direct 发送的数据：" + sdf.format(new Date()));
+        int i = 0;
+        while (i < 1000) {
+            i++;
+            directProducer.sendMsg("direct 发送的数据：" + i);
+        }
     }
-
 }
