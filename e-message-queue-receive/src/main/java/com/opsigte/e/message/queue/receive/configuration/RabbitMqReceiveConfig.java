@@ -72,8 +72,6 @@ public class RabbitMqReceiveConfig {
         factory.setUsername(username);
         factory.setPassword(password);
         factory.setVirtualHost(virtualHost);
-        // factory.setPublisherConfirms(pubConfirm);
-        // factory.setPublisherReturns(resConfirm);
         return factory;
     }
 

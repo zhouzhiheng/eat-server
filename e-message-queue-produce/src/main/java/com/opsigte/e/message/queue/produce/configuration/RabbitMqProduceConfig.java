@@ -192,12 +192,12 @@ public class RabbitMqProduceConfig {
 
     @Bean
     public Binding fanoutBinding(){
-        return BindingBuilder.bind(new Queue(RabbitMqConstant.FANOUT_QUEUE_1,false)).to(fanoutExchange2());
+        return BindingBuilder.bind(new Queue(RabbitMqConstant.FANOUT_QUEUE_1,true)).to(fanoutExchange1());
     }
+
 
     @Bean
     public Binding fanoutBinding2(){
-        return BindingBuilder.bind(new Queue(RabbitMqConstant.FANOUT_QUEUE_3,false)).to(fanoutExchange2());
+        return BindingBuilder.bind(new Queue(RabbitMqConstant.FANOUT_QUEUE_2,true)).to(fanoutExchange1());
     }
-
 }

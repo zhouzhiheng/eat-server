@@ -7,20 +7,20 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
 /**
- *<p> @ClassName: <i>DirectReceiver</i></p>
+ *<p> @ClassName: <i>FanoutReceiver</i></p>
  *<p> @Description: <i></i></p>
  *<p> @Author: <i>zzh</i></p>
- *<p> @Created date: <i>2019/9/16 13:37</i></p>
+ *<p> @Created date: <i>2019/9/19 11:10</i></p>
  *<p> @Version: <i>V1.0.0</i> </p>
  */
 @Slf4j
 @Component
-@RabbitListener(queues = RabbitMqConstant.QUEUE_1,containerFactory = "jsonListenContainer",concurrency = "1")
-public class DirectReceiver {
+@RabbitListener(queues = RabbitMqConstant.FANOUT_QUEUE_1,containerFactory = "jsonListenContainer")
+public class FanoutReceiver {
+
 
     @RabbitHandler
     public void receive(String msg){
-        log.info("receive1接受到的消息：{}", msg);
+        log.info("fanout1 接受到的消息：{}", msg);
     }
-
 }

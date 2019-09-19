@@ -6,6 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.rabbit.connection.CorrelationData;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
@@ -25,13 +26,17 @@ public class FanoutProducer implements RabbitTemplate.ConfirmCallback,RabbitTemp
     @Autowired
     public FanoutProducer(RabbitTemplate rabbitTemplate){
         this.rabbitTemplate = rabbitTemplate;
+        // json 格式传入到exchange
+        this.rabbitTemplate.setMessageConverter(new Jackson2JsonMessageConverter());
+        this.rabbitTemplate.setMandatory(true);
+        rabbitTemplate.setReturnCallback(this);
         rabbitTemplate.setConfirmCallback(this);
     }
 
 
     public void sendMsg(String content){
         // fanout exchange会忽略 routingKey参数.
-        rabbitTemplate.convertAndSend(RabbitMqConstant.FANOUT_EXCHANGE_2, "",content);
+        rabbitTemplate.convertAndSend(RabbitMqConstant.FANOUT_EXCHANGE_1, "",content);
     }
 
 
@@ -43,7 +48,7 @@ public class FanoutProducer implements RabbitTemplate.ConfirmCallback,RabbitTemp
          * exchange到queue成功,则不回调return
          * exchange到queue失败,则回调return(需设置mandatory=true,否则不回回调,消息就丢了)
          */
-        log.info("消息丢失：exchange({}),routingKey({}),replyCode({}),replyText({})", exchange, routingKey,replyCode,replyText);
+        log.info("fanout 消息丢失：exchange({}),routingKey({}),replyCode({}),replyText({})", exchange, routingKey,replyCode,replyText);
     }
 
     @Override
@@ -52,11 +57,11 @@ public class FanoutProducer implements RabbitTemplate.ConfirmCallback,RabbitTemp
          * 如果消息没有到exchange,则confirm回调,ack=false
          * 如果消息到达exchange,则confirm回调,ack=true
          */
-        log.info("回调ID：{}", correlationData);
+        log.info("fanout 回调ID：{}", correlationData);
         if (ack) {
-            log.info("消息发送成功");
+            log.info("fanout 消息发送成功");
         } else {
-            log.info("消息发送失败:{}", cause);
+            log.info("fanout 消息发送失败:{}", cause);
         }
     }
 }
