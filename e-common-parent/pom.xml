@@ -53,6 +53,7 @@
     <swagger.bootstrap.ui.version>1.9.6</swagger.bootstrap.ui.version>
     <UserAgentUtils.version>1.21</UserAgentUtils.version>
     <jackson.version>2.9.8</jackson.version>
+    <docker.maven.plugin.version>1.0.0</docker.maven.plugin.version>
   </properties>
 
 
