@@ -1,4 +1,4 @@
-FROM e_jdk1.8:1.0.0
+FROM e_jdk1.8_tomcat8:1.0.0
 VOLUME /tmp
 ADD e-user-service.jar app.jar
 RUN bash -c 'touch /app.jar'
