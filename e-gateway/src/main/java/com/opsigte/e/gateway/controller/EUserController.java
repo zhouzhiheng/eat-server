@@ -35,10 +35,7 @@ public class EUserController {
 
     @ApiOperation(value = "todo",notes = "todo测试接口")
     @RequestMapping(value = "todo",method = {RequestMethod.GET,RequestMethod.DELETE})
-    public String todo (HttpServletRequest request,String name,@RequestBody EUserEntity userEntity){
-        AsyncContext asyncContext = request.getAsyncContext();
-        log.error("sss");
-        log.info("zzz");
+    public String todo (HttpServletRequest request,String name){
         System.out.println("name:" + name);
         return "todo返回";
     }

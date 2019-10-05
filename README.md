@@ -36,8 +36,8 @@
 * 使用：
 
   * 将 **e-common-parent** , **e-common** ,**e-common-core**  , **e-common-config**  maven install 到本地 
-
-  * 分别启动zookeeper服务、Redis服务、rabbitmq服务
+* 分别启动zookeeper服务、Redis服务、rabbitmq服务
   * 修改 **e-common-config** 中的配置相关配置文件
   * 分别启动 **e-user-service** ,**e-order-service** ,**e-cache-service**,**e-gateway**
+  * 启动**e-gateway**即可使用 **ip+端口+doc.html**访问swagger接口文档。如:**192.168.1.2:12000/doc.html**
 
