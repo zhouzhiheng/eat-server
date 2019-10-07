@@ -41,22 +41,18 @@ public class BizException extends RuntimeException{
     public static final BizException DB_LIST_IS_NULL = new BizException(
             10000005, "数据库操作,list返回null");
 
-    /**
-     * Token 验证不通过
-     */
-    public static final BizException TOKEN_IS_ILLICIT = new BizException(
-            10000006, "Token 验证非法");
-    /**
-     * 会话超时　获取session时，如果是空，throws 下面这个异常 拦截器会拦截爆会话超时页面
-     */
-    public static final BizException SESSION_IS_OUT_TIME = new BizException(
-            10000007, "会话超时");
 
     /**
      * 生成序列异常时
      */
     public static final BizException DB_GET_SEQ_NEXT_VALUE_ERROR = new BizException(
-            10000008, "序列生成超时");
+            10000006, "序列生成超时");
+
+    /**
+     * 未知异常
+     */
+    public static final BizException UNKNOW_ERROR = new BizException(
+        10000010, "未知异常");
 
     /**
      * 异常信息

@@ -1,4 +1,4 @@
-package com.opsigte.e.common.core.constant;
+package com.opsigte.e.common.core.constant.redis;
 
 /**
  * <p> @ClassName: <i>RedisConstant</i></p>

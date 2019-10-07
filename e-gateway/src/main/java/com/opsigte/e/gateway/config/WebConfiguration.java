@@ -1,9 +1,11 @@
 package com.opsigte.e.gateway.config;
 
+import com.opsigte.e.gateway.interceptor.AuthorizationInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.StringHttpMessageConverter;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.PathMatchConfigurer;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
@@ -34,6 +36,11 @@ public class WebConfiguration extends WebMvcConfigurationSupport {
         return stringHttpMessageConverter;
     }
 
+    @Bean
+    public AuthorizationInterceptor authorizeInterceptor(){
+        return new AuthorizationInterceptor();
+    }
+
     @Override
     public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
         converters.add(responseBodyConverter());
@@ -61,5 +68,16 @@ public class WebConfiguration extends WebMvcConfigurationSupport {
 
         registry.addResourceHandler("/webjars/**")
                 .addResourceLocations("classpath:/META-INF/resources/webjars/");
+    }
+
+    @Override
+    protected void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(authorizeInterceptor())
+                .addPathPatterns("/api/**");
+                // 过滤登录接口
+                //.excludePathPatterns("/api/user/login")
+                //过滤swagger页面
+                //.excludePathPatterns("/swagger-resources/**", "/webjars/**", "/v2/**", "/doc.html/**");
+
     }
 }

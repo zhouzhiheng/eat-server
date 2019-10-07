@@ -54,6 +54,7 @@
     <UserAgentUtils.version>1.21</UserAgentUtils.version>
     <jackson.version>2.9.8</jackson.version>
     <docker.maven.plugin.version>1.0.0</docker.maven.plugin.version>
+    <jjwt.version>0.9.1</jjwt.version>
   </properties>
 
 
@@ -235,6 +236,12 @@
         <version>${jackson.version}</version>
       </dependency>
 
+      <!--jwt-->
+      <dependency>
+        <groupId>io.jsonwebtoken</groupId>
+        <artifactId>jjwt</artifactId>
+        <version>${jjwt.version}</version>
+      </dependency>
 
     </dependencies>
   </dependencyManagement>

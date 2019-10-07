@@ -3,7 +3,7 @@ package com.opsigte.e.cache.service.impl;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.opsigte.e.cache.api.CacheService;
 import com.opsigte.e.cache.service.core.RedisManager;
-import com.opsigte.e.common.core.constant.RedisConstant;
+import com.opsigte.e.common.core.constant.redis.RedisConstant;
 import com.opsigte.e.common.core.utils.StringUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 

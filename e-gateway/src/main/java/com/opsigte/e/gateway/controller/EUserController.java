@@ -3,12 +3,18 @@ package com.opsigte.e.gateway.controller;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.fastjson.JSON;
 import com.opsigte.e.cache.api.CacheService;
+import com.opsigte.e.common.core.constant.JwtInfoConstant;
 import com.opsigte.e.common.core.utils.SnowFlakeIdWorker;
 import com.opsigte.e.common.core.web.response.Resp;
+import com.opsigte.e.gateway.annotation.Authorization;
+import com.opsigte.e.gateway.jwt.JwtTokenUtil;
+import com.opsigte.e.gateway.jwt.manager.impl.RedisTokenManager;
+import com.opsigte.e.gateway.jwt.model.TokenModel;
 import com.opsigte.e.user.api.EUserService;
 import com.opsigte.e.user.api.entity.EUserEntity;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.AsyncContext;
@@ -31,13 +37,15 @@ public class EUserController {
     private EUserService userService;
     @Reference(version = "1.0.0", check = false)
     private CacheService cacheService;
+    @Autowired
+    private RedisTokenManager manager;
 
 
     @ApiOperation(value = "todo",notes = "todo测试接口")
     @RequestMapping(value = "todo",method = {RequestMethod.GET,RequestMethod.DELETE})
     public String todo (HttpServletRequest request,String name){
         System.out.println("name:" + name);
-        return "todo返回";
+        return "todo返回211111";
     }
 
     @PostMapping(value = "insertUser")
@@ -54,13 +62,11 @@ public class EUserController {
 
     }
 
+    @Authorization
     @GetMapping(value = "getUserById")
     public Resp getUserById(Integer id){
 
         System.out.println("id:" +SnowFlakeIdWorker.getId() );
-
-        /*EUserEntity userById = userService.getUserById(id);
-        return Resp.success(userById);*/
         EUserEntity eUserEntity = new EUserEntity();
         eUserEntity.setAccountId(1111);
         return Resp.success(eUserEntity);
@@ -72,6 +78,18 @@ public class EUserController {
         return JSON.toJSONString(userById);
     }
 
+
+    @PostMapping(value = "login")
+    public Resp login(String name,String password){
+        log.info("name:{}", name);
+        log.info("password:{}", password);
+        if ("admin".equals(name) && "admin".equals(password)) {
+            TokenModel tokenModel = manager.createTokenModel(name, null, JwtInfoConstant.JWT_TOKEN_EXPIRATION);
+            return Resp.success(tokenModel);
+        } else {
+            return Resp.fail("login account is fail");
+        }
+    }
 
 
 
