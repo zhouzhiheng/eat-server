@@ -50,15 +50,9 @@ public class EOrderController {
     @PostMapping(value = "insertOrder")
     public Resp insertUser(@RequestBody OrderEntity orderEntity) {
         if (orderEntity == null) {
-            return "参数错误";
+            return Resp.fail("参数错误");
         }
-
-        int insert = userService.insert(userEntity);
-        if (insert != 0) {
-            return JSON.toJSONString("添加成功" + insert);
-        }
-        return "添加失败";
-
+        return Resp.fail("参数错误");
     }
 
 
