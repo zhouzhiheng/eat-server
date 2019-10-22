@@ -45,7 +45,7 @@ public class EUserController {
     @RequestMapping(value = "todo",method = {RequestMethod.GET,RequestMethod.DELETE})
     public String todo (HttpServletRequest request,String name){
         System.out.println("name:" + name);
-        return "todo返回211111";
+        return "todo返回!!!!";
     }
 
     @PostMapping(value = "insertUser")
