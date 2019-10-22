@@ -4,8 +4,6 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import com.opsigte.e.cache.api.CacheService;
 import com.opsigte.e.user.api.entity.EUserEntity;
 import com.opsigte.e.user.service.mapper.EUserMapper;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,8 +18,6 @@ import java.util.Date;
  */
 @Service
 public class EUserServiceBiz {
-
-    private static final Logger log = LoggerFactory.getLogger(EUserServiceBiz.class);
 
 
     @Reference(version = "1.0.0", check = false)

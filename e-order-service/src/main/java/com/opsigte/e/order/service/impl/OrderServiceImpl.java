@@ -4,8 +4,10 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.opsigte.e.order.api.OrderService;
 import com.opsigte.e.order.api.entity.OrderEntity;
+import com.opsigte.e.order.service.mapper.EOrderMapper;
 import com.opsigte.e.user.api.EUserService;
-import com.opsigte.e.user.api.entity.UserEntity;
+import com.opsigte.e.user.api.entity.EUserEntity;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +24,9 @@ import java.util.List;
 public class OrderServiceImpl implements OrderService {
 
     @Reference(check = false,version = "1.0.0")
-    private EUserService EUserService;
+    private EUserService eUserService;
+    @Autowired
+    private EOrderMapper orderMapper;
 
     @Override
     public List<OrderEntity> getAllOrders() {
@@ -41,16 +45,31 @@ public class OrderServiceImpl implements OrderService {
         list.add(entity1);
 
         List<OrderEntity> resList = new ArrayList<OrderEntity>();
-        for (OrderEntity orderEntity : list) {
-            UserEntity userByUid = EUserService.getUserByUid(orderEntity.getUid());
+        /*for (OrderEntity orderEntity : list) {
+            EUserEntity userByUid = eUserService.getUserByUid(orderEntity.getUid());
             if (userByUid != null) {
                 orderEntity.setUserName(userByUid.getName());
             } else {
                 System.out.println("没有uid为"+orderEntity.getUid()+"的用户");
             }
             resList.add(orderEntity);
-        }
+        }*/
 
         return resList;
+    }
+
+    @Override
+    public int insertOrder(OrderEntity orderEntity) {
+        // 插入订单表
+        orderMapper.insert(orderEntity);
+
+        // 更新用户版本
+
+        EUserEntity userEntity = new EUserEntity();
+        userEntity.setId(1);
+        // userEntity.
+        // eUserService.update()
+
+        return 1;
     }
 }

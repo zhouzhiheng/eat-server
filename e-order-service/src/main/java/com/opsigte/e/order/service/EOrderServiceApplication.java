@@ -16,7 +16,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * @version 1.0.0
  */
 @SpringBootApplication
-@MapperScan(value = "com.opsigte.e.order.service.dao")
+@MapperScan(value = "com.opsigte.e.order.service.mapper")
 @EnableDubbo
 @EnableTransactionManagement
 public class EOrderServiceApplication {
