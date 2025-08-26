@@ -41,7 +41,7 @@
         <alibaba-spring-boot-dubbo.version>0.2.0</alibaba-spring-boot-dubbo.version>
         <!--<zookeeper.version>3.5.3-beta</zookeeper.version>-->
         <lombok.version>1.16.20</lombok.version>
-        <common-lang3.version>3.8.1</common-lang3.version>
+        <common-lang3.version>3.18.0</common-lang3.version>
         <mybatis-spring-boot.version>2.0.1</mybatis-spring-boot.version>
         <mysql.version>5.1.47</mysql.version>
         <alibaba-druid.version>1.1.9</alibaba-druid.version>
